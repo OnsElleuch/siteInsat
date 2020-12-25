@@ -24,9 +24,45 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "src/assets/css/fullcalendar.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/prettyPhoto.css",
+              "src/assets/css/jquery.bxslider.css",
+              "src/assets/js/dl-menu/component.css",
+              "src/assets/svg/style.css",
+              "src/assets/css/widget.css",
+              "src/assets/css/typography.css",
+              "src/assets/css/shortcodes.css",
+              "src/assets/css/color.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/selectric.css",
+              "src/assets/css/jquery.sidr.dark.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/jquery.js",
+              "src/assets/js/jquery.bxslider.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.prettyPhoto.js",
+              "src/assets/js/dl-menu/modernizr.custom.js",
+              "src/assets/js/dl-menu/jquery.dlmenu.js",
+              "src/assets/js/dl-menu/modernizr.custom.js",
+              "src/assets/js/dl-menu/jquery.dlmenu.js",
+              "src/assets/js/moment.min.js",
+              "src/assets/js/fullcalendar.min.js",
+              "src/assets/js/jquery.downCount.js",
+              "src/assets/js/jquery-filterable.js",
+              "src/assets/js/jquery.accordion.js",
+              "src/assets/js/waypoints-min.js",
+              "src/assets/js/jquery.vticker.min.js",
+              "src/assets/js/jquery.selectric.min.js",
+              "src/assets/js/jquery.sidr.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
