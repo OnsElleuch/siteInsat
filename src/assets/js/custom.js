@@ -45,7 +45,6 @@ jQuery(document).ready(function($){
 		// Custom Navigation Events
 		$(".next").on('click',function(){
 			owl.trigger('owl.next');
-			
 		})
 		$(".prev").on('click',function(){
 			owl.trigger('owl.prev');

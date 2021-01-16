@@ -42,7 +42,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery/jquery-3.3.1.min.js",
+              "src/assets/js/jquery/ajax/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/jquery.js",
               "src/assets/js/jquery.bxslider.min.js",
