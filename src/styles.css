@@ -61,7 +61,7 @@ footer{
 	width:100%;
 }
 footer{
-	background-color: #1b1b1b;
+	background-color: #263a48;
 	padding: 40px 0 30px;
 }
 
@@ -476,6 +476,7 @@ section,
 	float: left;
 	width: 100%;
 	padding:22px 0; 
+	max-width: 55%;
 }
 .nav_2{
 	float: left;
@@ -493,7 +494,7 @@ section,
 }
 .nav_2 ul li a{
 	display: block;
-	color: #666666;
+	color: #263a48;
 	font-size: 14px;
 	text-transform:uppercase;
 	font-weight: bold;
@@ -604,7 +605,7 @@ section,
 .kf_edu_pagination_wrap .pagination > li > span {
     background-color: #fff;
     border: 1px solid #dbdbdb;
-    color: #333333;
+    color: #263a48;
     float: left;
     line-height: 31px;
     width: 35px;
@@ -864,7 +865,7 @@ section,
 	bottom: 0;
 	height: 2px;
 	width: 25px;
-	background-color: #666666;
+	background-color: #263a48;
 	position: absolute;
 }
 .kf_edu2_heading1 h3:after{
@@ -889,7 +890,7 @@ section,
 	padding-bottom: 15px;
 }
 .kf_edu2_heading2 h3:before {
-    background-color: #666666;
+    background-color: #263a48;
     bottom: 0;
     content: "";
     height: 2px;
@@ -1098,7 +1099,7 @@ section,
 	border-radius: 100%;
 	font-size: 32px;
 	background-color: #fff;
-	color: #666666;
+	color: #263a48;
 	margin: 0 0 26px 0;
 	border: solid 1px #ddd;
 }
@@ -1121,7 +1122,7 @@ section,
 .kf_intro_des_caption a{
 	display: inline-block;
 	font-weight: bold;
-	color: #666666;
+	color: #263a48;
 	text-transform: capitalize;
 	margin-bottom: 45px;
 	font-size: 14px;
@@ -1163,7 +1164,7 @@ section,
 .kf_edu2_tab_wrap .nav-tabs > li > a {
     border-radius: 0;
     border: none;
-    color: #666666;
+    color: #263a48;
     font-size: 18px;
     font-weight: normal;
     padding: 4px 0 8px;
@@ -1268,14 +1269,14 @@ section,
     margin-bottom: 21px;
 }
 .edu2_cur_des > strong span{
-	color: #333333;
+	color: #263a48;
     font-size: 14px;
     font-weight: normal;
     padding: 0 3px 0 0;
     position: relative;
 }
 .edu2_cur_des > strong small {
-    color: #333333;
+    color: #263a48;
     font-size: 14px;
     font-weight: normal;
     padding: 0 10px;
@@ -1403,7 +1404,7 @@ section,
 .edu2_gallery_wrap{
 	float: left;
 	width: 100%;
-	background-color: #333333;
+	background-color: #263a48;
 	margin-bottom: 40px;
 	position:relative;
 }
@@ -1648,7 +1649,7 @@ section,
 	position: absolute;
 	line-height: 27px;
 	font-size: 15px;
-	color: #333333;
+	color: #263a48;
 	font-family: FontAwesome;
 }
 .edu2_faculty_wrap .owl-controls .owl-buttons .owl-prev:before{
@@ -1776,7 +1777,7 @@ section,
 	top: 0;
 	bottom: 0;
 	position: absolute;
-	background-color: #333333;
+	background-color: #263a48;
 	opacity: 0.85;
 }
 .kf_edu2_training_des{
@@ -1896,7 +1897,7 @@ section,
 	font-size: 50px;
 	font-weight: bold;
 	text-transform: capitalize;
-	color: #333333;
+	color: #263a48;
 	display: block;
 	position: relative;
 	line-height: 50px;
@@ -2124,7 +2125,7 @@ section,
 }
 .kf_courses_des > p{
 	margin: 0 0 23px ;
-	color:#666666;
+	color:#263a48;
 	float: left;
 }
 /*rating stars css start*/
@@ -2251,7 +2252,7 @@ section,
 	font-weight: normal;
 	font-size: 14px;
 	text-transform: capitalize;
-	color: #333333;
+	color: #263a48;
 	padding: 12px 10px;
 	display: block;
 	line-height:normal;
@@ -2456,7 +2457,7 @@ section,
 	width: 100%;
 	text-align: left;
 	font-size: 16px;
-	color: #666666;
+	color: #263a48;
 	margin-bottom: 7px;
 }
 .sidebar_register_des li > span{
@@ -3107,7 +3108,7 @@ section,
 	text-transform: uppercase;;
 }
 .kf_event_list_des h4 a span{
-	color: #333333;
+	color: #263a48;
 }
 .kf_event_list_des p{
 	margin-bottom: 15px;
@@ -3179,7 +3180,7 @@ section,
 	color: #fff;
 	text-transform: capitalize;
 	font-size: 16px; 
-	background-color:#333333; 
+	background-color:#263a48; 
 	width: 16.7%;
 	text-transform: uppercase;
 	line-height: normal;
@@ -3298,7 +3299,7 @@ section,
 .edu2_col_4_des h6{
 	margin: -3px 0 7px;
 	text-transform: capitalize;
-	color: #333333;
+	color: #263a48;
 	font-weight: bold;
 }
 .edu2_col_4_des p{
@@ -3465,7 +3466,7 @@ section,
 .blog_3_sidebar > li {
     float: left;
     width: 100%;
-    background-color: #333333;
+    background-color: #263a48;
     border-bottom: 1px solid #717171;
     padding:4px 0px 5px; 
 }
@@ -3526,7 +3527,7 @@ section,
 	float: left;
 	border-right: 1px solid #dcdcdc;
 	font-size: 15px;
-	color:#666666;
+	color:#263a48;
 	 margin: -5px 0 -2px;
 	 padding-right:15px;
 }
@@ -3700,7 +3701,7 @@ section,
 .progress-names span{
 	font-weight: normal;
 	font-size: 16px;
-	color:#333333;
+	color:#263a48;
     margin-bottom: 13px;
     float: left;
     line-height: normal;
@@ -3731,7 +3732,7 @@ section,
 }
 .label {
     background:  transparent;
-    color: #666666;
+    color: #263a48;
     display: block;
     font-size: 16px;
     font-weight: normal;
@@ -4811,7 +4812,7 @@ section,
 	padding-bottom:26px;
 }
 .location_meta li {
-    color: #666666;
+    color: #263a48;
     float: left;
     font-size: 16px;
     font-weight: normal;
@@ -4827,7 +4828,7 @@ section,
 	margin-right:10px;
 }
 .location_meta li a {
-    color: #666666;
+    color: #263a48;
     display: inline-block;
     font-size: 16px;
     font-weight: normal;
@@ -5329,7 +5330,7 @@ section,
 .event_link{
 	display: inline-block;
 	font-size: 15px;
-	color: #666666;
+	color: #263a48;
 	font-weight: normal;
 	padding:8px 20px ;
 	border: 1px solid #dbdbdb;
