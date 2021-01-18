@@ -766,7 +766,7 @@ section,
 	width: 100%;
 	text-align:left;
 	padding:51px 0 54px;
-	background-image: url(src/assets/images/inrbg.jpg);
+	background-image: url(src/assets/images/photos_insat/photo_insat_main.jpg);
 	background-size: cover;
 	background-origin: center;
 	background-repeat: none-repeat;
@@ -1503,7 +1503,7 @@ section,
 /*main page gallery end*/
 /*counter section start*/
 .edu2_counter_wrap{
-	background-color: #2d2e32;
+	background-color: #3f0304;
 	position: relative;
 	z-index: 2;
 	padding:30px 0px;
@@ -1515,7 +1515,10 @@ section,
 	top: 0;
 	bottom: 0;
 	position: absolute;
-	background-image:url(src/assets/images/counter-bg.png); 
+	background-image:url(src/assets/images/photos_insat/photo_insat_main.jpg); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	z-index: -1;
 }
 .edu2_counter_des{
@@ -1994,6 +1997,33 @@ section,
 .edu_testemonial_wrap .kode-text{
 	padding-left: 180px;
 
+}
+.edu_testemonial_wrap .kode-text-modified{
+	padding-left: 20px;
+
+}
+.edu_testemonial_wrap .kode-text-modified > h5{
+	text-align: center;
+
+}
+.edu_testemonial_wrap .kode-text-modified > a{
+	font-size: 14px !important;
+
+}
+.edu2_testemonial_slider_wrap #owl-demo-99 .item {
+	width: inherit;
+}
+.edu2_testemonial_slider_wrap #owl-demo-999 .item {
+	width: inherit;
+}
+.edu2_testemonial_slider_wrap #owl-demo-99 .item .edu_testemonial_wrap{
+	height: 281px;
+}
+.edu2_testemonial_slider_wrap #owl-demo-999 .item .edu_testemonial_wrap{
+	height: 281px;
+}
+.edu_testemonial_wrap .kode-text-modified > a > span{
+	text-align: right;
 }
 .edu_testemonial_wrap p {
     margin-bottom: 20px;
