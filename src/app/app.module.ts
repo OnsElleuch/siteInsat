@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FullLayoutComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    EspaceEtudiantComponent
   ],
   imports: [
     BrowserModule,

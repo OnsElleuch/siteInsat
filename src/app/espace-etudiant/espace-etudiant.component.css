@@ -1,0 +1,27 @@
+.intro_header{
+	color:#830709 !important;
+	font-weight: 600;
+
+
+}
+.intro_subtext {
+    color: black;
+    font-weight: 300;
+}
+
+.kf_edu2_intro_wrap{
+	position: relative;
+	background-color: #f8f8f8;
+}
+
+.kf_edu2_intro_wrap:before{
+	content: "";
+	left: 0;
+	width: 50%;
+	top: 0;
+	bottom: 0;
+	background-image: url(src/assets/images/insateamphi.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+}
