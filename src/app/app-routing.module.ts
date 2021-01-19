@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
-import {EspaceEtudiantComponent} from './espace-etudiant/espace-etudiant.component'
+import {EspaceEtudiantComponent} from './espace-etudiant/espace-etudiant.component';
 
 const routes: Routes = [{
   path: '',

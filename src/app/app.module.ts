@@ -7,6 +7,7 @@ import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
+import { ParallaxDirective } from './espace-etudiant/parallax.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.compo
     FullLayoutComponent,
     HomeComponent,
     AboutUsComponent,
-    EspaceEtudiantComponent
+    EspaceEtudiantComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ export class EspaceEtudiantComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
