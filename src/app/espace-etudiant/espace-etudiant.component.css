@@ -3,13 +3,21 @@
 	font-weight: 600;
 }
 .header{
-	margin-top: 40px;
+	margin-top: 20px;
 	font-weight: 300;
+}
+.bold{
+	font-weight: 600;
+}
+.heading-hr{
+margin-top: -20px;
 }
 .profile{
 	display: block;
 	padding-top: 20%;
-	margin-bottom: 30%;
+	margin-bottom: 30%;	
+	padding-bottom: 5%;
+
 	width:700px;
 	margin-left: auto;
 	margin-right: auto;
