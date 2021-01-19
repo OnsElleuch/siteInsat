@@ -1,8 +1,23 @@
 .intro_header{
 	color:#830709 !important;
 	font-weight: 600;
-
-
+}
+.header{
+	margin-top: 40px;
+	font-weight: 300;
+}
+.profile{
+	display: block;
+	padding-top: 300px;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profile-img{
+	display: block;
+	margin-left: 40%;
+	margin-right: auto;
+	width: 200px;
 }
 .intro_subtext {
     color: black;
@@ -24,4 +39,13 @@
 	background-size: cover;
 	background-position: center;
 	position: absolute;
+}
+.btn-3:hover
+{
+    background-color: #000000;
+    color: #fff;
+    border-color: #000000 !important;
+}
+.text-cnter{
+	text-align: center;
 }
