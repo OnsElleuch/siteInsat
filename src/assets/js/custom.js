@@ -1,6 +1,5 @@
-jQuery(document).ready(function($){
+jQuery(window).on('load',function(){
 	"use strict";
-	
 	/*
     ==============================================================
        OwlCarousel Script Start
@@ -124,6 +123,58 @@ jQuery(document).ready(function($){
 		})
 	}
 
+	/*
+    ==============================================================
+       OwlCarousel Script Start
+    ============================================================== */
+	if($('#owl-demo-99').length){		
+		$("#owl-demo-99").owlCarousel({
+			items : 3, //10 items above 1000px browser width
+			itemsDesktop : [1000,3], //5 items between 1000px and 901px
+			itemsDesktopSmall : [900,2], // betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0
+			itemsMobile : [400,1] // itemsMobile disabled - inherit from itemsTablet option
+		});
+		// Custom Navigation Events
+		$(".next").on('click',function(){
+		  owl.trigger('owl.next');
+		})
+		$(".prev").on('click',function(){
+		  owl.trigger('owl.prev');
+		})
+		$(".play").on('click',function(){
+		  owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+		})
+		$(".stop").on('click',function(){
+		  owl.trigger('owl.stop');
+		})
+	}
+	/*
+    ==============================================================
+       OwlCarousel Script Start
+    ============================================================== */
+	if($('#owl-demo-999').length){		
+		$("#owl-demo-999").owlCarousel({
+			items : 3, //10 items above 1000px browser width
+			itemsDesktop : [1000,3], //5 items between 1000px and 901px
+			itemsDesktopSmall : [900,2], // betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0
+			itemsMobile : [400,1] // itemsMobile disabled - inherit from itemsTablet option
+		});
+		// Custom Navigation Events
+		$(".next").on('click',function(){
+		  owl.trigger('owl.next');
+		})
+		$(".prev").on('click',function(){
+		  owl.trigger('owl.prev');
+		})
+		$(".play").on('click',function(){
+		  owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+		})
+		$(".stop").on('click',function(){
+		  owl.trigger('owl.stop');
+		})
+	}
 	/*
     ==============================================================
        OwlCarousel Script Start
