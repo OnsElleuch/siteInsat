@@ -5757,3 +5757,9 @@ input:checked + .radio-value {
 	text-align:center;
 	color:#999;
 }
+.study_table_wrap .table-bordered >thead > tr > th, .table-bordered {
+    text-align: center;
+}
+.kf_courses_detail_des > h5 > fa-icon, .kf_courses_detail_des >p >li >a >fa-icon {
+	margin-right: 2px;
+}
