@@ -1,7 +1,6 @@
 <div class="profile">
   <div class="edu_testemonial_wrap row">
-
-    <div class="col ">
+    <div class="col">
       <div class="col align-self-center">
         <div class="row align-items-center">
           <div class="col-md-4 align-self-center">
@@ -13,29 +12,29 @@
           </div>
           <div class="kf_edu2_heading2 col">
             <h3 class="header">Elleuch Sami</h3>
-            <p class="header"> - Etudiant 4emme année cycle ingenieure GL</p>
-            
-
+            <p class="header">- Etudiant 4emme année cycle ingenieure GL</p>
           </div>
         </div>
         <!-- -->
-        <div class="row align-items-center ">
-          <div class="col   text-center">
-            <hr class="heading-hr">
-            <p >  <span class="bold">CIN :</span>  000000000000</p>
-            <hr>
-            <p > <span class="bold">NumEtudiant :</span> 074151515</p>
-            <hr>
-            <p > <span class="bold">Email :</span> xxxxxxx@xxxxxx.xx</p>
-            <hr>
+        <div class="row align-items-center">
+          <div class="col text-center">
+            <hr class="heading-hr" />
+            <p><span class="bold">CIN :</span> 000000000000</p>
+            <hr />
+            <p><span class="bold">NumEtudiant :</span> 074151515</p>
+            <hr />
+            <p><span class="bold">Email :</span> xxxxxxx@xxxxxx.xx</p>
+            <hr />
           </div>
         </div>
         <!-- -->
-        <div class="row align-items-center ">
-          <div class="col align-self-center  text-center">
-            <a class="btn-3 text-center" href="#">Changer mes informations personel</a>
+        <div class="row align-items-center">
+          <div class="col align-self-center text-center">
+            <a class="btn-3 text-center" href="#"
+              >Changer mes informations personel</a
+            >
           </div>
-          <div class="col align-self-center  text-center">
+          <div class="col align-self-center text-center">
             <a class="btn-3 text-center" href="#">Deconnecter</a>
           </div>
         </div>
@@ -97,3 +96,117 @@
 </section>
 <!--KF INTRO WRAP END-->
 <div appParallax [ratio]="+0.2" id="square"></div>
+<!--OUR TESTEMONIAL WRAP START Direction-->
+<!-- Consultation de notes-->
+
+<section class="background_color">
+  <div class="container">
+    <div class="row">
+      <!-- HEADING 2 START-->
+      <div class="col-md-12">
+        <div class="training_heading">
+          <h4>Consultation de notes</h4>
+        </div>
+      </div>
+      <!-- HEADING 2 END-->
+      <!-- TESTEMONIAL SLIDER WRAP START-->
+      <div class="edu2_testemonial_slider_wrap">
+        <div id="owl-demo-99">
+          <!-- TESTEMONIAL SLIDER WRAP END-->
+
+          <div *ngFor="let note of Notes" class="item">
+            <!-- TESTEMONIAL SLIDER WRAP START-->
+            <div class="edu_testemonial_wrap slideritem">
+              <div class="kode-text-modified">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <h5 class="sliderTitle">{{ note.title }}</h5>
+                  </div>
+                </div>
+                <div
+                  *ngFor="let field of note.fields"
+                  class="row align-items-center"
+                >
+                  <div class="col">
+                    <p>
+                      <span class="bold">{{ field.fieldName }}</span
+                      >{{ field.fieldContent }}
+                    </p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col align-self-center text-center">
+                  <a class="btn-3 text-center" [href]="note.link"
+                    >Telecharger</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- TESTEMONIAL SLIDER WRAP END-->
+          </div>
+        </div>
+      </div>
+      <!-- TESTEMONIAL SLIDER WRAP END-->
+    </div>
+  </div>
+</section>
+
+<!--OUR TESTEMONIAL WRAP START Direction-->
+
+<!-- Consultation de notes-->
+
+<section class="background_td">
+  <div class="card-overlay">
+  <div class="container">
+    <div class="row">
+      <!-- HEADING 2 START-->
+      <div class="col-md-12">
+        <div class="training_heading">
+          <h4>CALENDRIER PÉDAGOGIQUE</h4>
+        </div>
+      </div>
+      <!-- HEADING 2 END-->
+      <!-- TESTEMONIAL SLIDER WRAP START-->
+      <div class="edu2_testemonial_slider_wrap">
+        <div id="owl-demo-999">
+          <!-- TESTEMONIAL SLIDER WRAP END-->
+
+          <div *ngFor="let note of Calendrier" class="item">
+            <!-- TESTEMONIAL SLIDER WRAP START-->
+            <div class="edu_testemonial_wrap slideritem">
+              <div class="kode-text-modified">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <h5 class="sliderTitle">{{ note.title }}</h5>
+                  </div>
+                </div>
+                <div
+                  *ngFor="let field of note.fields"
+                  class="row align-items-center"
+                >
+                  <div class="col">
+                    <p>
+                      <span class="bold">{{ field.fieldName }}</span
+                      >{{ field.fieldContent }}
+                    </p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col align-self-center text-center">
+                  <a class="btn-3 text-center" [href]="note.link"
+                    >Telecharger</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- TESTEMONIAL SLIDER WRAP END-->
+          </div>
+        </div>
+      </div>
+      <!-- TESTEMONIAL SLIDER WRAP END-->
+    </div>
+  </div>
+</div>
+</section>

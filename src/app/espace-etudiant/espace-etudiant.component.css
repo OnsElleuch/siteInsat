@@ -87,13 +87,46 @@ margin-top: -20px;
 	object-fit: contain;
 	background-image: url(src/assets/images/insat/insateamphi.jpg);
 }
+.background_td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+background-color: #263a48;
+}
+.card-overlay {padding: 50px 50px;
+	background: rgba(255, 255, 255, 0.924);
+height: 100%;  
+}
 
+.edu_testemonial_wrap:hover{
+margin-top: -10px;
+}
+
+.edu_testemonial_wrap:hover::before{
+	animation: goLeft 350ms ease-in-out;
+	right: 51px;
+
+}
+.edu_testemonial_wrap::before{
+animation-duration: 350ms;
+
+}
+.sliderTitle{
+	padding-bottom: 20px;
+}
 @keyframes openBox {
 	0% {
 		clip-path: inset(0 0 0 100%);
 	}
 	100% {
 		clip-path: inset(0 0 0 0);
+	}
+  }
+  @keyframes goLeft {
+	0% {
+		right : -1px ;
+	}
+	100% {
+		right : 50px ;
 	}
   }
 

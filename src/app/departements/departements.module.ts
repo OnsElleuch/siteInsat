@@ -19,7 +19,7 @@ import { FormGenComponent } from './form-gen/form-gen.component';
   ]
 })
 export class DepartementsModule {
-  constructor(library : FaIconLibrary){
+  constructor(library: FaIconLibrary){
     library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope, faFlask );
   }
  }

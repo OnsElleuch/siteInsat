@@ -30,7 +30,7 @@ import { DepartementsModule } from './departements/departements.module';
     FontAwesomeModule,
     CommonModule,
     DepartementsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

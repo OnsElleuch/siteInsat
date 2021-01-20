@@ -10,10 +10,10 @@ export class InfMathComponent implements OnInit {
 
   constructor() { }
   tablist = [true, false, false, false];
-  professeurs : Enseignant [];
-  maitresConf : Enseignant [];
-  maitresAss : Enseignant [];
-  pes : Enseignant [];
+  professeurs: Enseignant [];
+  maitresConf: Enseignant [];
+  maitresAss: Enseignant [];
+  pes: Enseignant [];
 
   ngOnInit(): void {
     this.getProfesseurs();
@@ -22,15 +22,15 @@ export class InfMathComponent implements OnInit {
     this.getPes();
   }
   getPes() {
-    this.pes=[
+    this.pes = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
-  changeActiveTab(tab : number){
+  changeActiveTab(tab: number){
     this.tablist.forEach((value, index) => {
-      if(index == tab) {
+      if (index == tab) {
         this.tablist[index] = true;
       }
       else {
@@ -38,23 +38,23 @@ export class InfMathComponent implements OnInit {
       }
     });
   }
-  
+
   getMaitresConf() {
-    this.maitresConf=[
+    this.maitresConf = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
   getMaitresAss() {
-    this.maitresAss=[
+    this.maitresAss = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
   getProfesseurs() {
-    this.professeurs=[
+    this.professeurs = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}

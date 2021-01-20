@@ -9,12 +9,12 @@ import { Lab } from 'src/app/shared/models/lab';
 })
 export class PhyInsComponent implements OnInit {
   labs: Lab [];
-  professeurs : Enseignant [];
-  maitresConf : Enseignant [];
-  maitresAss : Enseignant [];
+  professeurs: Enseignant [];
+  maitresConf: Enseignant [];
+  maitresAss: Enseignant [];
   constructor() { }
   tablist = [true, false, false];
-  
+
 
   ngOnInit(): void {
     this.getLabs();
@@ -23,29 +23,29 @@ export class PhyInsComponent implements OnInit {
     this.getMaitresAss();
   }
   getProfesseurs() {
-    this.professeurs=[
+    this.professeurs = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
   getMaitresConf() {
-    this.maitresConf=[
+    this.maitresConf = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
   getMaitresAss() {
-    this.maitresAss=[
+    this.maitresAss = [
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
       {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
     ];
   }
-  changeActiveTab(tab : number){
+  changeActiveTab(tab: number){
     this.tablist.forEach((value, index) => {
-      if(index == tab) {
+      if (index == tab) {
         this.tablist[index] = true;
       }
       else {
@@ -54,11 +54,11 @@ export class PhyInsComponent implements OnInit {
     });
   }
   getLabs(){
-    this.labs= [
+    this.labs = [
       {num: 'LP 002', name: 'Laboratoire de CAO', department: 'GPI'},
       {num: 'LP 004', name: 'Laboratoire de RdM et de CND', department: 'GPI'},
       {num: 'LP 006', name: 'Laboratoire de Production Mécanique et d’Analyse Vibratoire', department: 'GPI'},
-    ]
+    ];
   }
 
 }
