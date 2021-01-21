@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Enseignant } from 'src/app/shared/models/enseignant';
 import { Lab } from 'src/app/shared/models/lab';
+
 import { DepartmentService } from 'src/app/shared/services/department.service';
+
 
 @Component({
   selector: 'app-phy-ins',

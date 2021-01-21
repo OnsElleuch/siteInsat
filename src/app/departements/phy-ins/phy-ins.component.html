@@ -51,7 +51,9 @@
                                         aria-controls="coursestructure" role="tab" data-toggle="tab">Débouchés
                                         professionnels</a></li>
                                 <li role="presentation" [ngClass]="{'active-tab' : tablist[2]}"
+
                                     (click)="changeActiveTab(2)" *ngIf="(maitresAss.length >0 || maitresConf.length > 0 || professeurs.length>0)"><a href="#entryrequirment"
+
                                         aria-controls="entryrequirment" role="tab" data-toggle="tab">Enseignants
                                         permanents</a></li>
                                 
@@ -126,7 +128,9 @@
                                     <!-- COURSES DETAIL DES END -->
 
                                     <!-- STUDY TABLE WRAP START -->
+
                                     <div class="study_table_wrap" *ngIf="labs.length > 0">
+
                                         <h6>Laboratoires affectés au département de Génie Physique et Instrumentation
                                         </h6>
                                         <!--  TABLE  START -->
@@ -155,7 +159,9 @@
                                 <div role="tabpanel" class="tab-pane" id="entryrequirment">
 
                                     <!-- STUDY TABLE WRAP START -->
+
                                     <div class="study_table_wrap" *ngIf="professeurs.length > 0">
+
                                         <h6>Grade Professeur</h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -169,7 +175,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of professeurs">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -182,7 +188,9 @@
                                     </div>
                                     <!-- STUDY TABLE WRAP END -->
                                      <!-- STUDY TABLE WRAP START -->
+
                                      <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
+
                                         <h6>Grade Maître de Conférences </h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -196,7 +204,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresConf">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -209,7 +217,9 @@
                                     </div>
                                     <!-- STUDY TABLE WRAP END -->
                                      <!-- STUDY TABLE WRAP START -->
+
                                      <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
+
                                         <h6>Grade Maître Assistant</h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -223,7 +233,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresAss">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}} </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>

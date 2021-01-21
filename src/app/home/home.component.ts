@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   initCarousel(className: string, timeout) {
     const carousel = jQuery('#' + className);
 
-    setTimeout(function () {
+    setTimeout(function() {
       carousel.owlCarousel(
         {
           items: 1, //10 items above 1000px browser width

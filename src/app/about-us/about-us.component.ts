@@ -5,6 +5,8 @@ import {Subscription} from 'rxjs';
 import { AboutUsService } from '../shared/services/about-us.service';
 import { Direction } from '../shared/models/direction';
 import { environment } from 'src/environments/environment';
+
+
 declare var jQuery: any;
 
 @Component({
@@ -16,6 +18,7 @@ export class AboutUsComponent implements OnInit {
 
   rendezVous: RendezVous[];
   docsAdmin: Ressource[];
+
   busy: Subscription;
   directionMembers : Direction[];
   administrationMembers : Direction[];
@@ -29,10 +32,7 @@ export class AboutUsComponent implements OnInit {
     this.getAdministrationMembers();
     this.getRendezVous();
     this.getDocsAdmin();
-    
-    
-    
-  }
+   }
   getRendezVous() {
     this.busy = this.aboutService.getRendezVous().subscribe(
       (data) => {
@@ -82,22 +82,9 @@ export class AboutUsComponent implements OnInit {
         }
       );
     }, timeout);
-  }
-  initCarousel9(className: string, timeout) {
-    const carousel = jQuery('#' + className);
 
-    setTimeout(function() {
-      carousel.owlCarousel(
-        {
-          items: 3, // 10 items above 1000px browser width
-          itemsDesktop: [1000, 2], // 5 items between 1000px and 901px
-          itemsDesktopSmall: [900, 2], // betweem 900px and 601px
-          itemsTablet: [600, 1], // 2 items between 600 and 0
-          itemsMobile: [400, 1] // itemsMobile disabled - inherit from itemsTablet option
-        }
-      );
-    }, timeout);
   }
+  
   getDirectionMembers(){
     this.busy = this.aboutService.getDirectionMembers().subscribe(
       (data) => {
@@ -115,6 +102,23 @@ export class AboutUsComponent implements OnInit {
         
       }
     );
+
   }
+  initCarousel9(className: string, timeout) {
+    const carousel = jQuery('#' + className);
+
+    setTimeout(function() {
+      carousel.owlCarousel(
+        {
+          items: 3, // 10 items above 1000px browser width
+          itemsDesktop: [1000, 2], // 5 items between 1000px and 901px
+          itemsDesktopSmall: [900, 2], // betweem 900px and 601px
+          itemsTablet: [600, 1], // 2 items between 600 and 0
+          itemsMobile: [400, 1] // itemsMobile disabled - inherit from itemsTablet option
+        }
+      );
+    }, timeout);
+  }
+
 
 }

@@ -321,12 +321,16 @@
                                             <h3>Les Enseignants Chercheurs</h3>
                                         </div>
                                         <p>Le département de Génie Informatique et Mathématiques compte 35 enseignants
+
                                             permanents et 26 enseignants vacataires/contractuels et 3 PES.</p>
+
                                     </div>
                                     <!-- COURSES DETAIL DES END -->
 
                                      <!-- STUDY TABLE WRAP START -->
+
                                      <div class="study_table_wrap" *ngIf="professeurs.length > 0">
+
                                         <h6>Grade Professeur</h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -340,7 +344,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of professeurs">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -353,7 +357,9 @@
                                     </div>
                                     <!-- STUDY TABLE WRAP END -->
                                      <!-- STUDY TABLE WRAP START -->
+
                                      <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
+
                                         <h6>Grade Maître de Conférences </h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -367,7 +373,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresConf">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -380,7 +386,9 @@
                                     </div>
                                     <!-- STUDY TABLE WRAP END -->
                                      <!-- STUDY TABLE WRAP START -->
+
                                      <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
+
                                         <h6>Grade Maître Assistant</h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -394,7 +402,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresAss">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -407,7 +415,9 @@
                                     </div>
                                     <!-- STUDY TABLE WRAP END -->
                                     <!-- STUDY TABLE WRAP START -->
+
                                     <div class="study_table_wrap" *ngIf="sec.length > 0">
+
                                         <h6>Grade Professeur de l'Enseignement Secondaire</h6>
                                         <!--  TABLE  START -->
                                         <table class="table table-bordered">
@@ -420,8 +430,10 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+
                                                 <tr *ngFor="let prof of sec">
-                                                    <td>{{prof.nom}} </td>
+
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>

@@ -20,9 +20,11 @@ export class InfMathComponent implements OnInit {
     this.getProfesseurs();
     this.getMaitresConf();
     this.getMaitresAss();
+
     this.getSec();
   }
   
+
   changeActiveTab(tab : number){
     this.tablist.forEach((value, index) => {
       if(index == tab) {

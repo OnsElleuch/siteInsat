@@ -303,7 +303,9 @@
                         <!-- TESTEMONIAL SLIDER WRAP START-->
                         <div class="edu2_testemonial_slider_wrap">
                             <div id="owl-demo-99">
+
                                 <div class="item" *ngFor="let direction of directionMembers">
+
                                     <!-- TESTEMONIAL SLIDER WRAP START-->
                                     <div class="edu_testemonial_wrap">
 
@@ -323,8 +325,6 @@
                                     </div>
                                     <!-- TESTEMONIAL SLIDER WRAP END-->
                                 </div>
-
-                               
 
 
                             </div>
@@ -348,7 +348,9 @@
                         <!-- TESTEMONIAL SLIDER WRAP START-->
                         <div class="edu2_testemonial_slider_wrap">
                             <div id="owl-demo-999">
+
                                 <div class="item" *ngFor="let adminstratif of administrationMembers">
+
                                     <!-- TESTEMONIAL SLIDER WRAP START-->
                                     <div class="edu_testemonial_wrap">
 
@@ -369,7 +371,6 @@
                                     <!-- TESTEMONIAL SLIDER WRAP END-->
                                 </div>
 
-                                
                             </div>
                         </div>
                         <!-- TESTEMONIAL SLIDER WRAP END-->
@@ -396,11 +397,14 @@
                                     <!-- FACULTY DES START-->
                                     <div class="edu2_faculty_des">
                                         <figure style="height: 154.3px;"><img style="object-fit: cover;"
-                                                src="../../assets/images/photos_insat/profKaus.jpg" alt="../../assets/images/photos_insat/profKaus.jpg" />
+
+                                                src="{{filesUrl}}{{item.photoUrl}}" alt="../../assets/images/photos_insat/profKaus.jpg" />
+
 
                                         </figure>
                                         <div class="edu2_faculty_des2" style="height: 215px;">
                                             <h6><a href="#">{{getMonth(item.date)}} {{getYear(item.date)}}</a></h6>
+
                                             <strong>{{item.name}} </strong>
 
                                         </div>
