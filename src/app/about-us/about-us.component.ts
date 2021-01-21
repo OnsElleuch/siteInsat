@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RendezVous } from '../shared/models/rendez-vous';
 import { Ressource } from '../shared/models/ressource';
+
 import {Subscription} from 'rxjs';
 import { AboutUsService } from '../shared/services/about-us.service';
 import { Direction } from '../shared/models/direction';
 import { environment } from 'src/environments/environment';
+
 declare var jQuery: any;
 
 @Component({
@@ -16,6 +18,7 @@ export class AboutUsComponent implements OnInit {
 
   rendezVous: RendezVous[];
   docsAdmin: Ressource[];
+
   busy: Subscription;
   directionMembers : Direction[];
   administrationMembers : Direction[];
@@ -25,6 +28,7 @@ export class AboutUsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.getDirectionMembers();
     this.getAdministrationMembers();
     this.getRendezVous();
@@ -54,6 +58,7 @@ export class AboutUsComponent implements OnInit {
   }
   getDocsAdmin(){
     this.docsAdmin = this.aboutService.getDocsAdmin();
+
   }
   openPdf(url: string){
     window.open(url, '_blank');
@@ -82,6 +87,7 @@ export class AboutUsComponent implements OnInit {
         }
       );
     }, timeout);
+
   }
   initCarousel9(className: string, timeout) {
     const carousel = jQuery('#' + className);
@@ -115,6 +121,23 @@ export class AboutUsComponent implements OnInit {
         
       }
     );
+
   }
+  initCarousel9(className: string, timeout) {
+    const carousel = jQuery('#' + className);
+
+    setTimeout(function() {
+      carousel.owlCarousel(
+        {
+          items: 3, // 10 items above 1000px browser width
+          itemsDesktop: [1000, 2], // 5 items between 1000px and 901px
+          itemsDesktopSmall: [900, 2], // betweem 900px and 601px
+          itemsTablet: [600, 1], // 2 items between 600 and 0
+          itemsMobile: [400, 1] // itemsMobile disabled - inherit from itemsTablet option
+        }
+      );
+    }, timeout);
+  }
+
 
 }
