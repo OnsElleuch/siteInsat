@@ -7,7 +7,6 @@
                 <div class="kf_inr_ban_des">
                     <div class="inr_banner_heading">
                         <h3>Sciences Sociales, Langues et Formation Générale </h3>
-
                     </div>
 
                     <div class="kf_inr_breadcrumb">
@@ -136,7 +135,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of professeurs">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -165,7 +164,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresConf">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -194,7 +193,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let prof of maitresAss">
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>
@@ -225,7 +224,7 @@
 
                                                 <tr *ngFor="let prof of sec">
 
-                                                    <td>{{prof.nom}} </td>
+                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
                                                     <td>{{prof.grade}}</td>
                                                     <td>{{prof.discipline}}</td>
                                                     <td>{{prof.email}}</td>

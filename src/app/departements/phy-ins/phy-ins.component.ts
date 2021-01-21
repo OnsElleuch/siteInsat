@@ -11,13 +11,11 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
   styleUrls: ['./phy-ins.component.css']
 })
 export class PhyInsComponent implements OnInit {
-
   labs: Lab[] = [];
   professeurs : Enseignant [] = [];
   maitresConf : Enseignant [] = [];
   maitresAss : Enseignant [] = [];
   constructor(private departmentService : DepartmentService) { }
-
   tablist = [true, false, false];
   
 
@@ -28,7 +26,6 @@ export class PhyInsComponent implements OnInit {
     this.getMaitresAss();
   }
   getProfesseurs() {
-
     this.departmentService.getProfesseurs('GPI').subscribe(data => {
       this.professeurs = data;
     });
@@ -42,7 +39,6 @@ export class PhyInsComponent implements OnInit {
     this.departmentService.getMaitreAss('GPI').subscribe(data => {
       this.maitresAss = data;
     });
-
   }
   changeActiveTab(tab : number){
     this.tablist.forEach((value, index) => {
@@ -55,12 +51,10 @@ export class PhyInsComponent implements OnInit {
     });
   }
   getLabs(){
-
     this.departmentService.getLabs('GPI').subscribe(data => {
       this.labs = data;
     });
     
-
   }
 
 }

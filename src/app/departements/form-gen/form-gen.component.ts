@@ -11,7 +11,6 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
 })
 export class FormGenComponent implements OnInit {
 
-
   constructor(private departmentService : DepartmentService) { }
   tablist = [true, false];
   
@@ -19,7 +18,6 @@ export class FormGenComponent implements OnInit {
   maitresConf : Enseignant [] = [];
   maitresAss : Enseignant [] = [];
   sec : Enseignant [] = [];
-
 
   changeActiveTab(tab : number){
     this.tablist.forEach((value, index) => {
@@ -31,7 +29,6 @@ export class FormGenComponent implements OnInit {
       }
     });
   }
-
   getSec() {
     this.departmentService.getProfSec('FG').subscribe(data => {
       this.sec = data;
@@ -51,7 +48,6 @@ export class FormGenComponent implements OnInit {
     this.departmentService.getMaitreAss('FG').subscribe(data => {
       this.maitresAss = data;
     });
-
   }
   ngOnInit(): void {
     
