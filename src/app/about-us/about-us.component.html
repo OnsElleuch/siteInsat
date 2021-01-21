@@ -303,20 +303,20 @@
                         <!-- TESTEMONIAL SLIDER WRAP START-->
                         <div class="edu2_testemonial_slider_wrap">
                             <div id="owl-demo-99">
-                                <div class="item">
+                                <div class="item" *ngFor="let direction of directionMembers">
                                     <!-- TESTEMONIAL SLIDER WRAP START-->
                                     <div class="edu_testemonial_wrap">
 
                                         <div class="kode-text-modified">
-                                            <h5>Direction de l'INSAT<br> </h5>
-                                            <a> Samir HAMZA <br>
-                                                <span> - Directeur</span>
+                                            <h5>{{direction.title}}<br> </h5>
+                                            <a> {{direction.responsable}} <br>
+                                                <span> - {{direction.poste}}</span>
                                             </a>
                                             <p>
-                                                Email : <br> <a href="mailto:samir.hamza@insat.rnu.tn"
-                                                    style="font-size: 13px;"> samir.hamza@insat.rnu.tn
+                                                Email : <br> <a href="mailto:{{direction.email}}"
+                                                    style="font-size: 13px;"> {{direction.email}}
                                                 </a></p>
-                                            Poste : <a>6506</a>
+                                            Poste : <a>{{direction.poste_code}}</a>
 
 
                                         </div>
@@ -324,83 +324,7 @@
                                     <!-- TESTEMONIAL SLIDER WRAP END-->
                                 </div>
 
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Direction de l'Ecole Doctorale<br></h5>
-                                            <a> Pr.Mohamed Saber Naceur <br>
-                                                <span> - Directeur </span>
-                                            </a>
-                                            <p>
-                                                <span>Email : <br> <a href="mailto:naceurs@yahoo.fr"
-                                                        style="font-size: 13px;"> naceurs@yahoo.fr </a></span>
-                                            </p>
-                                            Poste : <a>6510</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Direction des études et de la formation <br></h5>
-                                            <a> Najmeddine SIFI <br>
-                                                <span> - Directeur </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:nejm.sifi@fss.rnu.tn"
-                                                    style="font-size: 13px;"> nejm.sifi@fss.rnu.tn</a>
-                                            </p>
-                                            Poste : <a>6522</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Direction de la Vie Universitaire et des Relations avec l'Environnement
-                                                <br>
-                                            </h5>
-                                            <a> Slim YACOUB <br>
-                                                <span> - Directeur </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:slim.yacoub@insat.rnu.tn"
-                                                    style="font-size: 13px;"> slim.yacoub@insat.rnu.tn</a>
-                                            </p>
-                                            Poste : <a>6521</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Direction du Centre d'innovation et de Développement </h5>
-                                            <a> Lorem IPSUM <br>
-                                                <span> - Directeur </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:mailExample@gmail.com"
-                                                    style="font-size: 13px;">mailExample@gmail.com</a>
-                                            </p>
-                                            Poste : <a>6526</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
+                               
 
 
                             </div>
@@ -424,20 +348,20 @@
                         <!-- TESTEMONIAL SLIDER WRAP START-->
                         <div class="edu2_testemonial_slider_wrap">
                             <div id="owl-demo-999">
-                                <div class="item">
+                                <div class="item" *ngFor="let adminstratif of administrationMembers">
                                     <!-- TESTEMONIAL SLIDER WRAP START-->
                                     <div class="edu_testemonial_wrap">
 
                                         <div class="kode-text-modified">
-                                            <h5>Secrétaire Général<br> </h5>
-                                            <a> BEN ABDALLAH Soufiane <br>
-                                                <span> - Secrétaire Général</span>
+                                            <h5>{{adminstratif.title}}<br> </h5>
+                                            <a>{{adminstratif.responsable}}<br>
+                                                <span> - {{adminstratif.poste}}</span>
                                             </a>
                                             <p>
-                                                Email : <br> <a href="mailto:benabdallahsoufiane2017@gmail.com"
-                                                    style="font-size: 13px;"> benabdallahsoufiane2017@gmail.com
+                                                Email : <br> <a href="mailto:{{adminstratif.email}}"
+                                                    style="font-size: 13px;"> {{adminstratif.email}}
                                                 </a></p>
-                                            Poste : <a>6503</a>
+                                            Poste : <a>{{adminstratif.poste_code}}</a>
 
 
                                         </div>
@@ -445,116 +369,7 @@
                                     <!-- TESTEMONIAL SLIDER WRAP END-->
                                 </div>
 
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Service Scolarité <br></h5>
-                                            <a> Sayari Mehdi <br>
-                                                <span> - Secrétaire principal</span>
-                                            </a>
-                                            <p>
-                                                <span>Email : <br> <a href="mailto:sayari.mehdi@gmail.com"
-                                                        style="font-size: 13px;">sayari.mehdi@gmail.com </a></span>
-                                            </p>
-                                            Poste : <a>6519</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Service Informatique <br></h5>
-                                            <a> Slim Khlifi <br>
-                                                <span> - Chef Service </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:slimkhlifi1980@gmail.com"
-                                                    style="font-size: 13px;">slimkhlifi1980@gmail.com</a>
-                                            </p>
-                                            Poste : <a>6514</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Service Moyen Pédagogiques <br></h5>
-                                            <a> Tayeb Touili <br>
-                                                <span> - Chef Service </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:touilitayeb@yahoo.fr"
-                                                    style="font-size: 13px;">touilitayeb@yahoo.fr</a>
-                                            </p>
-                                            Poste : <a>6129</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Service de maintenance batiments et équipements </h5>
-                                            <a> Abdeladhim Bouagga <br>
-                                                <span> - Chef Service </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:bouaggaabdeladhim@gmail.com"
-                                                    style="font-size: 13px;">bouaggaabdeladhim@gmail.com</a>
-                                            </p>
-                                            Poste : <a>6147</a>
-
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Service Financier </h5>
-                                            <a> Olfa Gamoudi <br>
-                                                <span> - Chef Service </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:olfa.gamoudi@insat.u-carthage.tn"
-                                                    style="font-size: 13px;">olfa.gamoudi@insat.u-carthage.tn</a>
-                                            </p>
-                                            Poste : <a>6186</a>
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
-                                <div class="item">
-                                    <!-- TESTEMONIAL SLIDER WRAP START-->
-                                    <div class="edu_testemonial_wrap">
-                                        <div class="kode-text-modified">
-                                            <h5>Cellule Qualité </h5>
-                                            <a> Anouar Ben Halima <br>
-                                                <span> - Responsable </span>
-                                            </a>
-                                            <p>
-                                                Email : <br> <a href="mailto:anouar.benhalima@insat.rnu.tn"
-                                                    style="font-size: 13px;"> anouar.benhalima@insat.rnu.tn</a>
-                                            </p>
-                                            Poste : <a>6143</a>
-                                        </div>
-                                    </div>
-                                    <!-- TESTEMONIAL SLIDER WRAP END-->
-                                </div>
+                                
                             </div>
                         </div>
                         <!-- TESTEMONIAL SLIDER WRAP END-->
@@ -581,11 +396,11 @@
                                     <!-- FACULTY DES START-->
                                     <div class="edu2_faculty_des">
                                         <figure style="height: 154.3px;"><img style="object-fit: cover;"
-                                                src="{{item.photoUrl}}" alt="" />
+                                                src="../../assets/images/photos_insat/profKaus.jpg" alt="../../assets/images/photos_insat/profKaus.jpg" />
 
                                         </figure>
                                         <div class="edu2_faculty_des2" style="height: 215px;">
-                                            <h6><a href="#">{{item.date}}</a></h6>
+                                            <h6><a href="#">{{getMonth(item.date)}} {{getYear(item.date)}}</a></h6>
                                             <strong>{{item.name}} </strong>
 
                                         </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Enseignant } from 'src/app/shared/models/enseignant';
+import { DepartmentService } from 'src/app/shared/services/department.service';
 
 @Component({
   selector: 'app-bio-ch',
@@ -8,12 +9,12 @@ import { Enseignant } from 'src/app/shared/models/enseignant';
 })
 export class BioChComponent implements OnInit {
 
-  constructor() { }
+  constructor(private departmentService: DepartmentService) { }
   tablist = [true, false, false, false];
   
-  professeurs : Enseignant [];
-  maitresConf : Enseignant [];
-  maitresAss : Enseignant [];
+  professeurs : Enseignant [] = [];
+  maitresConf : Enseignant [] = [];
+  maitresAss : Enseignant [] = [];
   changeActiveTab(tab : number){
     this.tablist.forEach((value, index) => {
       if(index == tab) {
@@ -25,25 +26,19 @@ export class BioChComponent implements OnInit {
     });
   }
   getProfesseurs() {
-    this.professeurs=[
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Professeur', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
-    ];
+    this.departmentService.getProfesseurs('GBC').subscribe(data => {
+      this.professeurs = data;
+    });
   }
   getMaitresConf() {
-    this.maitresConf=[
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître de Conférences', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
-    ];
+    this.departmentService.getMaitreConf('GBC').subscribe(data => {
+      this.maitresConf = data;
+    });
   }
   getMaitresAss() {
-    this.maitresAss=[
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'},
-      {id : 1, nom : 'ABDELGHANI Adnane', grade : 'Maître Assistant', email : 'aabdelghan@yahoo.fr', department : 'GPI', discipline: 'Physique'}
-    ];
+    this.departmentService.getMaitreAss('GBC').subscribe(data => {
+      this.maitresAss = data;
+    });
   }
   ngOnInit(): void {
     
