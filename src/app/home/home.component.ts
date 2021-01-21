@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.initCarousel('owl-demo-main', 50);
+    this.initCarousel('owl-carousel', 50);
   }
   initCarousel(className: string, timeout) {
-    const carousel = jQuery('#' + className);
+    const carousel = jQuery('.' + className);
 
     setTimeout(function() {
       carousel.owlCarousel(
