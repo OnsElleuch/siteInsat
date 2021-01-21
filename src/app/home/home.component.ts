@@ -10,19 +10,21 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.initCarousel('owl-carousel', 50);
+    this.initCarousel('owl-demo-main', 50);
   }
   initCarousel(className: string, timeout) {
-    const carousel = jQuery('.' + className);
+    const carousel = jQuery('#' + className);
 
     setTimeout(function() {
       carousel.owlCarousel(
         {
-          items : 1, // 10 items above 1000px browser width
-          itemsDesktop : [1000, 1], // 5 items between 1000px and 901px
-          itemsDesktopSmall : [900, 1], // betweem 900px and 601px
-          itemsTablet: [600, 1], // 2 items between 600 and 0
-          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+
+          items: 1, //10 items above 1000px browser width
+          itemsDesktop: [1000, 1], //5 items between 1000px and 901px
+          itemsDesktopSmall: [900, 1], // betweem 900px and 601px
+          itemsTablet: [600, 1], //2 items between 600 and 0
+          itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+
         }
       );
     }, timeout);
