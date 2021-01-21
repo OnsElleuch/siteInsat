@@ -6,7 +6,6 @@ import { AboutUsService } from '../shared/services/about-us.service';
 import { Direction } from '../shared/models/direction';
 import { environment } from 'src/environments/environment';
 
-
 declare var jQuery: any;
 
 @Component({
