@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RendezVous } from '../shared/models/rendez-vous';
 import { Ressource } from '../shared/models/ressource';
-
 import {Subscription} from 'rxjs';
 import { AboutUsService } from '../shared/services/about-us.service';
 import { Direction } from '../shared/models/direction';
@@ -28,15 +27,11 @@ export class AboutUsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     this.getDirectionMembers();
     this.getAdministrationMembers();
     this.getRendezVous();
     this.getDocsAdmin();
-    
-    
-    
-  }
+   }
   getRendezVous() {
     this.busy = this.aboutService.getRendezVous().subscribe(
       (data) => {
@@ -58,7 +53,6 @@ export class AboutUsComponent implements OnInit {
   }
   getDocsAdmin(){
     this.docsAdmin = this.aboutService.getDocsAdmin();
-
   }
   openPdf(url: string){
     window.open(url, '_blank');

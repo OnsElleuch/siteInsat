@@ -11,14 +11,12 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
 })
 export class BioChComponent implements OnInit {
 
-
   constructor(private departmentService: DepartmentService) { }
   tablist = [true, false, false, false];
   
   professeurs : Enseignant [] = [];
   maitresConf : Enseignant [] = [];
   maitresAss : Enseignant [] = [];
-
   changeActiveTab(tab : number){
     this.tablist.forEach((value, index) => {
       if(index == tab) {
@@ -30,7 +28,6 @@ export class BioChComponent implements OnInit {
     });
   }
   getProfesseurs() {
-
     this.departmentService.getProfesseurs('GBC').subscribe(data => {
       this.professeurs = data;
     });
@@ -44,7 +41,6 @@ export class BioChComponent implements OnInit {
     this.departmentService.getMaitreAss('GBC').subscribe(data => {
       this.maitresAss = data;
     });
-
   }
   ngOnInit(): void {
     

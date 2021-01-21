@@ -9,14 +9,12 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
 })
 export class InfMathComponent implements OnInit {
 
-
   constructor(private departmentService: DepartmentService) { }
   tablist = [true, false, false, false];
   professeurs : Enseignant []= [];
   maitresConf : Enseignant [] = [];
   maitresAss : Enseignant [] = [];
   sec : Enseignant []= [];
-
 
   ngOnInit(): void {
     this.getProfesseurs();
@@ -37,7 +35,6 @@ export class InfMathComponent implements OnInit {
       }
     });
   }
-
   getSec() {
     this.departmentService.getProfSec('GIM').subscribe(data => {
       this.sec = data;
@@ -57,7 +54,6 @@ export class InfMathComponent implements OnInit {
     this.departmentService.getMaitreAss('GIM').subscribe(data => {
       this.maitresAss = data;
     });
-
   }
 
 }
