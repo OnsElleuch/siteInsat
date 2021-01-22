@@ -1,0 +1,38 @@
+.btn_slider{
+  margin-top:210px;
+}
+
+.nouveauté{
+  padding-top : 0px;
+  padding-bottom : 10px;
+  height : 70px
+}
+
+.date{
+  margin-bottom: 5px;
+}
+.titre{
+  font-size : 13px;
+}
+.box{
+  height : 100px;
+}
+.margin{
+  margin-bottom : 30px;
+}
+.news_image{
+  height : 190px;
+}
+.gallery_image{
+  height : 200px;
+  width : 300px;
+  margin : 10px;
+}
+.row_gallery{
+margin-top : 20px;
+margin-bottom: 15px;
+}
+.decouvrir{
+  padding-bottom: 10px
+}
+
