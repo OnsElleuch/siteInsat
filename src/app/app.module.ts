@@ -15,6 +15,9 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { EvenmentsComponent } from './evenments/evenments.component';
+import { EventCardComponent } from './event-card/event-card.component';
+import { NouveautesComponent } from './nouveautes/nouveautes.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { DepartmentService } from './shared/services/department.service';
     HomeComponent,
     AboutUsComponent,
     NotFoundComponent,
+    EvenmentsComponent,
+    EventCardComponent,
+    NouveautesComponent,
   ],
   imports: [
     BrowserModule,

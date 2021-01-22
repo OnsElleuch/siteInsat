@@ -8,6 +8,8 @@ import { FormGenComponent } from './departements/form-gen/form-gen.component';
 import { InfMathComponent } from './departements/inf-math/inf-math.component';
 import { PhyInsComponent } from './departements/phy-ins/phy-ins.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
+import { EvenmentsComponent } from './evenments/evenments.component';
+import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -38,6 +40,14 @@ const routes: Routes = [{
     {
       path: 'insat/formgen',
       component: FormGenComponent,
+    },
+    {
+      path: 'insat/evenments',
+      component: EvenmentsComponent ,
+    },
+    {
+      path: 'insat/nouveautes',
+      component: NouveautesComponent ,
     },
     {
       path: '**',
