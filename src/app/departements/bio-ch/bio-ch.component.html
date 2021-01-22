@@ -1,500 +1,454 @@
 <!--Banner Wrap Start-->
 <div class="kf_inr_banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!--KF INR BANNER DES Wrap Start-->
-                <div class="kf_inr_ban_des">
-                    <div class="inr_banner_heading">
-                        <h3>Génie Biologie et Chimie</h3>
-                    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3>Génie Biologie et Chimie</h3>
+          </div>
 
-                    <div class="kf_inr_breadcrumb">
-                        <ul>
-                            <li><a href="/insat/">A propos de l'INSAT</a></li>
-                            <li><a href="/insat/bioch">Génie Biologie et Chimie</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--KF INR BANNER DES Wrap End-->
-            </div>
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="/insat/">A propos de l'INSAT</a></li>
+              <li><a href="/insat/bioch">Génie Biologie et Chimie</a></li>
+            </ul>
+          </div>
         </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
     </div>
+  </div>
 </div>
 
 <!--Banner Wrap End-->
 
 <!--Content Wrap Start-->
 <div class="kf_content_wrap">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col" style="max-width: 90%; margin-left: auto; margin-right: auto;">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col" style="max-width: 90%; margin-left: auto; margin-right: auto">
+          <!-- COURSES DETAIL WRAP START -->
+          <div class="kf_courses_detail_wrap">
+            <div class="courses_detail_heading">
+              <h4>Département de Génie Biologie et de Chimie</h4>
+            </div>
 
-                    <!-- COURSES DETAIL WRAP START -->
-                    <div class="kf_courses_detail_wrap">
-                        <div class="courses_detail_heading">
-                            <h4>Département de Génie Biologie et de Chimie</h4>
-                        </div>
+            <!-- COURSES DETAIL TABS WRAP START -->
+            <div class="kf_courses_tabs">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[0] }" (click)="changeActiveTab(0)">
+                  <a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Présentation</a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[1] }" (click)="changeActiveTab(1)">
+                  <a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab">Recherche</a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[2] }" (click)="changeActiveTab(2)">
+                  <a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab"
+                    >Mastère et Doctorat
+                  </a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[3] }" (click)="changeActiveTab(3)">
+                  <a href="#placements" aria-controls="placements" role="tab" data-toggle="tab"
+                    >Enseignants Permanents</a
+                  >
+                </li>
+              </ul>
 
-
-
-                        <!-- COURSES DETAIL TABS WRAP START -->
-                        <div class="kf_courses_tabs">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[0]}"
-                                    (click)="changeActiveTab(0)"><a href="#coursedetails" aria-controls="coursedetails"
-                                        role="tab" data-toggle="tab">Présentation</a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[1]}"
-                                    (click)="changeActiveTab(1)"><a href="#coursestructure"
-                                        aria-controls="coursestructure" role="tab" data-toggle="tab">Recherche</a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[2]}"
-                                    (click)="changeActiveTab(2)"><a href="#entryrequirment"
-                                        aria-controls="entryrequirment" role="tab" data-toggle="tab">Mastère et
-                                        Doctorat </a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[3]}"
-                                    (click)="changeActiveTab(3)"><a href="#placements" aria-controls="placements"
-                                        role="tab" data-toggle="tab">Enseignants Permanents</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-
-                                <div role="tabpanel" class="tab-pane active" id="coursedetails">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Présentation</h3>
-                                        </div>
-                                        <p> Le Département de Génie Biologie et Chimie propose, après une année
-                                            de tronc commun en Chimie - Biologie Appliquée (CBA), le choix entre deux
-                                            options, dans le cadre du cycle préparatoire intégré :
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Biologie industrielle.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Chimie Industrielle.
-                                            </li>
-                                            <br>
-                                        </p>
-                                        <div class="course_heading">
-                                            <h3>Le cursus de formation au département de Génie Biologique et de Chimie
-                                            </h3>
-                                        </div>
-                                        <p style="text-align: center;">
-                                            <img src="../../../assets/images/photos_insat/cursuscba.gif">
-                                        </p>
-                                        <div class="course_heading">
-                                            <h3>Biologie Industrielle</h3>
-                                        </div>
-                                        <p>
-                                            La filière Biologie industrielle a pour objectif de former des ingénieurs
-                                            aptes à maîtriser les méthodes d’analyses chimiques et biologiques, dans un
-                                            secteur industriel, agroalimentaire ou pharmaceutique. La formation
-                                            dispensée est axée sur l’aspect « procédés » dans différentes spécialités
-                                            (Biochimie, Microbiologie, Génétique, immunologie, Biologie Moléculaire,
-                                            Environnement) et ceci en interaction avec les méthodes de génie biologique
-                                            et de chimie. Ces ingénieurs par leur formation polyvalente, apporteront
-                                            leurs compétences dans les bio-industries (amélioration par les procédés
-                                            biotechnologiques de la production animale, végétale et de son
-                                            conditionnement) dans les structures d’analyse biologique et biochimique, ou
-                                            dans les laboratoires d’études et de recherches.
-                                        </p>
-                                        <div class="course_heading">
-                                            <h3>Chimie Industrielle</h3>
-                                        </div>
-                                        <p>
-                                            La filière Chimie Industrielle a pour objectif la formation d’ingénieurs
-                                            aptes à conduire des activités d’analyses physico-chimiques et d’élaboration
-                                            de matériaux. La formation dispensée concerne différents aspects
-                                            scientifiques et technologiques : transfert fluide-solide, échanges
-                                            thermiques et énergétiques, techniques de séparation et de purification,
-                                            régulation et contrôle des procédés. Les ingénieurs peuvent au sein de
-                                            l’industrie chimique et para-chimique apporter leur compétence dans
-                                            l’amélioration et la maintenance des procédés assurant la compétitivité liée
-                                            à la qualité du produit, à la sécurité, à l’utilisation optimale des
-                                            matières premières et des énergies et à la sauvegarde de l’environnement.
-                                        </p>
-                                        <div class="course_heading">
-                                            <h3>Le Cycle de Formation pour l’obtention d’un Diplôme National d’Ingénieur
-                                                (DNI) en sciences appliquées</h3>
-                                        </div>
-                                        <p>
-                                            Ce cycle dure 3 ans et l’admission à ce cycle se fait par voie de concours
-                                            ouvert aux étudiants inscrits en cycle préparatoire intégré de l’INSAT.
-                                        </p>
-                                        <p>
-                                            Les filières concernées par le concours, le nombre de places ouvertes pour
-                                            chaque filière au titre de ce concours ainsi que les conditions de
-                                            participation et les critères d’évaluation sont fixés par un décret du
-                                            ministre de l’enseignement supérieur, de la recherche scientifique et de la
-                                            technologie selon les besoins.
-                                        </p>
-                                        <div class="course_heading">
-                                            <h3>Le Parcours qui conduit à l’obtention de la licence appliquée</h3>
-                                        </div>
-                                        <p>
-                                            Ce parcours est destiné aux étudiants n’ayant pas été admis au cycle
-                                            d’ingénieur.
-                                        </p>
-
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="coursestructure">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Laboratoires et Unités de Recherche</h3>
-                                        </div>
-
-                                        <h5 style="font-size: 18px;">
-
-                                            <fa-icon [icon]="['fas', 'microscope']" style="color: #830709;"></fa-icon> 1
-                                            Laboratoire de recherche
-                                        </h5>
-                                        <p style="margin-left: 15px; margin-top: 5px;">
-                                            <li style="flex-wrap: nowrap;">
-
-
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Procédés Microbiologiques :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr
-                                                        Mokhtar HAMDI </span>
-                                                </a>
-                                            </li>
-                                        </p>
-                                        <h5 style="font-size: 18px;">
-
-                                            <fa-icon [icon]="['fas', 'microscope']" style="color: #830709;"></fa-icon> 6
-                                            Unités de recherche
-                                        </h5>
-                                        <p style="margin-left: 15px; margin-top: 5px;">
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Ressources Phylogénétiques & Biotechnologies :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Mohamed BOUSSAÏD </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Génie Biologique :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Mohamed Néjib MARZOUKI </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Chimie Industrielle Organique & Alimentaire :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Naceur AYED </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Chimie Analytique et Electrochimie :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Jamel BELGAIED </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Etude des Nanomatériaux et de leurs Applications :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Narjis BATIS </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'flask']" style="color: #830709;">
-                                                    </fa-icon>Chimie organo-métallique et catalyse homogène :
-                                                    <span style="font-size: 14px; font-weight: bold;"> <i
-                                                            class="fa fa-user"></i> Pr Faouzi BOUACHIR </span>
-                                                </a>
-                                            </li>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="entryrequirment">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Habilitation de l’établissement à délivrer le grade de mastère et/ou de
-                                                doctorat</h3>
-                                        </div>
-                                        <h5 style="font-size: 18px;">
-
-                                            <fa-icon [icon]="['fas', 'flask']" style="color: #830709;"></fa-icon> 2
-                                            Mastères de recherche
-                                        </h5>
-                                        <p style="margin-left: 15px; margin-top: 5px;">
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;"> Chimie
-                                                        Industrielle: </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2001
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;">
-                                                        Biologie Industrielle: </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2003
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </p>
-                                        <h5 style="font-size: 18px;">
-
-                                            <fa-icon [icon]="['fas', 'flask']" style="color: #830709;"></fa-icon> 2
-                                            Mastères Professionnels
-                                        </h5>
-                                        <p style="margin-left: 15px; margin-top: 5px;">
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;">
-                                                        Maîtrise de l’Hygiène en Bio-Industries: </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2008
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;">
-                                                        Technologie des Produits Naturels et Développement Durable:
-                                                    </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2009
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </p>
-                                        <h5 style="font-size: 18px;">
-
-                                            <fa-icon [icon]="['fas', 'flask']" style="color: #830709;"></fa-icon> 2
-                                            Doctorats Habilités
-                                        </h5>
-                                        <p style="margin-left: 15px; margin-top: 5px;">
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;"> Chimie
-                                                        Appliquée : </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2003
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <a>
-                                                    <fa-icon [icon]="['fas', 'check']" style="color: #830709;">
-                                                    </fa-icon><span style="font-size: 14px; font-weight: bold;"> Génie
-                                                        Biologique : </span>
-                                                    <span> <i class="fa fa-calendar"></i> Année de création : 2006
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </p>
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Partenariats</h3>
-                                        </div>
-                                        <p>Parallèlement aux cours de bases, le Département Génie Informatique et
-                                            Mathématiques encourage les enseignants du département a établir des
-                                            relations de collaboration et partenariat avec les industriels pour assurer
-                                            des cours d’actualité et faire travailler nos élèves ingénieurs sur de vrais
-                                            problématiques. Les relations de partenariat touchent l’ensemble des acteurs
-                                            dans le monde professionnel en Tunisie, dont on cite:</p>
-                                        <p>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                STMicroelectronics (Conception des systèmes embarqués).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                SAGEM (Sécurité des systèmes embarqués).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                HRAccess (Conception des Systèmes d’Information).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                ORADIST (Oracle).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                CISCO (réseaux et sécurité).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Microsoft (.net).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                HP (e-services).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                IBM (AIX).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Apple (Mac-OS).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                SUN (Java/JEE).
-                                            </li>
-
-                                        </p>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="placements">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Les Enseignants Chercheurs</h3>
-                                        </div>
-                                        <p>Le département de Génie Biologique et de Chimie compte 45 enseignants
-                                            permanents et 15 enseignants vacatiares/contractuels.</p>
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                    <!-- STUDY TABLE WRAP START -->
-                                    <div class="study_table_wrap">
-                                        <h6>Grade Professeur</h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of professeurs">
-                                                    <td>{{prof.nom}} </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                    <!-- STUDY TABLE WRAP START -->
-                                    <div class="study_table_wrap">
-                                        <h6>Grade Maître de Conférences </h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of maitresConf">
-                                                    <td>{{prof.nom}} </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                    <!-- STUDY TABLE WRAP START -->
-                                    <div class="study_table_wrap">
-                                        <h6>Grade Maître Assistant</h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of maitresAss">
-                                                    <td>{{prof.nom}} </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                   
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- COURSES DETAIL TABS WRAP END -->
-
-
-                        <!--KF_BLOG DETAIL_DES END-->
-
-
-
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="coursedetails">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Présentation</h3>
                     </div>
-                    <!-- COURSES DETAIL WRAP END -->
+                    <p>
+                      Le Département de Génie Biologie et Chimie propose, après une année de tronc commun en Chimie -
+                      Biologie Appliquée (CBA), le choix entre deux options, dans le cadre du cycle préparatoire intégré
+                      :
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Biologie industrielle.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Chimie Industrielle.
+                      </li>
+                      <br />
+                    </p>
+                    <div class="course_heading">
+                      <h3>Le cursus de formation au département de Génie Biologique et de Chimie</h3>
+                    </div>
+                    <p style="text-align: center">
+                      <img src="../../../assets/images/photos_insat/cursuscba.gif" />
+                    </p>
+                    <div class="course_heading">
+                      <h3>Biologie Industrielle</h3>
+                    </div>
+                    <p>
+                      La filière Biologie industrielle a pour objectif de former des ingénieurs aptes à maîtriser les
+                      méthodes d’analyses chimiques et biologiques, dans un secteur industriel, agroalimentaire ou
+                      pharmaceutique. La formation dispensée est axée sur l’aspect « procédés » dans différentes
+                      spécialités (Biochimie, Microbiologie, Génétique, immunologie, Biologie Moléculaire,
+                      Environnement) et ceci en interaction avec les méthodes de génie biologique et de chimie. Ces
+                      ingénieurs par leur formation polyvalente, apporteront leurs compétences dans les bio-industries
+                      (amélioration par les procédés biotechnologiques de la production animale, végétale et de son
+                      conditionnement) dans les structures d’analyse biologique et biochimique, ou dans les laboratoires
+                      d’études et de recherches.
+                    </p>
+                    <div class="course_heading">
+                      <h3>Chimie Industrielle</h3>
+                    </div>
+                    <p>
+                      La filière Chimie Industrielle a pour objectif la formation d’ingénieurs aptes à conduire des
+                      activités d’analyses physico-chimiques et d’élaboration de matériaux. La formation dispensée
+                      concerne différents aspects scientifiques et technologiques : transfert fluide-solide, échanges
+                      thermiques et énergétiques, techniques de séparation et de purification, régulation et contrôle
+                      des procédés. Les ingénieurs peuvent au sein de l’industrie chimique et para-chimique apporter
+                      leur compétence dans l’amélioration et la maintenance des procédés assurant la compétitivité liée
+                      à la qualité du produit, à la sécurité, à l’utilisation optimale des matières premières et des
+                      énergies et à la sauvegarde de l’environnement.
+                    </p>
+                    <div class="course_heading">
+                      <h3>
+                        Le Cycle de Formation pour l’obtention d’un Diplôme National d’Ingénieur (DNI) en sciences
+                        appliquées
+                      </h3>
+                    </div>
+                    <p>
+                      Ce cycle dure 3 ans et l’admission à ce cycle se fait par voie de concours ouvert aux étudiants
+                      inscrits en cycle préparatoire intégré de l’INSAT.
+                    </p>
+                    <p>
+                      Les filières concernées par le concours, le nombre de places ouvertes pour chaque filière au titre
+                      de ce concours ainsi que les conditions de participation et les critères d’évaluation sont fixés
+                      par un décret du ministre de l’enseignement supérieur, de la recherche scientifique et de la
+                      technologie selon les besoins.
+                    </p>
+                    <div class="course_heading">
+                      <h3>Le Parcours qui conduit à l’obtention de la licence appliquée</h3>
+                    </div>
+                    <p>Ce parcours est destiné aux étudiants n’ayant pas été admis au cycle d’ingénieur.</p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
                 </div>
 
+                <div role="tabpanel" class="tab-pane" id="coursestructure">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Laboratoires et Unités de Recherche</h3>
+                    </div>
 
+                    <h5 style="font-size: 18px">
+                      <fa-icon [icon]="['fas', 'microscope']" style="color: #830709"></fa-icon> 1 Laboratoire de
+                      recherche
+                    </h5>
+                    <p style="margin-left: 15px; margin-top: 5px">
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Procédés Microbiologiques
+                          :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Mokhtar HAMDI
+                          </span>
+                        </a>
+                      </li>
+                    </p>
+                    <h5 style="font-size: 18px">
+                      <fa-icon [icon]="['fas', 'microscope']" style="color: #830709"></fa-icon> 6 Unités de recherche
+                    </h5>
+                    <p style="margin-left: 15px; margin-top: 5px">
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Ressources
+                          Phylogénétiques & Biotechnologies :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Mohamed BOUSSAÏD
+                          </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Génie Biologique :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Mohamed Néjib MARZOUKI
+                          </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Chimie Industrielle
+                          Organique & Alimentaire :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Naceur AYED
+                          </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Chimie Analytique et
+                          Electrochimie :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Jamel BELGAIED
+                          </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Etude des Nanomatériaux
+                          et de leurs Applications :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Narjis BATIS
+                          </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'flask']" style="color: #830709"> </fa-icon>Chimie organo-métallique
+                          et catalyse homogène :
+                          <span style="font-size: 14px; font-weight: bold">
+                            <i class="fa fa-user"></i> Pr Faouzi BOUACHIR
+                          </span>
+                        </a>
+                      </li>
+                    </p>
+                  </div>
+
+                  <!-- COURSES DETAIL DES END -->
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="entryrequirment">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Habilitation de l’établissement à délivrer le grade de mastère et/ou de doctorat</h3>
+                    </div>
+                    <h5 style="font-size: 18px">
+                      <fa-icon [icon]="['fas', 'flask']" style="color: #830709"></fa-icon> 2 Mastères de recherche
+                    </h5>
+                    <p style="margin-left: 15px; margin-top: 5px">
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold"> Chimie Industrielle: </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2001 </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold"> Biologie Industrielle: </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2003 </span>
+                        </a>
+                      </li>
+                    </p>
+                    <h5 style="font-size: 18px">
+                      <fa-icon [icon]="['fas', 'flask']" style="color: #830709"></fa-icon> 2 Mastères Professionnels
+                    </h5>
+                    <p style="margin-left: 15px; margin-top: 5px">
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold">
+                            Maîtrise de l’Hygiène en Bio-Industries:
+                          </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2008 </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold">
+                            Technologie des Produits Naturels et Développement Durable:
+                          </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2009 </span>
+                        </a>
+                      </li>
+                    </p>
+                    <h5 style="font-size: 18px">
+                      <fa-icon [icon]="['fas', 'flask']" style="color: #830709"></fa-icon> 2 Doctorats Habilités
+                    </h5>
+                    <p style="margin-left: 15px; margin-top: 5px">
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold"> Chimie Appliquée : </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2003 </span>
+                        </a>
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <a>
+                          <fa-icon [icon]="['fas', 'check']" style="color: #830709"> </fa-icon
+                          ><span style="font-size: 14px; font-weight: bold"> Génie Biologique : </span>
+                          <span> <i class="fa fa-calendar"></i> Année de création : 2006 </span>
+                        </a>
+                      </li>
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Partenariats</h3>
+                    </div>
+                    <p>
+                      Parallèlement aux cours de bases, le Département Génie Informatique et Mathématiques encourage les
+                      enseignants du département a établir des relations de collaboration et partenariat avec les
+                      industriels pour assurer des cours d’actualité et faire travailler nos élèves ingénieurs sur de
+                      vrais problématiques. Les relations de partenariat touchent l’ensemble des acteurs dans le monde
+                      professionnel en Tunisie, dont on cite:
+                    </p>
+                    <p>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        STMicroelectronics (Conception des systèmes embarqués).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        SAGEM (Sécurité des systèmes embarqués).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        HRAccess (Conception des Systèmes d’Information).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        ORADIST (Oracle).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        CISCO (réseaux et sécurité).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Microsoft (.net).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        HP (e-services).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        IBM (AIX).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Apple (Mac-OS).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        SUN (Java/JEE).
+                      </li>
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="placements">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Les Enseignants Chercheurs</h3>
+                    </div>
+                    <p>
+                      Le département de Génie Biologique et de Chimie compte 45 enseignants permanents et 15 enseignants
+                      vacatiares/contractuels.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+
+                  <!-- STUDY TABLE WRAP START -->
+                  <div class="study_table_wrap">
+                    <h6>Grade Professeur</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of professeurs">
+                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+                  <div class="study_table_wrap">
+                    <h6>Grade Maître de Conférences</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresConf">
+                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+                  <div class="study_table_wrap">
+                    <h6>Grade Maître Assistant</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresAss">
+                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                </div>
+              </div>
             </div>
+            <!-- COURSES DETAIL TABS WRAP END -->
+
+            <!--KF_BLOG DETAIL_DES END-->
+          </div>
+          <!-- COURSES DETAIL WRAP END -->
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
 <!--Content Wrap End-->

@@ -24,19 +24,12 @@ import { DepartementsModule } from './departements/departements.module';
     ParallaxDirective,
     NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    CommonModule,
-    DepartementsModule
-
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, CommonModule, DepartementsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(library: FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope );
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope);
   }
 }

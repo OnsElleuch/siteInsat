@@ -1,146 +1,141 @@
-.intro_header{
-	color:#830709 !important;
-	font-weight: 600;
+.intro_header {
+  color: #830709 !important;
+  font-weight: 600;
 }
-.header{
-	margin-top: 20px;
-	font-weight: 300;
+.header {
+  margin-top: 20px;
+  font-weight: 300;
 }
-.bold{
-	font-weight: 600;
+.bold {
+  font-weight: 600;
 }
-.heading-hr{
-margin-top: -20px;
+.heading-hr {
+  margin-top: -20px;
 }
-.profile{
-	display: block;
-	padding-top: 15%;
-	margin-bottom: 30%;	
-	padding-bottom: 5%;
+.profile {
+  display: block;
+  padding-top: 15%;
+  margin-bottom: 30%;
+  padding-bottom: 5%;
 
-	width:700px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.profile-img{
-	display: block;
-	margin-left: 40%;
-	margin-right: auto;
-	width: 150px;
-	margin-bottom: 50px;
-	animation: openBox 1.2s cubic-bezier(.74, .06, .4, .92) forwards;
-
+.profile-img {
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 150px;
+  margin-bottom: 50px;
+  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 }
 .intro_subtext {
-    color: black;
-	font-weight: 300;
+  color: black;
+  font-weight: 300;
 }
 
-.kf_edu2_intro_wrap{
-	position: relative;
-	background-color: #f8f8f8;
+.kf_edu2_intro_wrap {
+  position: relative;
+  background-color: #f8f8f8;
 }
-.edu_testemonial_wrap{
-	background-color: #f8f8f8;
-	animation: openBox 1s cubic-bezier(.74, .06, .4, .92) forwards;
-
+.edu_testemonial_wrap {
+  background-color: #f8f8f8;
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 }
-.kf_edu2_intro_wrap:before{
-	content: "";
-	left: 0;
-	width: 50%;
-	top: 0;
-	bottom: 0;
-	background-image: url(src/assets/images/insateamphi.jpg);
-	background-size: cover;
-	background-position: center;
-	position: absolute;
+.kf_edu2_intro_wrap:before {
+  content: '';
+  left: 0;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  background-image: url(src/assets/images/insateamphi.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
 }
-.btn-3{
-	transition-duration: 450ms;
-	animation: openBox 1.2s cubic-bezier(.74, .06, .4, .92) forwards;
-	position:relative;
-	overflow: hidden;
-
+.btn-3 {
+  transition-duration: 450ms;
+  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  position: relative;
+  overflow: hidden;
 }
-.btn-3:hover
-{
-    background-color: #000000;
-    color: #fff;
-    border-color: #000000 !important;
+.btn-3:hover {
+  background-color: #000000;
+  color: #fff;
+  border-color: #000000 !important;
 }
-.text-center{
-	text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.k{
-	background-color: rgb(245, 244, 244);
+.k {
+  background-color: rgb(245, 244, 244);
 }
 
-#square{
-    position: fixed;
-    z-index: -1;
-    top: 0px; 
-    left: 0px;
-    width: 100%;
-	height: 100%;
-	object-fit: contain;
-	background-image: url(src/assets/images/insat/insateamphi.jpg);
+#square {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-image: url(src/assets/images/insat/insateamphi.jpg);
 }
-.background_td{
-	padding-top: 50px;
-	padding-bottom: 10px;
-background-color: #263a48;
+.background_td {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #263a48;
 }
-.card-overlay {padding: 50px 50px;
-	background: rgba(255, 255, 255, 0.924);
-height: 100%;  
-}
-
-.edu_testemonial_wrap:hover{
-margin-top: -10px;
+.card-overlay {
+  padding: 50px 50px;
+  background: rgba(255, 255, 255, 0.924);
+  height: 100%;
 }
 
-.edu_testemonial_wrap:hover::before{
-	animation: goLeft 350ms ease-in-out;
-	right: 51px;
-
+.edu_testemonial_wrap:hover {
+  margin-top: -10px;
 }
-.edu_testemonial_wrap::before{
-animation-duration: 350ms;
 
+.edu_testemonial_wrap:hover::before {
+  animation: goLeft 350ms ease-in-out;
+  right: 51px;
 }
-.sliderTitle{
-	padding-bottom: 20px;
+.edu_testemonial_wrap::before {
+  animation-duration: 350ms;
+}
+.sliderTitle {
+  padding-bottom: 20px;
 }
 @keyframes openBox {
-	0% {
-		clip-path: inset(0 0 0 100%);
-	}
-	100% {
-		clip-path: inset(0 0 0 0);
-	}
+  0% {
+    clip-path: inset(0 0 0 100%);
   }
-  @keyframes goLeft {
-	0% {
-		right : -1px ;
-	}
-	100% {
-		right : 50px ;
-	}
+  100% {
+    clip-path: inset(0 0 0 0);
   }
-
-  @keyframes fade {
-	0% {
-opacity: 0%;
 }
-	100% {
-		opacity: 100%;
-	}
+@keyframes goLeft {
+  0% {
+    right: -1px;
   }
-  /* Contact Form CSS*/
- .contact-center{
-	 margin-top: 70px;
-	margin-left:auto;
-    margin-right:auto;
- }
+  100% {
+    right: 50px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* Contact Form CSS*/
+.contact-center {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}

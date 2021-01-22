@@ -10,54 +10,51 @@ import { PhyInsComponent } from './departements/phy-ins/phy-ins.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import {EspaceEtudiantComponent} from './espace-etudiant/espace-etudiant.component';
+import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
 
-const routes: Routes = [{
-  path: '',
+const routes: Routes = [
+  {
+    path: '',
     component: FullLayoutComponent,
     children: [
       {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
       },
       {
         path: 'insat',
-        component: AboutUsComponent
+        component: AboutUsComponent,
       },
       {
         path: 'espace-etudiant',
-        component: EspaceEtudiantComponent
+        component: EspaceEtudiantComponent,
       },
-    {
-      path: 'insat/phyins',
-      component: PhyInsComponent,
-    },
-    {
-      path: 'insat/infmath',
-      component: InfMathComponent,
-    },
-    {
-      path: 'insat/bioch',
-      component: BioChComponent,
-    },
-    {
-      path: 'insat/formgen',
-      component: FormGenComponent,
-    },
-    {
-      path: '**',
-      component: NotFoundComponent
-    }
-
-  ]
-}
+      {
+        path: 'insat/phyins',
+        component: PhyInsComponent,
+      },
+      {
+        path: 'insat/infmath',
+        component: InfMathComponent,
+      },
+      {
+        path: 'insat/bioch',
+        component: BioChComponent,
+      },
+      {
+        path: 'insat/formgen',
+        component: FormGenComponent,
+      },
+      {
+        path: '**',
+        component: NotFoundComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

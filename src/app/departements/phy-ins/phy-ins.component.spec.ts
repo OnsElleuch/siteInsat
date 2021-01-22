@@ -8,9 +8,8 @@ describe('PhyInsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PhyInsComponent ]
-    })
-    .compileComponents();
+      declarations: [PhyInsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
