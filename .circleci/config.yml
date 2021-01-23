@@ -18,7 +18,7 @@ jobs:
     working_directory: ~/siteInsat
 
     steps:
-      - checkout 
+      - checkout
       # Download and cache dependencies
 
       - restore_cache:
@@ -26,15 +26,15 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run:  pwd
-      - run:  ls
-      - run:  npm install
+      - run: pwd
+      - run: ls
+      - run: npm install
       - save_cache:
           paths:
             - node_modules
             - dist
             - package.json
-          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }} 
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run: npm run build
 
 # Orchestrate our job run sequence

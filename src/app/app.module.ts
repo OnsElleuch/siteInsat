@@ -17,13 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FullLayoutComponent,
-    HomeComponent,
-    AboutUsComponent,
-    NotFoundComponent,
-  ],
+  declarations: [AppComponent, FullLayoutComponent, HomeComponent, AboutUsComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -31,14 +25,13 @@ import { DepartmentService } from './shared/services/department.service';
     FontAwesomeModule,
     CommonModule,
     DepartementsModule,
-    SharedModule
-    
+    SharedModule,
   ],
   providers: [AboutUsService, DepartmentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(library: FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope );
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope);
   }
 }

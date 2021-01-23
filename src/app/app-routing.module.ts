@@ -11,48 +11,45 @@ import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-const routes: Routes = [{
-  path: '',
-  component: FullLayoutComponent,
-  children: [
-    {
-      path: '',
-      component: HomeComponent
-    },
-    {
-      path: 'insat',
-      component: AboutUsComponent,
-    },
-    {
-      path: 'insat/phyins',
-      component: PhyInsComponent,
-    },
-    {
-      path: 'insat/infmath',
-      component: InfMathComponent,
-    },
-    {
-      path: 'insat/bioch',
-      component: BioChComponent,
-    },
-    {
-      path: 'insat/formgen',
-      component: FormGenComponent,
-    },
-    {
-      path: '**',
-      component: NotFoundComponent
-    }
-
-  ]
-}
+const routes: Routes = [
+  {
+    path: '',
+    component: FullLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+      },
+      {
+        path: 'insat',
+        component: AboutUsComponent,
+      },
+      {
+        path: 'insat/phyins',
+        component: PhyInsComponent,
+      },
+      {
+        path: 'insat/infmath',
+        component: InfMathComponent,
+      },
+      {
+        path: 'insat/bioch',
+        component: BioChComponent,
+      },
+      {
+        path: 'insat/formgen',
+        component: FormGenComponent,
+      },
+      {
+        path: '**',
+        component: NotFoundComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
