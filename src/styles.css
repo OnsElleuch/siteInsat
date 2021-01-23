@@ -8,20 +8,20 @@
 
 /**
  * Table of Contents :
- 
+
  * 1.0 - DEFAULT CSS START
- * 2.0 - KF EDUCATION 2 HEADER CSS START 
+ * 2.0 - KF EDUCATION 2 HEADER CSS START
  * 3.0 - MAIN BANNER CSS Strat
  * 4.0 - KF INNER PAGE BANNER CSS START
  * 5.0 - DEFALT HEADINGS CSS START
  * 6.0 - DEFALT HEADINGS CSS START
- * 7.0 - Courses List Pge CSS Strat 
+ * 7.0 - Courses List Pge CSS Strat
  * 8.0 - SIDE BAR CSS START
  * 9.0 - OUR TEACHER PAGE CSS START
  * 10.0 - OUR EVENT PAGE CSS START
  * 11.0 - OUR BLOG PAGE CSS START
  * 12.0 - ABOUt US PAGE CSS START
- * 13.0 - EVENT LIST PAGE CSS START 
+ * 13.0 - EVENT LIST PAGE CSS START
  * 14.0 - OUR COURSES $ COLUM PAGE CSS START
  * 15.0 - OUR COURSES PAGE CSS START
  * 16.0 - BLOG  3 PAGE CSS START
@@ -34,7 +34,7 @@
  * 23.0 - FILTERABLE GALLERY PAGE CSS START
  * 24.0 - KF EDUCATION 404 PAGE CSS START
  * 25.0 - CHECKBOX AND RADIO BUTTON CSS start
- 
+
 	[Color codes]
 
 	Background: #ffffff (white)
@@ -5047,13 +5047,14 @@ b {
 }
 #filterable-item-filter-1 li {
   display: inline-block;
-  margin: 0px 3px;
+  margin: 0px 7px;
 }
 #filterable-item-filter-1 a {
   border: 2px solid;
   display: block;
   padding: 8px 15px;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
   border-radius: 5px;
   color: #fff;
   margin: 0px;

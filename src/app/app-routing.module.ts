@@ -10,6 +10,7 @@ import { PhyInsComponent } from './departements/phy-ins/phy-ins.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EmploisComponent } from './scolarite/emplois/emplois.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
       {
         path: 'insat/formgen',
         component: FormGenComponent,
+      },
+      {
+        path: 'insat/emplois',
+        component: EmploisComponent,
       },
       {
         path: '**',
