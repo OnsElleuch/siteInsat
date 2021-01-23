@@ -1,469 +1,430 @@
 <!--Banner Wrap Start-->
 <div class="kf_inr_banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!--KF INR BANNER DES Wrap Start-->
-                <div class="kf_inr_ban_des">
-                    <div class="inr_banner_heading">
-                        <h3>Génie Informatique et Mathématiques</h3>
-                    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3>Génie Informatique et Mathématiques</h3>
+          </div>
 
-                    <div class="kf_inr_breadcrumb">
-                        <ul>
-                            <li><a href="/insat/">A propos de l'INSAT</a></li>
-                            <li><a href="/insat/infmath">Génie Informatique et Mathématiques</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--KF INR BANNER DES Wrap End-->
-            </div>
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="/insat/">A propos de l'INSAT</a></li>
+              <li><a href="/insat/infmath">Génie Informatique et Mathématiques</a></li>
+            </ul>
+          </div>
         </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
     </div>
+  </div>
 </div>
 
 <!--Banner Wrap End-->
 
 <!--Content Wrap Start-->
 <div class="kf_content_wrap">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col" style="max-width: 90%; margin-left: auto; margin-right: auto;">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col" style="max-width: 90%; margin-left: auto; margin-right: auto">
+          <!-- COURSES DETAIL WRAP START -->
+          <div class="kf_courses_detail_wrap">
+            <div class="courses_detail_heading">
+              <h4>Département de Génie Informatique et Mathématiques</h4>
+            </div>
 
-                    <!-- COURSES DETAIL WRAP START -->
-                    <div class="kf_courses_detail_wrap">
-                        <div class="courses_detail_heading">
-                            <h4>Département de Génie Informatique et Mathématiques</h4>
-                        </div>
+            <!-- COURSES DETAIL TABS WRAP START -->
+            <div class="kf_courses_tabs">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[0] }" (click)="changeActiveTab(0)">
+                  <a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Présentation</a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[1] }" (click)="changeActiveTab(1)">
+                  <a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab">Recherche</a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[2] }" (click)="changeActiveTab(2)">
+                  <a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab"
+                    >Certifications et Partenariat</a
+                  >
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[3] }" (click)="changeActiveTab(3)">
+                  <a href="#placements" aria-controls="placements" role="tab" data-toggle="tab"
+                    >Enseignants Permanents</a
+                  >
+                </li>
+              </ul>
 
-
-
-                        <!-- COURSES DETAIL TABS WRAP START -->
-                        <div class="kf_courses_tabs">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[0]}"
-                                    (click)="changeActiveTab(0)"><a href="#coursedetails" aria-controls="coursedetails"
-                                        role="tab" data-toggle="tab">Présentation</a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[1]}"
-                                    (click)="changeActiveTab(1)"><a href="#coursestructure"
-                                        aria-controls="coursestructure" role="tab" data-toggle="tab">Recherche</a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[2]}"
-                                    (click)="changeActiveTab(2)"><a href="#entryrequirment"
-                                        aria-controls="entryrequirment" role="tab" data-toggle="tab">Certifications et
-                                        Partenariat</a></li>
-                                <li role="presentation" [ngClass]="{'active-tab' : tablist[3]}"
-                                    (click)="changeActiveTab(3)"><a href="#placements" aria-controls="placements"
-                                        role="tab" data-toggle="tab">Enseignants Permanents</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-
-                                <div role="tabpanel" class="tab-pane active" id="coursedetails">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Présentation</h3>
-                                        </div>
-                                        <p>Le département Génie Informatique et Mathématiques est l’un des quatre
-                                            départements de l’INSAT. Ses activités consistent à mobiliser et gérer les
-                                            ressources nécessaires pour l’enseignement des disciplines informatique et
-                                            mathématiques durant le cursus des élèves ingénieurs de l’INSAT. Par
-                                            ailleurs, le département participe au développement de travaux de recherche,
-                                            à la gestion des stages et à la mise en place ainsi qu'au bon déroulement
-                                            des mastères de recherche et professionnels.</p>
-                                        Les filières sous la responsabilité du département sont :
-                                        <li style="flex-wrap: nowrap;">
-                                            <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                            Génie Logiciel.
-                                        </li>
-                                        <li style="flex-wrap: nowrap;">
-                                            <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                            Informatique Réseaux et Télécommunication.
-                                        </li>
-                                        <p>
-                                            Dans chacune de ces filières, deux promotions sortent chaque année :
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Techniciens (Bac + 3).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Ingénieurs (Bac + 5 et demi).
-                                            </li>
-                                        </p>
-                                        <p>
-                                            Selon le nouveau régime qui a démarré en septembre 2008, l’enseignement dans
-                                            la filière ingénieur dure cinq années au total, soit deux années
-                                            préparatoires (effectuées au sein de l’INSAT) et trois années de spécialité.
-                                        </p>
-                                        <p>
-                                            Au total, environs 150 ingénieurs et 70 techniciens sont diplômés chaque
-                                            année.
-                                        </p>
-                                        <p>
-                                            Nous souhaitons former des ingénieurs et techniciens informaticiens de haut
-                                            niveau. Selon la filière choisie, l’ingénieur informaticien sortant de
-                                            l’INSAT obtient acquière des compétences en méthodologies et techniques
-                                            relevant du génie logiciel ou des réseaux.
-                                        </p>
-                                        <p>
-                                            Participe à la formation des ingénieurs et techniciens environ 90
-                                            intervenants dont les deux tiers provenant du corps enseignants permanents
-                                            et contractuels et un tiers d’intervenants sont des externes (professeurs
-                                            invités, experts industriels ou vacataires).
-                                        </p>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Master Professionnels</h3>
-                                        </div>
-                                        <p>Le département gère depuis 2007 deux masters professionnels en ingénierie des
-                                            systèmes embarqués et en e-services. Les formations dans le cadre de ces
-                                            deux masters s’effectuent en étroite collaboration avec les industriels. En
-                                            effets, certains cours et travaux pratiques s’effectuent dans les lieux même
-                                            des industriels. Par exemple les travaux pratiques du module « Applications
-                                            et processeurs Multimédia » s’effectuent au laboratoire Lab-ST20 et Lab-ARM
-                                            au parc technologique de STMicroelectronique.</p>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="coursestructure">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Recherche</h3>
-                                        </div>
-                                        <p>Les enseignants-chercheurs du département participent activement à la
-                                            recherche chacun appartenant à un laboratoire ou une unité de recherche.
-                                            L’environnement mis à leur disposition au sein du département permet une
-                                            collaboration et une interaction entre les différents chercheurs et
-                                            disciplines associées. Les travaux de recherche touchent à plusieurs
-                                            domaines :</p>
-                                        <p>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Systèmes embarqués.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Systèmes critiques.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Réseaux et Sécurité.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Traitement d’images.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Bases de données.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Intelligence artificielle.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Génie Logiciel et Ingénierie dirigées par les modèles.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Systèmes temps réels.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Systèmes répartis.
-                                            </li>
-                                        </p>
-                                        <p>
-                                            Ces travaux de recherche ont pour objectifs de contribuer à l’analyse des
-                                            nouveaux challenges et à proposer des solutions appropriées et de qualité.
-                                            Les résultats de ces travaux font l'objet de publications et de
-                                            communications dans des journaux scientifiques et dans des conférences
-                                            nationales et internationales. Ces travaux de recherche permettent par
-                                            ailleurs, d’assurer un enseignement de qualité pouvant s’adapter aux
-                                            évolutions rapides des méthodes et techniques auxquelles s’affronteront nos
-                                            futurs ingénieurs.
-                                        </p>
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="entryrequirment">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Certifications</h3>
-                                        </div>
-                                        <p>Dans le but de renforcer la formation des nos ingénieurs, plusieurs
-                                            certifications sont mises à la disposition de nos élèves ingénieurs.
-                                            Parallèlement à son diplôme d’ingénieur, l’ingénieur sortant de l’INSAT doit
-                                            réussir avec un bon score, un certain nombre d’examens de certifications.
-                                            L’administration de l’INSAT a commencé dans une première phase à former et à
-                                            faire certifier un bon nombre du corps enseignant. Ainsi, nous disposons
-                                            d’enseignants certifiés en :</p>
-                                        <p>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Linux.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                CISCO.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                .Net .
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                JAVA.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                JEE.
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Sécurité.
-                                            </li>
-
-                                        </p>
-                                        <p>
-                                            Vu les bons scores obtenus et le grand nombre d’enseignants certifiés,
-                                            l’INSAT est devenue depuis septembre 2009 un centre agrée de certification
-                                            en Linux (LPI). Elle est aussi une académie régionale CISCO et une académie
-                                            SUN-JAVA pour former des développeurs java certifiés et des architectes JEE.
-                                        </p>
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Partenariats</h3>
-                                        </div>
-                                        <p>Parallèlement aux cours de bases, le Département Génie Informatique et
-                                            Mathématiques encourage les enseignants du département a établir des
-                                            relations de collaboration et partenariat avec les industriels pour assurer
-                                            des cours d’actualité et faire travailler nos élèves ingénieurs sur de vrais
-                                            problématiques. Les relations de partenariat touchent l’ensemble des acteurs
-                                            dans le monde professionnel en Tunisie, dont on cite:</p>
-                                        <p>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                STMicroelectronics (Conception des systèmes embarqués).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                SAGEM (Sécurité des systèmes embarqués).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                HRAccess (Conception des Systèmes d’Information).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                ORADIST (Oracle).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                CISCO (réseaux et sécurité).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Microsoft (.net).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                HP (e-services).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                IBM (AIX).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                Apple (Mac-OS).
-                                            </li>
-                                            <li style="flex-wrap: nowrap;">
-                                                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon>
-                                                SUN (Java/JEE).
-                                            </li>
-
-                                        </p>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane" id="placements">
-
-                                    <!-- COURSES DETAIL DES START -->
-                                    <div class="kf_courses_detail_des">
-                                        <div class="course_heading">
-                                            <h3>Les Enseignants Chercheurs</h3>
-                                        </div>
-                                        <p>Le département de Génie Informatique et Mathématiques compte 35 enseignants
-
-                                            permanents et 26 enseignants vacataires/contractuels et 3 PES.</p>
-
-                                    </div>
-                                    <!-- COURSES DETAIL DES END -->
-
-                                     <!-- STUDY TABLE WRAP START -->
-
-                                     <div class="study_table_wrap" *ngIf="professeurs.length > 0">
-
-                                        <h6>Grade Professeur</h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of professeurs">
-                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-                            
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                     <!-- STUDY TABLE WRAP START -->
-
-                                     <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
-
-                                        <h6>Grade Maître de Conférences </h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of maitresConf">
-                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-                                
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                     <!-- STUDY TABLE WRAP START -->
-
-                                     <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
-
-                                        <h6>Grade Maître Assistant</h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr *ngFor="let prof of maitresAss">
-                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-                                        
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-                                    <!-- STUDY TABLE WRAP START -->
-
-                                    <div class="study_table_wrap" *ngIf="sec.length > 0">
-
-                                        <h6>Grade Professeur de l'Enseignement Secondaire</h6>
-                                        <!--  TABLE  START -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom et Prénom</th>
-                                                    <th>Grade</th>
-                                                    <th>Discipline</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr *ngFor="let prof of sec">
-
-                                                    <td>{{prof.name}} {{prof.lastName}}  </td>
-                                                    <td>{{prof.grade}}</td>
-                                                    <td>{{prof.discipline}}</td>
-                                                    <td>{{prof.email}}</td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                        <!--  TABLE  END -->
-                            
-                                    </div>
-                                    <!-- STUDY TABLE WRAP END -->
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- COURSES DETAIL TABS WRAP END -->
-
-
-                        <!--KF_BLOG DETAIL_DES END-->
-
-
-
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="coursedetails">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Présentation</h3>
                     </div>
-                    <!-- COURSES DETAIL WRAP END -->
+                    <p>
+                      Le département Génie Informatique et Mathématiques est l’un des quatre départements de l’INSAT.
+                      Ses activités consistent à mobiliser et gérer les ressources nécessaires pour l’enseignement des
+                      disciplines informatique et mathématiques durant le cursus des élèves ingénieurs de l’INSAT. Par
+                      ailleurs, le département participe au développement de travaux de recherche, à la gestion des
+                      stages et à la mise en place ainsi qu'au bon déroulement des mastères de recherche et
+                      professionnels.
+                    </p>
+                    Les filières sous la responsabilité du département sont :
+                    <li style="flex-wrap: nowrap">
+                      <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                      Génie Logiciel.
+                    </li>
+                    <li style="flex-wrap: nowrap">
+                      <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                      Informatique Réseaux et Télécommunication.
+                    </li>
+                    <p>
+                      Dans chacune de ces filières, deux promotions sortent chaque année :
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Techniciens (Bac + 3).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Ingénieurs (Bac + 5 et demi).
+                      </li>
+                    </p>
+                    <p>
+                      Selon le nouveau régime qui a démarré en septembre 2008, l’enseignement dans la filière ingénieur
+                      dure cinq années au total, soit deux années préparatoires (effectuées au sein de l’INSAT) et trois
+                      années de spécialité.
+                    </p>
+                    <p>Au total, environs 150 ingénieurs et 70 techniciens sont diplômés chaque année.</p>
+                    <p>
+                      Nous souhaitons former des ingénieurs et techniciens informaticiens de haut niveau. Selon la
+                      filière choisie, l’ingénieur informaticien sortant de l’INSAT obtient acquière des compétences en
+                      méthodologies et techniques relevant du génie logiciel ou des réseaux.
+                    </p>
+                    <p>
+                      Participe à la formation des ingénieurs et techniciens environ 90 intervenants dont les deux tiers
+                      provenant du corps enseignants permanents et contractuels et un tiers d’intervenants sont des
+                      externes (professeurs invités, experts industriels ou vacataires).
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Master Professionnels</h3>
+                    </div>
+                    <p>
+                      Le département gère depuis 2007 deux masters professionnels en ingénierie des systèmes embarqués
+                      et en e-services. Les formations dans le cadre de ces deux masters s’effectuent en étroite
+                      collaboration avec les industriels. En effets, certains cours et travaux pratiques s’effectuent
+                      dans les lieux même des industriels. Par exemple les travaux pratiques du module « Applications et
+                      processeurs Multimédia » s’effectuent au laboratoire Lab-ST20 et Lab-ARM au parc technologique de
+                      STMicroelectronique.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
                 </div>
 
+                <div role="tabpanel" class="tab-pane" id="coursestructure">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Recherche</h3>
+                    </div>
+                    <p>
+                      Les enseignants-chercheurs du département participent activement à la recherche chacun appartenant
+                      à un laboratoire ou une unité de recherche. L’environnement mis à leur disposition au sein du
+                      département permet une collaboration et une interaction entre les différents chercheurs et
+                      disciplines associées. Les travaux de recherche touchent à plusieurs domaines :
+                    </p>
+                    <p>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Systèmes embarqués.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Systèmes critiques.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Réseaux et Sécurité.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Traitement d’images.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Bases de données.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Intelligence artificielle.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Génie Logiciel et Ingénierie dirigées par les modèles.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Systèmes temps réels.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Systèmes répartis.
+                      </li>
+                    </p>
+                    <p>
+                      Ces travaux de recherche ont pour objectifs de contribuer à l’analyse des nouveaux challenges et à
+                      proposer des solutions appropriées et de qualité. Les résultats de ces travaux font l'objet de
+                      publications et de communications dans des journaux scientifiques et dans des conférences
+                      nationales et internationales. Ces travaux de recherche permettent par ailleurs, d’assurer un
+                      enseignement de qualité pouvant s’adapter aux évolutions rapides des méthodes et techniques
+                      auxquelles s’affronteront nos futurs ingénieurs.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+                </div>
 
+                <div role="tabpanel" class="tab-pane" id="entryrequirment">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Certifications</h3>
+                    </div>
+                    <p>
+                      Dans le but de renforcer la formation des nos ingénieurs, plusieurs certifications sont mises à la
+                      disposition de nos élèves ingénieurs. Parallèlement à son diplôme d’ingénieur, l’ingénieur sortant
+                      de l’INSAT doit réussir avec un bon score, un certain nombre d’examens de certifications.
+                      L’administration de l’INSAT a commencé dans une première phase à former et à faire certifier un
+                      bon nombre du corps enseignant. Ainsi, nous disposons d’enseignants certifiés en :
+                    </p>
+                    <p>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Linux.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        CISCO.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        .Net .
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        JAVA.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        JEE.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Sécurité.
+                      </li>
+                    </p>
+                    <p>
+                      Vu les bons scores obtenus et le grand nombre d’enseignants certifiés, l’INSAT est devenue depuis
+                      septembre 2009 un centre agrée de certification en Linux (LPI). Elle est aussi une académie
+                      régionale CISCO et une académie SUN-JAVA pour former des développeurs java certifiés et des
+                      architectes JEE.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Partenariats</h3>
+                    </div>
+                    <p>
+                      Parallèlement aux cours de bases, le Département Génie Informatique et Mathématiques encourage les
+                      enseignants du département a établir des relations de collaboration et partenariat avec les
+                      industriels pour assurer des cours d’actualité et faire travailler nos élèves ingénieurs sur de
+                      vrais problématiques. Les relations de partenariat touchent l’ensemble des acteurs dans le monde
+                      professionnel en Tunisie, dont on cite:
+                    </p>
+                    <p>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        STMicroelectronics (Conception des systèmes embarqués).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        SAGEM (Sécurité des systèmes embarqués).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        HRAccess (Conception des Systèmes d’Information).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        ORADIST (Oracle).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        CISCO (réseaux et sécurité).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Microsoft (.net).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        HP (e-services).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        IBM (AIX).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Apple (Mac-OS).
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        SUN (Java/JEE).
+                      </li>
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="placements">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Les Enseignants Chercheurs</h3>
+                    </div>
+                    <p>
+                      Le département de Génie Informatique et Mathématiques compte 35 enseignants permanents et 26
+                      enseignants vacataires/contractuels et 3 PES.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="professeurs.length > 0">
+                    <h6>Grade Professeur</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of professeurs">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
+                    <h6>Grade Maître de Conférences</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresConf">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
+                    <h6>Grade Maître Assistant</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresAss">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="sec.length > 0">
+                    <h6>Grade Professeur de l'Enseignement Secondaire</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of sec">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                </div>
+              </div>
             </div>
+            <!-- COURSES DETAIL TABS WRAP END -->
+
+            <!--KF_BLOG DETAIL_DES END-->
+          </div>
+          <!-- COURSES DETAIL WRAP END -->
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
 <!--Content Wrap End-->

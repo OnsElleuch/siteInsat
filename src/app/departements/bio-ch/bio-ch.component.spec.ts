@@ -8,9 +8,8 @@ describe('BioChComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BioChComponent ]
-    })
-    .compileComponents();
+      declarations: [BioChComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

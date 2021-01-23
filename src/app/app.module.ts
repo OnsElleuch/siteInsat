@@ -19,13 +19,7 @@ import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FullLayoutComponent,
-    HomeComponent,
-    AboutUsComponent,
-    NotFoundComponent,
-  ],
+  declarations: [AppComponent, FullLayoutComponent, HomeComponent, AboutUsComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -39,10 +33,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     
   ],
   providers: [AboutUsService, DepartmentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(library: FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope );
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope);
   }
 }
