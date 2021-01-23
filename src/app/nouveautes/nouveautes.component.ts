@@ -7,7 +7,7 @@ import { EventCardComponent } from '../event-card/event-card.component'
   styleUrls: ['./nouveautes.component.css']
 })
 export class NouveautesComponent implements OnInit {
-  news: news[];
+ 
   news = [
     {titre: 'Coopération internationale : Convention INSAT-- INSA-Lyon', description: 'Berline', date : '03/12/2015', photo_url : '../assets/extra-images/insat-insa.jpg'},
     {titre: 'Le Café R&D (Teams) 01', description: 'Berline', date : '03/12/2015', photo_url : '../assets/extra-images/nouveauté1.jpg'},
