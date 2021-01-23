@@ -15,6 +15,7 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { FormationModule } from './formation/formation.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DepartmentService } from './shared/services/department.service';
     FontAwesomeModule,
     CommonModule,
     DepartementsModule,
-    SharedModule
+    SharedModule,
+    FormationModule
     
   ],
   providers: [AboutUsService, DepartmentService],

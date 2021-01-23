@@ -5763,3 +5763,7 @@ input:checked + .radio-value {
 .kf_courses_detail_des > h5 > fa-icon, .kf_courses_detail_des >p >li >a >fa-icon {
 	margin-right: 2px;
 }
+h6 > a:hover {
+	text-decoration: underline;
+	color : #830709;
+}
