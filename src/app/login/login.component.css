@@ -1,0 +1,16 @@
+.login-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background_td {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  object-fit: contain;
+  background-image: url(src/assets/images/photos_insat/photo_insat_main.jpg);
+}
+.card-overlay {
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.924);
+  height: 100%;
+}

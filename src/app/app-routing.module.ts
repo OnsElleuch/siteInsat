@@ -10,6 +10,7 @@ import { PhyInsComponent } from './departements/phy-ins/phy-ins.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'insat',
         component: AboutUsComponent,
+      },
+      {
+        path: 'login',
+        component: LoginComponent,
       },
       {
         path: 'insat/phyins',
