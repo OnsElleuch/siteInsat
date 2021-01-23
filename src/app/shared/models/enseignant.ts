@@ -1,8 +1,8 @@
 export class Enseignant {
-  public id: number;
-  public nom: string;
-  public grade: string;
   public email: string;
-  public department: string;
+  public name: string;
+  public lastName: string;
   public discipline: string;
+  public department: string;
+  public grade: string;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Enseignant } from 'src/app/shared/models/enseignant';
+import { DepartmentService } from 'src/app/shared/services/department.service';
 
 @Component({
   selector: 'app-inf-math',
@@ -7,47 +8,21 @@ import { Enseignant } from 'src/app/shared/models/enseignant';
   styleUrls: ['./inf-math.component.css'],
 })
 export class InfMathComponent implements OnInit {
-  constructor() {}
+  constructor(private departmentService: DepartmentService) {}
   tablist = [true, false, false, false];
-  professeurs: Enseignant[];
-  maitresConf: Enseignant[];
-  maitresAss: Enseignant[];
-  pes: Enseignant[];
+  professeurs: Enseignant[] = [];
+  maitresConf: Enseignant[] = [];
+  maitresAss: Enseignant[] = [];
+  sec: Enseignant[] = [];
 
   ngOnInit(): void {
     this.getProfesseurs();
     this.getMaitresConf();
     this.getMaitresAss();
-    this.getPes();
+
+    this.getSec();
   }
-  getPes() {
-    this.pes = [
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-    ];
-  }
+
   changeActiveTab(tab: number) {
     this.tablist.forEach((value, index) => {
       if (index == tab) {
@@ -57,89 +32,24 @@ export class InfMathComponent implements OnInit {
       }
     });
   }
-
-  getMaitresConf() {
-    this.maitresConf = [
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître de Conférences',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-    ];
-  }
-  getMaitresAss() {
-    this.maitresAss = [
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître Assistant',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître Assistant',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Maître Assistant',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-    ];
+  getSec() {
+    this.departmentService.getProfSec('GIM').subscribe((data) => {
+      this.sec = data;
+    });
   }
   getProfesseurs() {
-    this.professeurs = [
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Professeur',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Professeur',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-      {
-        id: 1,
-        nom: 'ABDELGHANI Adnane',
-        grade: 'Professeur',
-        email: 'aabdelghan@yahoo.fr',
-        department: 'GPI',
-        discipline: 'Physique',
-      },
-    ];
+    this.departmentService.getProfesseurs('GIM').subscribe((data) => {
+      this.professeurs = data;
+    });
+  }
+  getMaitresConf() {
+    this.departmentService.getMaitreConf('GIM').subscribe((data) => {
+      this.maitresConf = data;
+    });
+  }
+  getMaitresAss() {
+    this.departmentService.getMaitreAss('GIM').subscribe((data) => {
+      this.maitresAss = data;
+    });
   }
 }

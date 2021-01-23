@@ -6,13 +6,14 @@
         <!--KF INR BANNER DES Wrap Start-->
         <div class="kf_inr_ban_des">
           <div class="inr_banner_heading">
-            <h3>Génie Informatique et Mathématiques</h3>
+            <h3>Sciences Sociales, Langues et Formation Générale</h3>
           </div>
 
           <div class="kf_inr_breadcrumb">
             <ul>
               <li><a href="/insat/">A propos de l'INSAT</a></li>
-              <li><a href="/insat/infmath">Génie Informatique et Mathématiques</a></li>
+
+              <li><a href="/insat/formgen">Sciences Sociales, Langues et Formation Générale </a></li>
             </ul>
           </div>
         </div>
@@ -33,7 +34,7 @@
           <!-- COURSES DETAIL WRAP START -->
           <div class="kf_courses_detail_wrap">
             <div class="courses_detail_heading">
-              <h4>Département de Génie Informatique et Mathématiques</h4>
+              <h4>Département de Sciences Sociales, Langues et Formation Générale</h4>
             </div>
 
             <!-- COURSES DETAIL TABS WRAP START -->
@@ -43,7 +44,12 @@
                 <li role="presentation" [ngClass]="{ 'active-tab': tablist[0] }" (click)="changeActiveTab(0)">
                   <a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Présentation</a>
                 </li>
-                <li role="presentation" [ngClass]="{ 'active-tab': tablist[1] }" (click)="changeActiveTab(1)">
+                <li
+                  role="presentation"
+                  [ngClass]="{ 'active-tab': tablist[1] }"
+                  (click)="changeActiveTab(1)"
+                  *ngIf="maitresAss.length > 0 || maitresConf.length > 0 || professeurs.length > 0 || sec.length > 0"
+                >
                   <a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab"
                     >Enseignants Permanents</a
                   >
@@ -92,7 +98,8 @@
 
                 <div role="tabpanel" class="tab-pane" id="coursestructure">
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="professeurs.length > 0">
                     <h6>Grade Professeur</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -106,7 +113,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of professeurs">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
@@ -117,7 +124,8 @@
                   </div>
                   <!-- STUDY TABLE WRAP END -->
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
                     <h6>Grade Maître de Conférences</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -131,7 +139,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of maitresConf">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
@@ -142,7 +150,8 @@
                   </div>
                   <!-- STUDY TABLE WRAP END -->
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
                     <h6>Grade Maître Assistant</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -156,7 +165,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of maitresAss">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
@@ -167,7 +176,8 @@
                   </div>
                   <!-- STUDY TABLE WRAP END -->
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="sec.length > 0">
                     <h6>Grade Professeur de l'Enseignement Secondaire</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -180,8 +190,8 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let prof of pes">
-                          <td>{{ prof.nom }}</td>
+                        <tr *ngFor="let prof of sec">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>

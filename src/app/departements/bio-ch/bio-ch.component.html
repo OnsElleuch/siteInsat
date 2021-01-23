@@ -51,7 +51,12 @@
                     >Mastère et Doctorat
                   </a>
                 </li>
-                <li role="presentation" [ngClass]="{ 'active-tab': tablist[3] }" (click)="changeActiveTab(3)">
+                <li
+                  role="presentation"
+                  [ngClass]="{ 'active-tab': tablist[3] }"
+                  (click)="changeActiveTab(3)"
+                  *ngIf="maitresAss.length > 0 || maitresConf.length > 0 || professeurs.length > 0"
+                >
                   <a href="#placements" aria-controls="placements" role="tab" data-toggle="tab"
                     >Enseignants Permanents</a
                   >
@@ -364,7 +369,8 @@
                   <!-- COURSES DETAIL DES END -->
 
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="professeurs.length > 0">
                     <h6>Grade Professeur</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -378,7 +384,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of professeurs">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
@@ -389,7 +395,8 @@
                   </div>
                   <!-- STUDY TABLE WRAP END -->
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
                     <h6>Grade Maître de Conférences</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -403,7 +410,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of maitresConf">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
@@ -414,7 +421,8 @@
                   </div>
                   <!-- STUDY TABLE WRAP END -->
                   <!-- STUDY TABLE WRAP START -->
-                  <div class="study_table_wrap">
+
+                  <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
                     <h6>Grade Maître Assistant</h6>
                     <!--  TABLE  START -->
                     <table class="table table-bordered">
@@ -428,7 +436,7 @@
                       </thead>
                       <tbody>
                         <tr *ngFor="let prof of maitresAss">
-                          <td>{{ prof.nom }}</td>
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
                           <td>{{ prof.grade }}</td>
                           <td>{{ prof.discipline }}</td>
                           <td>{{ prof.email }}</td>
