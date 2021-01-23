@@ -3,13 +3,21 @@ import { CommonModule } from '@angular/common';
 import { PrepaComponent } from './prepa/prepa.component';
 import { FormationRoutingModule } from './formation-routing.module';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCheck, faAtom, faLaptopCode, faMicroscope } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faAtom, faLaptopCode, faMicroscope, faRobot, faIndustry, faNetworkWired, faLaptop, faFlask, faDna, faSquareRootAlt, faMicrochip } from '@fortawesome/free-solid-svg-icons';
+import { IngComponent } from './ing/ing.component';
+import { LaComponent } from './la/la.component';
+import { MasterComponent } from './master/master.component';
+import { FormDisComponent } from './form-dis/form-dis.component';
 
 
 
 @NgModule({
   declarations: [
-    PrepaComponent
+    PrepaComponent,
+    IngComponent,
+    LaComponent,
+    MasterComponent,
+    FormDisComponent
   ],
   imports: [
     CommonModule,
@@ -19,6 +27,6 @@ import { faCheck, faAtom, faLaptopCode, faMicroscope } from '@fortawesome/free-s
 })
 export class FormationModule { 
   constructor(library: FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope );
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope, faRobot, faIndustry, faNetworkWired, faLaptop, faFlask, faDna,faSquareRootAlt,faMicrochip );
   }
 }

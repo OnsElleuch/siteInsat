@@ -16,6 +16,7 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
 import { FormationModule } from './formation/formation.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormationModule } from './formation/formation.module';
     CommonModule,
     DepartementsModule,
     SharedModule,
-    FormationModule
+    FormationModule,
+    BrowserAnimationsModule
     
   ],
   providers: [AboutUsService, DepartmentService],

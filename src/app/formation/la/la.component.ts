@@ -2,9 +2,9 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-prepa',
-  templateUrl: './prepa.component.html',
-  styleUrls: ['./prepa.component.css'],
+  selector: 'app-la',
+  templateUrl: './la.component.html',
+  styleUrls: ['./la.component.css'],
   animations: [
     trigger(
       'inOutAnimation',
@@ -29,7 +29,8 @@ import { Component, OnInit } from '@angular/core';
       )
     ]
 })
-export class PrepaComponent implements OnInit {
+export class LaComponent implements OnInit {
+
   progUrl='assets/upload/prog_prepa.pdf'
 
   display: boolean[] = [];

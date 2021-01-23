@@ -8,20 +8,20 @@
 
 /**
  * Table of Contents :
- 
+
  * 1.0 - DEFAULT CSS START
- * 2.0 - KF EDUCATION 2 HEADER CSS START 
+ * 2.0 - KF EDUCATION 2 HEADER CSS START
  * 3.0 - MAIN BANNER CSS Strat
  * 4.0 - KF INNER PAGE BANNER CSS START
  * 5.0 - DEFALT HEADINGS CSS START
  * 6.0 - DEFALT HEADINGS CSS START
- * 7.0 - Courses List Pge CSS Strat 
+ * 7.0 - Courses List Pge CSS Strat
  * 8.0 - SIDE BAR CSS START
  * 9.0 - OUR TEACHER PAGE CSS START
  * 10.0 - OUR EVENT PAGE CSS START
  * 11.0 - OUR BLOG PAGE CSS START
  * 12.0 - ABOUt US PAGE CSS START
- * 13.0 - EVENT LIST PAGE CSS START 
+ * 13.0 - EVENT LIST PAGE CSS START
  * 14.0 - OUR COURSES $ COLUM PAGE CSS START
  * 15.0 - OUR COURSES PAGE CSS START
  * 16.0 - BLOG  3 PAGE CSS START
@@ -34,7 +34,7 @@
  * 23.0 - FILTERABLE GALLERY PAGE CSS START
  * 24.0 - KF EDUCATION 404 PAGE CSS START
  * 25.0 - CHECKBOX AND RADIO BUTTON CSS start
- 
+
 	[Color codes]
 
 	Background: #ffffff (white)
@@ -69,19 +69,19 @@ footer{
 section,
 .kf_content_wrap,
 footer{
-	overflow:hidden;	
+	overflow:hidden;
 }
 section,
 .kf_footer_bg{
-	padding:70px 0px;	
+	padding:70px 0px;
 }
 .inner-content-holder{
 	float: left;
 	width: 100%;
-	padding:70px 0px;	
+	padding:70px 0px;
 }
 .no_padding{
-	padding:0px;	
+	padding:0px;
 }
 /*
 	  ==============================================================
@@ -171,7 +171,7 @@ section,
   background: #fff;
   z-index: 1;
 }
- 
+
 .searchlink.open .searchform {
   display: block;
   background: rgba(225, 225, 225, 0.75);
@@ -287,35 +287,35 @@ section,
 	text-transform: capitalize;
 	font-size: 14px;
 	font-weight: normal;
-	padding: 12px 15px 12px 20px;	
+	padding: 12px 15px 12px 20px;
 }
 .edu2_navigation ul ul li a:hover{
 	color: #fff;
 }
 .edu2_navigation ul ul li a::before{
-	display:none;	
+	display:none;
 }
 .edu2_navigation ul ul li a::after{
-	display:none;	
+	display:none;
 }
 /*Hover Style*/
 .edu2_navigation ul li:hover > ul{
 	top:100%;
 	opacity:1;
-	visibility:visible;	
+	visibility:visible;
 }
 /*Third Drop Down Style*/
 .edu2_navigation ul ul ul{
 	position:absolute;
 	top:0px;
 	left:90%;
-	visibility:hidden;	
+	visibility:hidden;
 }
 /*Hover Style*/
 .edu2_navigation ul ul li:hover > ul{
 	top:0px;
 	left:100%;
-	visibility:visible;	
+	visibility:visible;
 }
 
 .get-admition {
@@ -358,7 +358,7 @@ section,
 */
 #header_2{
 
-	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75); 
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 	position: relative;
 	z-index: 10;
 }
@@ -376,7 +376,7 @@ section,
 	font-weight: normal;
 	font-style: normal;
 	display: block;
-	padding:11px 0; 
+	padding:11px 0;
 }
 .contct_2 i{
 	margin-right: 5px;
@@ -392,7 +392,7 @@ section,
 	font-size: 14px;
 	text-transform: capitalize;
 	display: block;
-	padding:10px 12px 8px; 
+	padding:10px 12px 8px;
 }
 .login_wrap li i{
 	float: left;
@@ -415,7 +415,7 @@ section,
 	font-size: 14px;
 	text-transform: capitalize;
 	display: block;
-	padding:10px 12px 8px; 
+	padding:10px 12px 8px;
 	position: relative;
 	z-index: 2;
 	position: relative;
@@ -433,11 +433,11 @@ section,
 }
 .lng_wrap button{
 	padding:10px 15px;
-	background: rgba(0,0,0,0.2); 
+	background: rgba(0,0,0,0.2);
 	color: #fff;
 	border: none;
 	border-radius: 0;
-	font-weight: bold; 
+	font-weight: bold;
 }
 .lng_wrap button i{
 	margin-right: 5px
@@ -475,18 +475,18 @@ section,
 .logo_wrap{
 	float: left;
 	width: 100%;
-	padding:22px 0; 
+	padding:22px 0;
 	max-width: 55%;
 }
 .nav_2{
 	float: left;
 	width: 100%;
-	padding:31px 0; 
+	padding:31px 0;
 }
 .nav_2 ul{
 	float: left;
 	width: 100%;
-	text-align:center; 
+	text-align:center;
 }
 .nav_2 ul li{
 	display: inline-block;
@@ -515,7 +515,7 @@ section,
     width: 45%;
 }
 .edu2_main_bn_wrap.banner_2 figcaption span::before{
-	margin:inherit;; 
+	margin:inherit;;
 }
 .edu2_main_bn_wrap.banner_2 .owl-pagination{
 	display: none;
@@ -582,7 +582,7 @@ section,
 	float: none;
 	margin: auto ;
 }
-.kf_edu_pagination_wrap .pagination > li:last-child > a, 
+.kf_edu_pagination_wrap .pagination > li:last-child > a,
 .kf_edu_pagination_wrap .pagination > li:last-child > span,
 .kf_edu_pagination_wrap  .pagination > li:first-child > a,
 .kf_edu_pagination_wrap  .pagination > li:first-child > span {
@@ -596,10 +596,10 @@ section,
 	margin-left: 0;
 }
 .kf_edu_pagination_wrap li:first-child  span i{
-	margin-right:12px; 
+	margin-right:12px;
 }
 .kf_edu_pagination_wrap li:last-child  span i{
-	margin-left:12px; 
+	margin-left:12px;
 }
 .kf_edu_pagination_wrap .pagination > li > a,
 .kf_edu_pagination_wrap .pagination > li > span {
@@ -621,7 +621,7 @@ section,
 .kf_edu_pagination_wrap .pagination > li > active a{
 	color:#fff ;
 }
-.kf_edu_pagination_wrap  .pagination > .active > a, 
+.kf_edu_pagination_wrap  .pagination > .active > a,
 .kf_edu_pagination_wrap  .pagination > .active > a:focus,
 .kf_edu_pagination_wrap  .pagination > .active > a:hover,
 .kf_edu_pagination_wrap  .pagination > .active > span,
@@ -685,7 +685,7 @@ section,
 	height: 2px;
 	width: 120px;
 	background-color: #d3d3d3;
-	margin:0 auto; 
+	margin:0 auto;
 }
 .edu2_main_bn_wrap figcaption h2{
 	font-weight: 700;
@@ -706,7 +706,7 @@ section,
 	border: 4px solid #fff;
 	border-radius: 100%;
 	margin: 0 4px;
-	background-color: transparent; 
+	background-color: transparent;
 	display: inline-block;
 }
 .edu2_main_bn_wrap .owl-theme .owl-pagination {
@@ -772,7 +772,7 @@ section,
 	background-repeat: none-repeat;
 	position:relative;
 	z-index:2;
-	background-position:center; 
+	background-position:center;
 }
 .kf_inr_banner:before{
 	content:"";
@@ -851,7 +851,7 @@ section,
 	float: left;
 	width: 100%;
 	text-align: left;
-	margin:-7px 0 30px 0; 
+	margin:-7px 0 30px 0;
 }
 .kf_edu2_heading1 h3{
 	text-transform: uppercase;
@@ -882,7 +882,7 @@ section,
 	float: left;
 	width: 100%;
 	text-align: center;
-	margin:-8px 0 40px 0; 
+	margin:-8px 0 40px 0;
 }
 .kf_edu2_heading2 h3{
 	text-transform: uppercase;
@@ -928,14 +928,14 @@ section,
 .kf_cur_catg_wrap{
 	float: left;
 	width: 100%;
-	padding:69px 0 40px; 
+	padding:69px 0 40px;
 }
 .kf_cur_catg_des{
 	float: left;
 	width: 100%;
 	position: relative;
 	background-color: #f8f8f8;
-	padding:31px 23px 31px; 
+	padding:31px 23px 31px;
 	margin-bottom: 30px;
 }
 .kf_cur_catg_des:before{
@@ -954,7 +954,7 @@ section,
 	float: none;
 	overflow: hidden;
 	text-align: left;
-	padding-left:23px; 
+	padding-left:23px;
 }
 .kf_cur_catg_des > span {
     color: #000000;
@@ -991,7 +991,7 @@ section,
 	float: left;
 	width: 100%;
 	background-color: #f8f8f8;
-	padding:69px 20px 70px; 
+	padding:69px 20px 70px;
 }
 .kf_edu2_search_wrap form{
 	float: left;
@@ -1009,7 +1009,7 @@ section,
 	padding:12px 20px 15px;
 	font-size: 14px;
 	color: #666;
-	border:1px solid #fae5e5; 
+	border:1px solid #fae5e5;
 	border-radius: 0;
 	text-align: left;
 	background-color: #fff;
@@ -1077,7 +1077,7 @@ section,
 .kf_intro_des_wrap{
 	float: right;
 	width: 50%;
-	padding:0 30px; 
+	padding:0 30px;
 }
 .kf_intro_des{
 	float: left;
@@ -1154,12 +1154,12 @@ section,
 	width: 100%;
 }
 .kf_edu2_tab_wrap .nav-tabs{
-	border:none; 
+	border:none;
 	float: right;
 }
 .kf_edu2_tab_wrap .nav-tabs li{
 	margin: 0px 0px 0px 23px;
-	border:none; 
+	border:none;
 }
 .kf_edu2_tab_wrap .nav-tabs > li > a {
     border-radius: 0;
@@ -1178,7 +1178,7 @@ section,
 .kf_edu2_tab_wrap  .nav > li > a:focus,.kf_edu2_tab_wrap  .nav > li > a:hover,
 .kf_edu2_tab_wrap .nav-tabs > li > a:hover{
 	background-color: transparent;
-	border: none; 
+	border: none;
 	text-decoration: none;
 }
 .kf_edu2_tab_wrap .nav-tabs > li > a:before{
@@ -1238,7 +1238,7 @@ section,
 	position: relative;
 }
 .edu2_cur_des{
-	padding:30px; 
+	padding:30px;
 }
 .edu2_cur_des > span {
     background: #fff none repeat scroll 0 0;
@@ -1295,7 +1295,7 @@ section,
 	float: left;
 	width: 100%;
 	padding:15px;
-	background-color: #f8f8f8; 
+	background-color: #f8f8f8;
 	border-top: 1px solid #e2e2e2;
 }
 .edu2_cur_des_ft figure{
@@ -1348,7 +1348,7 @@ section,
   display: inline-block;
   position: relative;
   width: auto;
- 
+
 }
 .edu2_cur_wrap .rating > span{
 	width: auto;
@@ -1481,7 +1481,7 @@ section,
 }
 .edu2_gallery_des > figure > figcaption > a:hover{
 	background-color:#000;
-	color:#fff;	
+	color:#fff;
 }
 .edu2_gallery_des > figure > figcaption > h5{
 	display: block;
@@ -1515,7 +1515,7 @@ section,
 	top: 0;
 	bottom: 0;
 	position: absolute;
-	background-image:url(src/assets/images/photos_insat/photo_insat_main.jpg); 
+	background-image:url(src/assets/images/photos_insat/photo_insat_main.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1582,7 +1582,7 @@ section,
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
-.edu2_faculty_des2 strong{	
+.edu2_faculty_des2 strong{
 	text-transform: capitalize;
 	color: #777;
 	display: block;
@@ -1614,7 +1614,7 @@ section,
 	line-height: 36px;
 	border-radius:100%;
 	background-color: #fff;
-	margin:0 3px;  
+	margin:0 3px;
 }
 .edu2_faculty_des figcaption a:hover{
 	background-color: #000;
@@ -1636,7 +1636,7 @@ section,
 .edu2_faculty_wrap .owl-controls .owl-buttons div{
 	border:1px solid #c4c4c4;
 	border-radius: 0;
-	margin:0px -1px; 
+	margin:0px -1px;
 	width:34px;
 	height: 29px;
 	font-size: 0;
@@ -1786,17 +1786,17 @@ section,
 .kf_edu2_training_des{
 	float:left;
 	width:100%;
-	position:relative;	
+	position:relative;
 }
 .kf_edu2_training_des figure{
 	overflow:visible;
 	position:absolute;
 	left:80px;
-	top:-26px;	
+	top:-26px;
 }
 .kf_edu2_training_des figure img{
 	width:auto;
-	height:auto;	
+	height:auto;
 }
 .edu2_training_des{
 	float: left;
@@ -1888,13 +1888,13 @@ section,
 }
 .edu2_pricing_des h4{
 	text-transform: capitalize;
-	padding: 24px 0; 
+	padding: 24px 0;
 	font-weight: 300;
 }
 .edu2_pricing_des .pckg-price{
 	background-color: #f8f8f8;
 	display: block;
-	padding:30px 0px; 
+	padding:30px 0px;
 }
 .edu2_pricing_des span strong{
 	font-size: 50px;
@@ -1920,7 +1920,7 @@ section,
 	float: left;
 	width: 100%;
 	padding:24px 0 29px;
-	text-align: center; 
+	text-align: center;
 	border-width: 1px 0 1px 0;
 	border-style: solid;
 	border-color: #e8e8e8;
@@ -1930,7 +1930,7 @@ section,
 	margin-bottom: 23px;
 }
 .edu2_pricing_des ul li a{
-	display: block;	
+	display: block;
 	font-weight: normal;
 	color: #666;
 	font-family: 'Ubuntu', sans-serif;
@@ -2027,7 +2027,7 @@ section,
 }
 .edu_testemonial_wrap p {
     margin-bottom: 20px;
-    
+
 }
 .edu_testemonial_wrap a{
 	display: inline-block;
@@ -2047,7 +2047,7 @@ section,
     padding: 0 15px;
 }
 .edu2_testemonial_slider_wrap .owl-wrapper-outer{
-	padding-top:30px; 
+	padding-top:30px;
 	margin-bottom: 29px;
 }
 .edu2_testemonial_slider_wrap  .owl-theme .owl-controls .owl-page > span{
@@ -2122,7 +2122,7 @@ section,
 .kf_courses_des{
 	float: left;
 	width: 100%;
-	
+
 }
 .courses_des_hding1{
 	float: left;
@@ -2460,7 +2460,7 @@ section,
 	float: left;
 	width: 100%;
 	padding:30px;
-	border: 1px solid #e0e0e0; 
+	border: 1px solid #e0e0e0;
 	margin-bottom: 30px;
 }
 .apply{
@@ -2705,7 +2705,7 @@ section,
 	width: 261px;
 	right: 0;
 	top: 50%;
-	margin-top:-96px; 
+	margin-top:-96px;
 }
 .edu2_event_wrap figure figcaption {
 	position: absolute;
@@ -2950,7 +2950,7 @@ section,
 }
 .student_slider_des > p {
     color: #fff;
-    font-size: 18px;    
+    font-size: 18px;
     margin-bottom: 47px;
     float: left;
 }
@@ -3042,7 +3042,7 @@ section,
     width: 32px;
     z-index: 9999;
     border-radius: 0;
-    background-color:#fff; 
+    background-color:#fff;
     line-height: 27px;
     float: right;
 }
@@ -3075,7 +3075,7 @@ section,
 	float: left;
 	width: 100%;
 	margin-bottom: 30px;
-	background-color:#f9f9f9; 
+	background-color:#f9f9f9;
 }
 .kf_event_list_wrap:hover{
 	box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.3)
@@ -3088,7 +3088,7 @@ section,
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	margin: auto; 
+	margin: auto;
 	bottom: 0px;
 	width: 80%;
 	text-align: center;
@@ -3209,8 +3209,8 @@ section,
 	font-weight: bold;
 	color: #fff;
 	text-transform: capitalize;
-	font-size: 16px; 
-	background-color:#263a48; 
+	font-size: 16px;
+	background-color:#263a48;
 	width: 16.7%;
 	text-transform: uppercase;
 	line-height: normal;
@@ -3232,7 +3232,7 @@ section,
 
 }
 .search_bar_des .selectric .button{
-	padding: 10px 12px; 
+	padding: 10px 12px;
 }
 .search_bar_des .selectric .label{
 	line-height: 50px;
@@ -3261,7 +3261,7 @@ section,
 .inr_pg_search_wrap form .btn-default:focus,
 .inr_pg_search_wrap form  .btn-default:active,
 .inr_pg_search_wrap form  .open > .dropdown-toggle.btn-default{
-	background-color:#fff; 
+	background-color:#fff;
 }
 .inr_pg_search_wrap form  .caret {
     margin-top: -2px;
@@ -3386,7 +3386,7 @@ section,
 
 }
 .edu2_col_3_wrap:hover > figure:before{
-	background-color:#000; 
+	background-color:#000;
 	opacity: 0.5;
 }
 .edu2_col_3_wrap figure figcaption{
@@ -3463,7 +3463,7 @@ section,
 	padding: 2px 0 0 15px;
 }
 .edu2_col_3_ftr .rating{
-	margin:0; 
+	margin:0;
 }
 /*
 	  ==============================================================
@@ -3498,7 +3498,7 @@ section,
     width: 100%;
     background-color: #263a48;
     border-bottom: 1px solid #717171;
-    padding:4px 0px 5px; 
+    padding:4px 0px 5px;
 }
 .blog_3_sidebar > li:last-child{
 	border: none;
@@ -3550,7 +3550,7 @@ section,
 }
 .blog_3_des ul{
 	float: left;
-	width: 100%; 
+	width: 100%;
 	margin: 20px 0px 15px 0px;
 }
 .blog_3_des ul li{
@@ -3599,7 +3599,7 @@ section,
 	width: 100%;
 }
 .teacher_bio_logo{
-	float: left;	
+	float: left;
 	border: 2px solid;
 	border-radius: 5px;
 	margin-bottom: 30px;
@@ -3616,7 +3616,7 @@ section,
 	float: left;
 	line-height:normal;
 	font-weight: bolder;
-	padding:15px 25px 12px; 
+	padding:15px 25px 12px;
 }
 .teacher_bio_des{
 	float: left;
@@ -3662,14 +3662,14 @@ section,
   	top: 20px;
   	bottom: 20px;
   	position: absolute;
-  	border:1px solid; 
+  	border:1px solid;
   }
  .teacher_thumb figure figcaption{
  	position: absolute;
  	left: 0;
  	right: 0;
  	text-align: center;
- 	bottom:16px; 
+ 	bottom:16px;
  	z-index: 9999;
   }
  .teacher_thumb ul {
@@ -3709,7 +3709,7 @@ section,
  	width: 100%;
  	position: relative;
  	margin: -5px 0 35px 0 ;
- 	padding: 0  0 4px; 
+ 	padding: 0  0 4px;
  	border-bottom: 2px solid #e2e2e2;
  }
   .progress_heading h4{
@@ -3784,7 +3784,7 @@ section,
 	left:14px;
 	background:transparent;
 	overflow:hidden;
-	transform:rotate(30deg) 
+	transform:rotate(30deg)
 }
 /*progress bar end*/
 /*EDUCATION TRAINING START*/
@@ -3793,7 +3793,7 @@ section,
  	width: 100%;
  	position: relative;
  	margin: -5px 0 50px 0 ;
- 	padding: 0  0 10px; 
+ 	padding: 0  0 10px;
  	border-bottom: 2px solid #e2e2e2;
  	text-align: center;
  }
@@ -3970,7 +3970,7 @@ section,
 .convocation_timing{
 	float: left;
 	width: 100%;
-	border-bottom:1px solid; 
+	border-bottom:1px solid;
 	padding-bottom: 20px;
 }
 .convocation_timing li{
@@ -3986,7 +3986,7 @@ section,
 	float: left;
 	width: 100%;
 	padding:20px 0;
-	border-bottom: 1px solid #e9e9e9; 
+	border-bottom: 1px solid #e9e9e9;
 }
 .kf_convocation_des h5{
 	margin: 0px 0 15px;
@@ -4003,8 +4003,8 @@ section,
 	padding:8px 30px;
 	margin-right: 11px;
 	color: #fff;
-	
-	display: inline-block; 
+
+	display: inline-block;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 }
@@ -4059,9 +4059,9 @@ section,
 	width: 100%;
 }
 .kf_event_speakers_des:hover figure img{
-	transform: scale(1.05); 
-	-moz-transform: scale(1.05); 
-	-webkit-transform: scale(1.05); 
+	transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
 
 }
 .kf_event_speakers_des h5{
@@ -4075,7 +4075,7 @@ section,
 .kf_event_gallery{
 	float: left;
 	width: 100%;
-	padding-top:34px; 
+	padding-top:34px;
 }
 .event_gallery_des{
 	float: left;
@@ -4090,8 +4090,8 @@ section,
 	background-color: #000;
 }
 .event_gallery_des li:hover img{
-	transform: scale(1.05); 
-	-moz-transform: scale(1.05); 
+	transform: scale(1.05);
+	-moz-transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	opacity: 0.5;
 }
@@ -4137,7 +4137,7 @@ section,
 .blog_detail_thumbnail figure figcaption a{
 	padding:6px 20px 5px;
 	text-transform: capitalize;
-	color: #fff; 
+	color: #fff;
 	font-weight: bold;
 	display: inline-block;
 }
@@ -4186,7 +4186,7 @@ section,
 	background-color:#f1f1f1;
 	float: left;
 	width: 100%;
-	padding:34px 34px 36px;  
+	padding:34px 34px 36px;
 	border-left: 6px solid;
 	text-align: center;
 	margin: 0px 0 23px 0;
@@ -4252,7 +4252,7 @@ section,
 .about_autor{
 	float: left;
 	width: 100%;
-	border:1px solid #e1e1e1; 
+	border:1px solid #e1e1e1;
 	padding:20px 15px 13px 20px;
 	margin-bottom: 40px;
 }
@@ -4303,7 +4303,7 @@ section,
 .comment_wrap{
 	float: left;
 	width: 100%;
-	padding:30px 0 30px 0; 
+	padding:30px 0 30px 0;
 	border-bottom: 1px solid #e7e7e7;
 }
 .section-comment .blog-detl_heading{
@@ -4340,7 +4340,7 @@ section,
 	display: inline-block;
 	font-size: 14px;
 	padding-left: 20px;
-	border-left:1px solid #e7e7e7; 
+	border-left:1px solid #e7e7e7;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -4510,18 +4510,18 @@ section,
     color: #666;
     cursor: pointer;
     padding: 15px 20px;
-    margin:0; 
+    margin:0;
     background-color: #fff;
     border: none;
 }
 .kf_courses_tabs .nav-tabs > li.active > a:focus,
 .kf_courses_tabs .nav-tabs > li.active > a:hover {
     border-style:solid;
-    border-color:  #dcdcdc; 
+    border-color:  #dcdcdc;
     border: none;
 }
 .kf_courses_tabs .nav-tabs > li.active > a {
- 
+
 }
 .kf_courses_tabs .nav-tabs > li > a::before {
     bottom: 0px;
@@ -4538,7 +4538,7 @@ section,
 .kf_courses_tabs  .tab-content {
     float: left;
     width: 100%;
-    padding:20px 0 0 0; 
+    padding:20px 0 0 0;
 }
 .kf_courses_detail_des{
 	float: left;
@@ -4645,7 +4645,7 @@ section,
 	float: left;
 	width: 100%;
 	margin-bottom: 14px;
-	
+
 }
 .contact_heading h4{
 	font-size: 24px;
@@ -4880,7 +4880,7 @@ section,
 	margin-left:30px;
 }
 .des_2{
-	position:relative;	
+	position:relative;
 }
 .inputs_des.des_2 > span {
     float: left;
@@ -5074,13 +5074,14 @@ section,
 }
 #filterable-item-filter-1  li {
     display: inline-block;
-    margin: 0px 3px;
+    margin: 0px 7px;
 }
 #filterable-item-filter-1 a {
     border: 2px solid;
     display: block;
     padding: 8px 15px;
-	font-size:14px;
+  font-weight: bold;
+	font-size:  18px;
 	border-radius: 5px;
 	color:#fff;
 	margin:0px;
@@ -5170,13 +5171,13 @@ section,
 	  ==============================================================
 */
 .error_outer_wrap{
-	padding:170px 0 141px; 
+	padding:170px 0 141px;
 }
 .error_wrap{
 	float: left;
 	width: 100%;
 	background-color: #f7f7f7;
-	padding: 101px 0 127px; 
+	padding: 101px 0 127px;
 	position: relative;
 }
 .error_des {
@@ -5217,7 +5218,7 @@ section,
 	right: 0;
 	border: 1px solid;
 	padding: 5px;
-	margin:0 auto; 
+	margin:0 auto;
 }
 .error_thumb figure:before{
 	background-color: #000;
@@ -5233,13 +5234,13 @@ section,
 	left: 0;
 	right: 0;
 	margin:-32px;
-	text-align: center; 
+	text-align: center;
 	z-index: 22;
 }
 .error_thumb figure a{
 	position: relative;
-	padding: 22px 30px 21px; 
-	text-transform:uppercase; 
+	padding: 22px 30px 21px;
+	text-transform:uppercase;
 	font-size: 16px;
 	line-height: 16px;
 	font-weight: bold;
@@ -5308,7 +5309,7 @@ section,
 	color: #fff;
 }
 .btn-2:hover{
-	background-color:#000 !important; 
+	background-color:#000 !important;
 }
 .btn-3 {
     background: transparent none repeat scroll 0 0;
@@ -5351,11 +5352,11 @@ section,
 	display: inline-block;
 	color: #fff;
 	font-size: 14px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	font-weight: bold;
 	padding:8px 30px;
 	text-align: center;
-	margin:0 3px; 
+	margin:0 3px;
 }
 .event_link{
 	display: inline-block;
@@ -5505,7 +5506,7 @@ section,
 	height: 48px;
 	width: 100%;
 	border-radius: 3px;
-	border: 2px solid #d6d9dd; 
+	border: 2px solid #d6d9dd;
 }
 .user-box .input-container .radio-value{
 	height:20px;
@@ -5671,7 +5672,7 @@ section,
 	color:#c4cdd6;
 	text-align:left;
 	font-family:15px;
-	
+
 }
 .input-container .dropdown button p{
 	float:left;
@@ -5766,4 +5767,17 @@ input:checked + .radio-value {
 h6 > a:hover {
 	text-decoration: underline;
 	color : #830709;
+}
+
+.formation-display{
+	transition: 1s all ease-in-out;
+}
+.formation-table >tr >th, .formation-table >tr >td{
+	text-align: center;
+	font-size: small;
+	font-weight: normal;
+}
+.licences >li {
+	margin-top: 10px;
+
 }

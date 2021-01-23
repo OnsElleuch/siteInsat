@@ -157,5 +157,8 @@
       }
     }
   },
-  "defaultProject": "siteinsat"
+  "defaultProject": "siteinsat",
+  "cli": {
+    "analytics": false
+  }
 }

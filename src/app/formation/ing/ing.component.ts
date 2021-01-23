@@ -2,9 +2,9 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-prepa',
-  templateUrl: './prepa.component.html',
-  styleUrls: ['./prepa.component.css'],
+  selector: 'app-ing',
+  templateUrl: './ing.component.html',
+  styleUrls: ['./ing.component.css'],
   animations: [
     trigger(
       'inOutAnimation',
@@ -29,21 +29,17 @@ import { Component, OnInit } from '@angular/core';
       )
     ]
 })
-export class PrepaComponent implements OnInit {
-  progUrl='assets/upload/prog_prepa.pdf'
+export class IngComponent implements OnInit {
+  progUrl='assets/upload/prog_ing.pdf'
 
-  display: boolean[] = [];
+  
 
   constructor() { }
 
   ngOnInit(): void {
-    for (var i = 0; i < 2; i++) {
-      this.display.push(false);
-    }
+    
   }
-  switchDisplay(n: number) {
-    this.display[n] = !this.display[n];
-  }
+  
   openPdf(url: string){
     window.open(url, '_blank');
   }
