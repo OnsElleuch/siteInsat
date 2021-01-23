@@ -1,15 +1,16 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Routes, RouterModule } from '@angular/router';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { BioChComponent } from './departements/bio-ch/bio-ch.component';
-import { FormGenComponent } from './departements/form-gen/form-gen.component';
-import { InfMathComponent } from './departements/inf-math/inf-math.component';
-import { PhyInsComponent } from './departements/phy-ins/phy-ins.component';
-import { FullLayoutComponent } from './full-layout/full-layout.component';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {Routes, RouterModule} from '@angular/router';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {BioChComponent} from './departements/bio-ch/bio-ch.component';
+import {FormGenComponent} from './departements/form-gen/form-gen.component';
+import {InfMathComponent} from './departements/inf-math/inf-math.component';
+import {PhyInsComponent} from './departements/phy-ins/phy-ins.component';
+import {FullLayoutComponent} from './full-layout/full-layout.component';
+import {HomeComponent} from './home/home.component';
+import {NotFoundComponent} from './not-found/not-found.component';
+import {EmploisComponent} from './scolarite/emplois/emplois.component';
 
 const routes: Routes = [{
   path: '',
@@ -40,9 +41,14 @@ const routes: Routes = [{
       component: FormGenComponent,
     },
     {
+      path: 'insat/emplois',
+      component: EmploisComponent
+    },
+    {
       path: '**',
       component: NotFoundComponent
     }
+
 
   ]
 }
@@ -55,4 +61,5 @@ const routes: Routes = [{
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
