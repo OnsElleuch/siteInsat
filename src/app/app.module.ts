@@ -11,10 +11,12 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faAtom, faCheck, faLaptopCode, faMicroscope } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
 import { DepartementsModule } from './departements/departements.module';
+import {ScolariteModule} from './scolarite/scolarite.module';
 import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { EmploisService} from './shared/services/emplois.service';
 
 @NgModule({
   declarations: [
@@ -31,10 +33,11 @@ import { DepartmentService } from './shared/services/department.service';
     FontAwesomeModule,
     CommonModule,
     DepartementsModule,
-    SharedModule
-    
+    SharedModule,
+    ScolariteModule
+
   ],
-  providers: [AboutUsService, DepartmentService],
+  providers: [AboutUsService, DepartmentService,EmploisService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
