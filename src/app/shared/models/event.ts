@@ -1,5 +1,5 @@
 export class Event {
-    public titre : string;
+    public title : string;
     public description : string;
     public date : string;
     public club: string;

@@ -14,6 +14,8 @@ import { EmploisComponent } from './scolarite/emplois/emplois.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
+import { ClubsComponent } from './clubs/clubs.component';
+import { ClubTemplateComponent } from './club-template/club-template.component';
 
 const routes: Routes = [{
   path: '',
@@ -57,6 +59,14 @@ const routes: Routes = [{
     {
       path: 'insat/evenments/event',
       component: NewsEventTemplateComponent
+    },
+    {
+      path: 'insat/clubs',
+      component: ClubsComponent
+    },
+    {
+      path: 'insat/clubs/club',
+      component: ClubTemplateComponent
     },
     {
       path: '**',

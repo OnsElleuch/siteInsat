@@ -1,0 +1,65 @@
+<section>  
+    <!-- HEADING 2 START-->
+    <div class="col-md-12">
+        <div class="kf_edu2_heading2">
+            <h3>{{club.clubName}}</h3>
+        </div>
+    </div>
+    <!-- HEADING 2 END-->
+    <!-- INTERO DES START-->
+<section class="wrap" >
+    <div class="kf_intro_des_wrap" >
+        <div>
+            <h5>Description du club: </h5>
+            <h6>{{club.descriptionClub}}</h6>
+        </div>
+    
+        <div class="espace">
+            <h5>Président du club : </h5>
+            <h6>{{club.president}}</h6>
+        </div>
+    </div>
+    <!-- INTERO DES END-->
+</section>
+<section>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="kf_edu2_heading2">
+                <h3>Les événements de {{club.clubName}}</h3>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 margin" *ngFor="let event of events">
+         <app-event-card [event]="event"></app-event-card>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 margin" *ngFor="let event of events">
+         <app-event-card [event]="event"></app-event-card>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 margin" *ngFor="let event of events">
+         <app-event-card [event]="event"></app-event-card>
+        </div>
+        </div>
+        </div>
+        <div class="row pagination">
+ <div >
+   <a href="insat/evenments">&laquo;</a>
+   <a href="insat/evenments">1</a>
+   <a href="insat/evenments">2</a>
+   <a href="insat/evenments">3</a>
+   <a href="insat/evenments">4</a>
+   <a href="insat/evenments">5</a>
+   <a href="insat/evenments">6</a>
+   <a href="insat/evenments">&raquo;</a>
+ 
+ 
+ </div>
+ </div>
+ 
+</section>
+
+</section>
+
