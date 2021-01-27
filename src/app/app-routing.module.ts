@@ -13,6 +13,7 @@ import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { EmploisComponent } from './scolarite/emplois/emplois.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
 
 const routes: Routes = [{
   path: '',
@@ -52,6 +53,10 @@ const routes: Routes = [{
     {
       path: 'insat/nouveautes',
       component: NouveautesComponent ,
+    },
+    {
+      path: 'insat/evenments/event',
+      component: NewsEventTemplateComponent
     },
     {
       path: '**',

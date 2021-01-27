@@ -18,6 +18,7 @@ import { DepartmentService } from './shared/services/department.service';
 import { EvenmentsComponent } from './evenments/evenments.component';
 import { EventCardComponent } from './event-card/event-card.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
+import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NouveautesComponent } from './nouveautes/nouveautes.component';
     EvenmentsComponent,
     EventCardComponent,
     NouveautesComponent,
+    NewsEventTemplateComponent,
   ],
   imports: [
     BrowserModule,
