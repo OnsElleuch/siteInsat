@@ -1,188 +1,189 @@
 <body>
-    <!--KF KODE WRAPPER WRAP START-->
-    <div class="kode_wrapper">
-        <!--Banner Wrap Start-->
-        <div class="kf_inr_banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--KF INR BANNER DES Wrap Start-->
-                        <div class="kf_inr_ban_des">
-                            <div class="inr_banner_heading">
-                                <h3>Cycle Préparatoire</h3>
-                            </div>
+  <!--KF KODE WRAPPER WRAP START-->
+  <div class="kode_wrapper">
+    <!--Banner Wrap Start-->
+    <div class="kf_inr_banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!--KF INR BANNER DES Wrap Start-->
+            <div class="kf_inr_ban_des">
+              <div class="inr_banner_heading">
+                <h3>Cycle Préparatoire</h3>
+              </div>
 
-                            <div class="kf_inr_breadcrumb">
-                                <ul>
-                                    <li><a href="JavaScript:Void(0);">Formation</a></li>
-                                    <li><a href="/formation/prepa">Cycle Préparatoire</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--KF INR BANNER DES Wrap End-->
-                    </div>
-                </div>
+              <div class="kf_inr_breadcrumb">
+                <ul>
+                  <li><a href="JavaScript:Void(0);">Formation</a></li>
+                  <li><a href="/formation/prepa">Cycle Préparatoire</a></li>
+                </ul>
+              </div>
             </div>
+            <!--KF INR BANNER DES Wrap End-->
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!--Banner Wrap End-->
+    <!--Banner Wrap End-->
 
-        <!--Content Wrap Start-->
-        <div class="kf_content_wrap">
-
-
-            <section>
-                <div class="container">
-                    <!-- Cursus Formation START -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="contact_2_headung">
-                                <h3>Cursus de Formation</h3>
-                                <p>
-                                    <li>
-                                        <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                                        <a href="JavaScript:Void(0);"
-                                            style="color: #777777; text-align: right;" (click)="openPdf(progUrl)">Télécharger le programme</a>
-                                    </li>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Docs INSAT END-->
-                    <!-- Acces INSAT START -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="contact_2_headung">
-                                <h3>Présentation des filières</h3>
-                                <ul>
-                                    <li>
-                                        <h6><fa-icon [icon]="['fas', 'square-root-alt']" style="color: #830709;">
-                                        </fa-icon> <a href="JavaScript:Void(0);" (click)="switchDisplay(0)"> Les Filières à
-                                                partir du tronc Commun MPI</a>
-                                            <br>
-                                        </h6>
-                                        <p *ngIf="display[0]" [@inOutAnimation]>
-
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'robot']"></fa-icon>
-                                            Informatique Industrielle & Automatique (IIA)
-                                        </p>
-                                        <p>La filière Informatique industrielle et Automatique a pour objectif de former
-                                            des ingénieurs aptes à maîtriser les outils de production automatisées
-                                            s’appuyant sur des techniques informatiques de pointe (système temps réel,
-                                            contrôle, commande, robotique, etc.). La formation, axée sur l’étude et la
-                                            mise au point de tous les types d’asservissements, de robotique, de commande
-                                            de systèmes par automate programmable, permet la maîtrise des technologies
-                                            spécifiques de l’industrie moderne ainsi que tous les aspects liés à la
-                                            commande par calculateur, et aux outils de l’informatique industrielle. De
-                                            part leur formation, ces ingénieurs pourront apporter leur compétence dans
-                                            le développement des applications industrielles qui visent l’amélioration
-                                            des processus de production, la qualité des produits et l’amélioration des
-                                            conditions de travail. Ces ingénieurs pourront exercer leur activité dans
-                                            les unités de production, dans les services de contrôle de qualité, de
-                                            normalisation, d’environnement et dans les laboratoires de recherches ou
-                                            d’études et d’une manière générale, ils participeront à la veille
-                                            technologique.</p>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'industry']"></fa-icon>
-                                            Instrumentation et Maintenance Industrielle (IMI)
-                                        </p>
-                                        <p>La filière Instrumentation et Maintenance Industrielle a pour objectif de
-                                            former des ingénieurs capables d’analyser et de traiter de nombreuses
-                                            mesures imposées par les technologies avancées et assurer dans les
-                                            entreprises les fonctions de maintenance des installations de fabrication,
-                                            des processus de production, de la qualité d’un produit et de son entretien.
-                                            La formation axée sur l’électronique, l’électrotechnique, l’automatique, la
-                                            mécanique, permet la maîtrise des technologies de pointe (microprocesseurs,
-                                            commande numérique, automate programmable, capteurs, etc.). De part leur
-                                            formation, ces ingénieurs pourront apporter leur compétence dans les
-                                            techniques d’instrumentation et d’analyse, l’organisation de la maintenance
-                                            et de la sûreté de fonctionnement et d’une manière générale, ils peuvent
-                                            assurer, dans leur entreprise, la fonction de veille technologique.</p>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'network-wired']"></fa-icon>
-                                            Réseaux Informatiques et Télécommunications (RT)
-                                        </p>
-                                        <p>La filière Réseaux Informatiques et Télécommunications a pour objectif de
-                                            former des ingénieurs dans les domaines de l’informatique intégrant les
-                                            moyens de communication dans les différents aspects de transmission de
-                                            données et les organisations en réseau. Ces ingénieurs peuvent exercer leur
-                                            compétence dans différents domaines de transmission de données, de
-                                            communications locales et à distance, de l’administration des réseaux et
-                                            plus généralement de l’informatique.</p>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'laptop']"></fa-icon>
-                                            Génie Logiciel (GL)
-                                        </p>
-                                        <p>La filière Génie Logiciel a pour objectif de former des ingénieurs maîtrisant
-                                            les méthodes d’analyse et de conduite de projets informatiques ainsi que les
-                                            langages et les outils menant au développement de logiciels. Les futurs
-                                            diplômés de cette filière auront acquis la compétence et l’expérience pour
-                                            suivre et piloter toutes les étapes du cycle de vie d’un projet leur
-                                            permettant ainsi de s’intégrer parfaitement à des équipes de développement,
-                                            ou encore d’assurer la responsabilité de chef de projet.</p>
-                                        <br>
-                                    </li>
-                                    </p>
-                                    </li>
-                                    <li style="margin-top: 10px;">
-                                        <h6> <fa-icon [icon]="['fas', 'microscope']" style="color: #830709;">
-                                        </fa-icon><a href="JavaScript:Void(0);" (click)="switchDisplay(1)"> Les Filières à
-                                                partir du tronc Commun CBA</a>
-
-                                        </h6>
-                                        <p *ngIf="display[1]" [@inOutAnimation]>
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'flask']"></fa-icon>
-                                            Chimie Industrielle (CH)
-                                        </p>
-                                        <p>La filière Chimie Industrielle a pour objectif la formation d’ingénieurs
-                                            aptes à conduire des activités d’analyses physico-chimiques et d’élaboration
-                                            de matériaux. La formation dispensée concerne différents aspects
-                                            scientifiques et technologiques : transfert fluide-solide, échanges
-                                            thermiques et énergétiques, techniques de séparation et de purification,
-                                            régulation et contrôle des procédés. Les ingénieurs peuvent au sein de
-                                            l’industrie chimique et para-chimique apporter leur compétence dans
-                                            l’amélioration et la maintenance des procédés assurant la compétitivité liée
-                                            à la qualité du produit, à la sécurité, à l’utilisation optimale des
-                                            matières premières et des énergies et à la sauvegarde de l’environnement.
-                                        </p>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <p style="color: #830709; font-size: larger; font-weight: normal;">
-                                            <fa-icon [icon]="['fas', 'dna']"></fa-icon>
-                                            Biologie industrielle (BIO)
-                                        </p>
-                                        <p>La filière Biologie industrielle a pour objectif de former des ingénieurs
-                                            aptes à maîtriser les méthodes d’analyses chimiques et biologiques, dans un
-                                            secteur industriel, agroalimentaire ou pharmaceutique. La formation
-                                            dispensée est axée sur l’aspect « procédés » dans différentes spécialités
-                                            (Biochimie, Microbiologie, Génétique, immunologie, Biologie Moléculaire,
-                                            Environnement) et ceci en interaction avec les méthodes de génie biologique
-                                            et chimique. Ces ingénieurs par leur formation polyvalente, apporteront
-                                            leurs compétences dans les bio-industries (amélioration par les procédés
-                                            biotechnologiques de la production animale, végétale et de son
-                                            conditionnement) dans les structures d’analyse biologique et biochimique, ou
-                                            dans les laboratoires d’études et de recherches.</p>
-                                        <br>
-                                    </li>
-                                    </p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- <div class="contact_2_headung">
+    <!--Content Wrap Start-->
+    <div class="kf_content_wrap">
+      <section>
+        <div class="container">
+          <!-- Cursus Formation START -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact_2_headung">
+                <h3>Cursus de Formation</h3>
+                <p>
+                  <li>
+                    <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                    <a href="JavaScript:Void(0);" style="color: #777777; text-align: right" (click)="openPdf(progUrl)"
+                      >Télécharger le programme</a
+                    >
+                  </li>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Docs INSAT END-->
+          <!-- Acces INSAT START -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact_2_headung">
+                <h3>Présentation des filières</h3>
+                <ul>
+                  <li>
+                    <h6>
+                      <fa-icon [icon]="['fas', 'square-root-alt']" style="color: #830709"> </fa-icon>
+                      <a href="JavaScript:Void(0);" (click)="switchDisplay(0)">
+                        Les Filières à partir du tronc Commun MPI</a
+                      >
+                      <br />
+                    </h6>
+                    <p *ngIf="display[0]" [@inOutAnimation]>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'robot']"></fa-icon>
+                          Informatique Industrielle & Automatique (IIA)
+                        </p>
+                        <p>
+                          La filière Informatique industrielle et Automatique a pour objectif de former des ingénieurs
+                          aptes à maîtriser les outils de production automatisées s’appuyant sur des techniques
+                          informatiques de pointe (système temps réel, contrôle, commande, robotique, etc.). La
+                          formation, axée sur l’étude et la mise au point de tous les types d’asservissements, de
+                          robotique, de commande de systèmes par automate programmable, permet la maîtrise des
+                          technologies spécifiques de l’industrie moderne ainsi que tous les aspects liés à la commande
+                          par calculateur, et aux outils de l’informatique industrielle. De part leur formation, ces
+                          ingénieurs pourront apporter leur compétence dans le développement des applications
+                          industrielles qui visent l’amélioration des processus de production, la qualité des produits
+                          et l’amélioration des conditions de travail. Ces ingénieurs pourront exercer leur activité
+                          dans les unités de production, dans les services de contrôle de qualité, de normalisation,
+                          d’environnement et dans les laboratoires de recherches ou d’études et d’une manière générale,
+                          ils participeront à la veille technologique.
+                        </p>
+                        <br />
+                      </li>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'industry']"></fa-icon>
+                          Instrumentation et Maintenance Industrielle (IMI)
+                        </p>
+                        <p>
+                          La filière Instrumentation et Maintenance Industrielle a pour objectif de former des
+                          ingénieurs capables d’analyser et de traiter de nombreuses mesures imposées par les
+                          technologies avancées et assurer dans les entreprises les fonctions de maintenance des
+                          installations de fabrication, des processus de production, de la qualité d’un produit et de
+                          son entretien. La formation axée sur l’électronique, l’électrotechnique, l’automatique, la
+                          mécanique, permet la maîtrise des technologies de pointe (microprocesseurs, commande
+                          numérique, automate programmable, capteurs, etc.). De part leur formation, ces ingénieurs
+                          pourront apporter leur compétence dans les techniques d’instrumentation et d’analyse,
+                          l’organisation de la maintenance et de la sûreté de fonctionnement et d’une manière générale,
+                          ils peuvent assurer, dans leur entreprise, la fonction de veille technologique.
+                        </p>
+                        <br />
+                      </li>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'network-wired']"></fa-icon>
+                          Réseaux Informatiques et Télécommunications (RT)
+                        </p>
+                        <p>
+                          La filière Réseaux Informatiques et Télécommunications a pour objectif de former des
+                          ingénieurs dans les domaines de l’informatique intégrant les moyens de communication dans les
+                          différents aspects de transmission de données et les organisations en réseau. Ces ingénieurs
+                          peuvent exercer leur compétence dans différents domaines de transmission de données, de
+                          communications locales et à distance, de l’administration des réseaux et plus généralement de
+                          l’informatique.
+                        </p>
+                        <br />
+                      </li>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'laptop']"></fa-icon>
+                          Génie Logiciel (GL)
+                        </p>
+                        <p>
+                          La filière Génie Logiciel a pour objectif de former des ingénieurs maîtrisant les méthodes
+                          d’analyse et de conduite de projets informatiques ainsi que les langages et les outils menant
+                          au développement de logiciels. Les futurs diplômés de cette filière auront acquis la
+                          compétence et l’expérience pour suivre et piloter toutes les étapes du cycle de vie d’un
+                          projet leur permettant ainsi de s’intégrer parfaitement à des équipes de développement, ou
+                          encore d’assurer la responsabilité de chef de projet.
+                        </p>
+                        <br />
+                      </li>
+                    </p>
+                  </li>
+                  <li style="margin-top: 10px">
+                    <h6>
+                      <fa-icon [icon]="['fas', 'microscope']" style="color: #830709"> </fa-icon
+                      ><a href="JavaScript:Void(0);" (click)="switchDisplay(1)">
+                        Les Filières à partir du tronc Commun CBA</a
+                      >
+                    </h6>
+                    <p *ngIf="display[1]" [@inOutAnimation]>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'flask']"></fa-icon>
+                          Chimie Industrielle (CH)
+                        </p>
+                        <p>
+                          La filière Chimie Industrielle a pour objectif la formation d’ingénieurs aptes à conduire des
+                          activités d’analyses physico-chimiques et d’élaboration de matériaux. La formation dispensée
+                          concerne différents aspects scientifiques et technologiques : transfert fluide-solide,
+                          échanges thermiques et énergétiques, techniques de séparation et de purification, régulation
+                          et contrôle des procédés. Les ingénieurs peuvent au sein de l’industrie chimique et
+                          para-chimique apporter leur compétence dans l’amélioration et la maintenance des procédés
+                          assurant la compétitivité liée à la qualité du produit, à la sécurité, à l’utilisation
+                          optimale des matières premières et des énergies et à la sauvegarde de l’environnement.
+                        </p>
+                        <br />
+                      </li>
+                      <li>
+                        <p style="color: #830709; font-size: larger; font-weight: normal">
+                          <fa-icon [icon]="['fas', 'dna']"></fa-icon>
+                          Biologie industrielle (BIO)
+                        </p>
+                        <p>
+                          La filière Biologie industrielle a pour objectif de former des ingénieurs aptes à maîtriser
+                          les méthodes d’analyses chimiques et biologiques, dans un secteur industriel, agroalimentaire
+                          ou pharmaceutique. La formation dispensée est axée sur l’aspect « procédés » dans différentes
+                          spécialités (Biochimie, Microbiologie, Génétique, immunologie, Biologie Moléculaire,
+                          Environnement) et ceci en interaction avec les méthodes de génie biologique et chimique. Ces
+                          ingénieurs par leur formation polyvalente, apporteront leurs compétences dans les
+                          bio-industries (amélioration par les procédés biotechnologiques de la production animale,
+                          végétale et de son conditionnement) dans les structures d’analyse biologique et biochimique,
+                          ou dans les laboratoires d’études et de recherches.
+                        </p>
+                        <br />
+                      </li>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="contact_2_headung">
                                 <h3>Plan d’études des filières à partir du tronc commun MPI</h3>
                                 <ul>
                                     <li>
@@ -579,17 +580,13 @@
                                     </li>
                                 </ul>
                             </div> -->
-                        </div>
-                    </div>
-                    <!-- Acces INSAT END-->
-
-                </div>
-            </section>
-
-
+            </div>
+          </div>
+          <!-- Acces INSAT END-->
         </div>
-        <!--Content Wrap End-->
-
+      </section>
     </div>
-    <!--KF KODE WRAPPER WRAP END-->
+    <!--Content Wrap End-->
+  </div>
+  <!--KF KODE WRAPPER WRAP END-->
 </body>

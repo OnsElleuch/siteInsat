@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LaComponent } from './la.component';
+import { QuatreCComponent } from './quatre-c.component';
 
-describe('LaComponent', () => {
-  let component: LaComponent;
-  let fixture: ComponentFixture<LaComponent>;
+describe('QuatreCComponent', () => {
+  let component: QuatreCComponent;
+  let fixture: ComponentFixture<QuatreCComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LaComponent],
+      declarations: [QuatreCComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LaComponent);
+    fixture = TestBed.createComponent(QuatreCComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

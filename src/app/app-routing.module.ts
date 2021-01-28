@@ -12,51 +12,49 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EmploisComponent } from './scolarite/emplois/emplois.component';
 
-const routes: Routes = [{
-  path: '',
-  component: FullLayoutComponent,
-  children: [
-    {
-      path: '',
-      component: HomeComponent
-    },
-    {
-      path: 'insat',
-      component: AboutUsComponent,
-    },
-    {
-      path: 'insat/phyins',
-      component: PhyInsComponent,
-    },
-    {
-      path: 'insat/infmath',
-      component: InfMathComponent,
-    },
-    {
-      path: 'insat/bioch',
-      component: BioChComponent,
-    },
-    {
-      path: 'insat/formgen',
-      component: FormGenComponent,
-    },
-    {
-      path: 'formation',
-      loadChildren: () => import('./formation/formation.module').then(m => m.FormationModule)
-    },
-    {
-
-      path: 'insat/emplois',
-      component: EmploisComponent
-    },
-    {
-      path: '**',
-      component: NotFoundComponent
-    }
-
-
-  ]
-}
+const routes: Routes = [
+  {
+    path: '',
+    component: FullLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+      },
+      {
+        path: 'insat',
+        component: AboutUsComponent,
+      },
+      {
+        path: 'insat/phyins',
+        component: PhyInsComponent,
+      },
+      {
+        path: 'insat/infmath',
+        component: InfMathComponent,
+      },
+      {
+        path: 'insat/bioch',
+        component: BioChComponent,
+      },
+      {
+        path: 'insat/formgen',
+        component: FormGenComponent,
+      },
+      {
+        path: 'formation',
+        loadChildren: () => import('./formation/formation.module').then((m) => m.FormationModule),
+      },
+      {
+        path: 'insat/emplois',
+        component: EmploisComponent,
+      },
+      {
+        path: '**',
+        component: NotFoundComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({

@@ -29,8 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DepartementsModule,
     SharedModule,
     FormationModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule,
   ],
   providers: [AboutUsService, DepartmentService],
   bootstrap: [AppComponent],
