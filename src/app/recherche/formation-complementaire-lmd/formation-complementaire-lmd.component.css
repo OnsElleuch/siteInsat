@@ -1,0 +1,24 @@
+ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0% 2%;
+}
+
+h3 {
+  margin-bottom: 2%;
+}
+h3 ~ p {
+  padding: 0% 2%;
+}
+h6 {
+  margin-bottom: 2%;
+  padding: 0% 2%;
+}
+
+ul.circle li::before {
+  content: '\2027'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #777777; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}

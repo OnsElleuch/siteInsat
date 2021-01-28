@@ -1,0 +1,134 @@
+<div class="kf_inr_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3>Formation complementaire LMD</h3>
+          </div>
+
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="#">Recherche</a></li>
+              <li><a href="#">Formation complementaire LMD</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kf_content_wrap" xmlns="http://www.w3.org/1999/html">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="kf_courses_detail_des">
+            <h3>1. Objectifs</h3>
+            <ul class="circle">
+              <li>Préparer le doctorant à son avenir académique et professionnel.</li>
+              <li>Elargir la culture scientifique du doctorant à des domaines extérieurs à son sujet de thèse.</li>
+              <li>
+                Faire acquérir au doctorant une formation complémentaire dans l’innovation et la valorisation de la
+                recherche scientifique, le management de projet, la création d'entreprise, business plan, etc.
+              </li>
+              <li>Faciliter l'insertion du doctorant dans la vie professionnelle.</li>
+            </ul>
+          </div>
+          <div class="kf_courses_detail_des">
+            <h3>2. Compétences générales que le docteur doit atteindre :</h3>
+            <ul class="circle">
+              <li>
+                Etre capable de mobiliser un esprit d’innovation en faisant preuve de curiosité, en mettant sa
+                créativité et son originalité au service de l’élaboration de solutions innovantes en ayant des regards
+                critiques sur les approches utilisées et sur les autres disciplines.
+              </li>
+              <li>
+                Etre capable de travailler en équipe en collaborant avec des collègues en faisant preuve de respect,
+                d’écoute, de confiance et en se mettant au service d’un collectif pour l’aboutissement d’un projet.
+              </li>
+              <li>
+                Travailler en autonomie en mobilisant sa polyvalence en faisant preuve d’esprit d’initiative et en
+                rendant compte régulièrement de ses progrès.
+              </li>
+              <li>
+                S’adapter à son contexte professionnel, aux personnes à leurs méthodes de travail et à leurs besoins ou
+                demandes.
+              </li>
+              <li>Avoir une méthode pédagogique pour bien communiquer et présenter son travail de recherche.</li>
+              <li>Utiliser une langue étrangère dans son domaine, à l’oral et à l’écrit.</li>
+              <li>Avoir un réseau national et international dans sa discipline.</li>
+              <li>
+                Avoir une idée sur la valorisation des travaux de recherche : propriété intellectuelle, brevet,
+                protection d’un brevet.
+              </li>
+              <li>Savoir mener et encadrer un projet de recherche.</li>
+              <li>
+                Développer des qualités personnelles au service de son engagement professionnel en faisant preuve de
+                patience, et donc de persévérance pour obtenir le succès d’un projet, en répartissant son temps entre
+                activités professionnelles et personnelles.
+              </li>
+            </ul>
+            <br />
+            <h6>MODALITÉS ET MISE EN PLACE</h6>
+            <p>La formation doctorale complémentaire est composée de 3 Unités de Formation Doctorale (UFD) :</p>
+            <ul>
+              <li>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                Développement de Compétences Transversales (DCT)
+              </li>
+              <li>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                Méthodologie de Communication en Recherche (MCR)
+              </li>
+              <li>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                Formation Scientifique Spécialisée (FSS)
+              </li>
+            </ul>
+            <br />
+            <p>
+              Le doctorant doit assurer pendant sa thèse les 30 points de crédit parmi les activités rapportées dans
+              <a style="color: #777777" href=""> <b>le tableau (Domaines de la Formation Doctorale de l'INSAT).</b></a>
+            </p>
+            <p>
+              * Durant les années de thèse, le doctorant en cotutelle (ou en stage) pourra suivre des formations
+              scientifiques à l’étranger. Une pièce justificative doit être remise à la direction de l’Ecole Doctorale
+              comportant la signature de ses directeurs de thèse.
+            </p>
+            <p>
+              * Pour la Formation Scientifique Spécialisée (FSS), le doctorant pourra suivre des modules dans d’autres
+              Ecoles Doctorales après l’avis de son directeur de thèse.
+            </p>
+          </div>
+          <div class="kf_courses_detail_des">
+            <h3>3. Validations des crédits de la formation complémentaire:</h3>
+            <ul>
+              <li>
+                La commission de thèse validera les groupes de formations complémentaires comprenant trente (30) crédits
+                de la totalité de cent quatre vingt (180) crédits (150 crédits sont attribués à la thèse).
+              </li>
+              <li>
+                Pour une meilleure visibilité de l’avancement de la thèse, le doctorant doit valider au moins 80% des 30
+                crédits durant les deux premières années de la thèse, ce qui lui permettra de soutenir sa thèse après
+                trois ans (au maximum quatre ans).
+              </li>
+            </ul>
+            <p>Veuillez télécharger le fichiers ci_dessous:</p>
+            <ul class="circle">
+              <div *ngFor="let fiche of fiches">
+                <li>
+                  <a (click)="openPdf(fiche.url)" href="JavaScript:Void(0);" style="color: #777777; text-align: right">
+                    {{ fiche.name }}</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

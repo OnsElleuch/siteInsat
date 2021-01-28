@@ -1,0 +1,179 @@
+<div class="kf_inr_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3>Ecole doctorale</h3>
+          </div>
+
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="#">Recherche</a></li>
+              <li><a href="#">Ecole doctorale</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kf_content_wrap">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="kf_courses_detail_des">
+            <p><b>Directeur :</b> Pr. Naceur Mohamed Saber</p>
+            <p><b>Chef de service informatique:</b> M. Slim Khélifi</p>
+            <p><b>Chef de service des moyens pédagogiques:</b> M. Tayeb Touili</p>
+            <p><b>Reponsable Administratif:</b> Mme. Souhir Harrar</p>
+            <p><b>Responsable Financier:</b> M. Meher Ferchichi</p>
+            <p><b>Assistante de direction:</b> Mlle. Chaima Trabelsi</p>
+            <p><b>Agent Administratif:</b> M. Ramzi Saadi</p>
+          </div>
+          <div class="study_table_wrap">
+            <h3>COMITE SCIENTIFIQUE ET PEDAGOGIQUE</h3>
+            <!--  TABLE  START -->
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Grade</th>
+                  <th>Qualité</th>
+                  <th>Etablissement</th>
+                  <th>Université</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let enseignant of comiteScientifique">
+                  <tr>
+                    <td>{{ comiteScientifique.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.qualite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+          </div>
+          <div class="study_table_wrap">
+            <h3>Les commissions de thèse de doctorat</h3>
+            <br />
+            <h6>Electronique</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Grade</th>
+                  <th>Structure de Recherche</th>
+                  <th>Département</th>
+                  <th>Etablissement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let enseignant of commissionTheseElectronique">
+                  <tr>
+                    <td>{{ commissionTheseElectronique.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.structureRecherche }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+            <h6>Informatique Indistruelle</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Grade</th>
+                  <th>Structure de Recherche</th>
+                  <th>Département</th>
+                  <th>Etablissement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let enseignant of commissionTheseInformatiqueIndistruelle">
+                  <tr>
+                    <td>{{ commissionTheseInformatiqueIndistruelle.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.structureRecherche }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+            <h6>Chimie Appliqué</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Grade</th>
+                  <th>Structure de Recherche</th>
+                  <th>Département</th>
+                  <th>Etablissement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let enseignant of commissionTheseChimie">
+                  <tr>
+                    <td>{{ commissionTheseChimie.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.structureRecherche }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+            <h6>Génie Biologie</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Grade</th>
+                  <th>Structure de Recherche</th>
+                  <th>Département</th>
+                  <th>Etablissement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let enseignant of commissionTheseBiologie">
+                  <tr>
+                    <td>{{ commissionTheseBiologie.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.structureRecherche }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+          </div>
+          <div class="study_table_wrap">
+            <h3>Thèses soutenues 2019/2020</h3>
+            <br />
+            <h6>En Cotutelle :</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

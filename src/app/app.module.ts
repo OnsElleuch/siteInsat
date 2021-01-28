@@ -15,6 +15,7 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { RechercheModule } from './recherche/recherche.module';
 
 @NgModule({
   declarations: [AppComponent, FullLayoutComponent, HomeComponent, AboutUsComponent, NotFoundComponent],
@@ -26,6 +27,7 @@ import { DepartmentService } from './shared/services/department.service';
     CommonModule,
     DepartementsModule,
     SharedModule,
+    RechercheModule,
   ],
   providers: [AboutUsService, DepartmentService],
   bootstrap: [AppComponent],
