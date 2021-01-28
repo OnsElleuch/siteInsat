@@ -11,6 +11,7 @@ import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EmploisComponent } from './scolarite/emplois/emplois.component';
+import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path: 'insat/emplois',
         component: EmploisComponent,
+      },
+      {
+        path: 'relations-externes',
+        component: RelationsExternesComponent,
       },
       {
         path: '**',

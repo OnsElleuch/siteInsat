@@ -15,9 +15,17 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 
 @NgModule({
-  declarations: [AppComponent, FullLayoutComponent, HomeComponent, AboutUsComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    FullLayoutComponent,
+    HomeComponent,
+    AboutUsComponent,
+    NotFoundComponent,
+    RelationsExternesComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
