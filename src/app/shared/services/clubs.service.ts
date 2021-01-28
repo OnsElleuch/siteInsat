@@ -3,22 +3,22 @@ import { HttpClient } from '@angular/common/http';
 import { GenericService } from './generic.service';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { Event } from '../models/event';
+import { Club } from '../models/Club';
 
 
 @Injectable({
-    providedIn: 'root'
-  })
+  providedIn: 'root'
+})
 export class EvenmentsService extends GenericService {
 
   constructor(private http: HttpClient) {
     super();
   }
-  getEvents(): Observable<Event[]> {
-    return this.http.get<Event[]>(environment.baseUrl + 'evenments/getEvents');
+  getClubs(): Observable<Club[]> {
+    return this.http.get<Club[]>(environment.baseUrl + 'clubs/getClubs');
   }
-  getEventById(): Observable<Event> {
-    return this.http.get<Event>(environment.baseUrl + 'evenments/getEventById');
+  getClubById(): Observable<Club> {
+    return this.http.get<Club>(environment.baseUrl + 'clubs/getClubById');
   }
   
   
