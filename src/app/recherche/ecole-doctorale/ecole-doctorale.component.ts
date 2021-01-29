@@ -27,6 +27,7 @@ export class EcoleDoctoraleComponent implements OnInit {
   commissionTheseInformatiqueIndistruelle: Enseignant[];
   commissionTheseChimie: Enseignant[];
   commissionTheseElectronique: Enseignant[];
+  cotutelle;
   constructor(private enseignantsService: EnseignantService) {}
 
   ngOnInit(): void {}

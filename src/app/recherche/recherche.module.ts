@@ -8,6 +8,8 @@ import { InscriptionTheseComponent } from './inscription-these/inscription-these
 import { DepotDossierTheseComponent } from './depot-dossier-these/depot-dossier-these.component';
 import { DossierMissionStageComponent } from './dossier-mission-stage/dossier-mission-stage.component';
 import { LabosComponent } from './labos/labos.component';
+import { CollaborationsInternationallesComponent } from './collaborations-internationalles/collaborations-internationalles.component';
+import { BrevetInventionComponent } from './brevet-invention/brevet-invention.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { LabosComponent } from './labos/labos.component';
     DepotDossierTheseComponent,
     DossierMissionStageComponent,
     LabosComponent,
+    CollaborationsInternationallesComponent,
+    BrevetInventionComponent,
   ],
   imports: [FontAwesomeModule, CommonModule],
 })

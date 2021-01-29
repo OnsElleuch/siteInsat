@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscriptionTheseComponent implements OnInit {
   constructor() {}
+
   anneeScolaire: string;
 
-  getAneescolaire;
-
   ngOnInit(): void {
+    this.getAneeScolaire();
+  }
+
+  openPdf(url: string): void {
+    window.open(url, '_blank');
+  }
+
+  getAneeScolaire(): void {
     const annee = new Date().getFullYear();
     const month = new Date().getMonth() + 1;
     if (month <= 7) {
@@ -19,8 +26,5 @@ export class InscriptionTheseComponent implements OnInit {
     } else {
       this.anneeScolaire = annee.toString() + '-' + (annee + 1).toString();
     }
-  }
-  openPdf(url: string): void {
-    window.open(url, '_blank');
   }
 }

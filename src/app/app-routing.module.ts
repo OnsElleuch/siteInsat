@@ -17,6 +17,8 @@ import { InscriptionTheseComponent } from './recherche/inscription-these/inscrip
 import { DossierMissionStageComponent } from './recherche/dossier-mission-stage/dossier-mission-stage.component';
 import { DepotDossierTheseComponent } from './recherche/depot-dossier-these/depot-dossier-these.component';
 import { LabosComponent } from './recherche/labos/labos.component';
+import { CollaborationsInternationallesComponent } from './recherche/collaborations-internationalles/collaborations-internationalles.component';
+import { BrevetInventionComponent } from './recherche/brevet-invention/brevet-invention.component';
 
 const routes: Routes = [
   {
@@ -74,6 +76,14 @@ const routes: Routes = [
       {
         path: 'insat/recherche/labos',
         component: LabosComponent,
+      },
+      {
+        path: 'insat/recherche/collaboration-internationnalles',
+        component: CollaborationsInternationallesComponent,
+      },
+      {
+        path: 'insat/recherche/brevets',
+        component: BrevetInventionComponent,
       },
       {
         path: '**',
