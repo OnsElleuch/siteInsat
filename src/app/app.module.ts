@@ -32,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     DepartementsModule,
     SharedModule,
-    ScolariteModule
+    ScolariteModule,
     FormationModule,
     BrowserAnimationsModule,
 
