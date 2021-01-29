@@ -12,8 +12,8 @@ import { Convention } from '../shared/models/convention.model';
 export class RelationsExternesComponent implements OnInit {
   tablist = [true, false, false, false, false, false];
 
-  partenariats: Partenariat[];
-  conventions: Convention[];
+  partenariats: any;
+  conventions: any;
   docsAdmin: Ressource[];
   docsLicense: Ressource[];
   docsMastere: Ressource[];
@@ -30,8 +30,12 @@ export class RelationsExternesComponent implements OnInit {
     this.docsLicense = this.relationsService.getDocsLicense();
     this.docsMastere = this.relationsService.getDocsMastere();
     this.docsIngenieur = this.relationsService.getDocsIngenieur();
-    this.partenariats = this.relationsService.getPartenariats();
-    this.conventions = this.relationsService.getConventions();
+    this.relationsService.getPartenariats().subscribe((partenariats) => {
+      this.partenariats = partenariats;
+    });
+    this.relationsService.getConventions().subscribe((conventions) => {
+      this.conventions = conventions;
+    });
   }
 
   changeActiveTab(tab: number) {
