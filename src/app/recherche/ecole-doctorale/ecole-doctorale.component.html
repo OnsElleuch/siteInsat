@@ -5,7 +5,7 @@
         <!--KF INR BANNER DES Wrap Start-->
         <div class="kf_inr_ban_des">
           <div class="inr_banner_heading">
-            <h3>Ecole doctorale</h3>
+            <h3 style="color: white">Ecole doctorale</h3>
           </div>
 
           <div class="kf_inr_breadcrumb">
@@ -50,16 +50,14 @@
                 </tr>
               </thead>
               <tbody>
-                <div *ngFor="let enseignant of comiteScientifique">
-                  <tr>
-                    <td>{{ comiteScientifique.indexOf(enseignant) + 1 }}</td>
-                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                    <td>{{ enseignant.grade }}</td>
-                    <td>{{ enseignant.qualite }}</td>
-                    <td>{{ enseignant.etablissement }}</td>
-                    <td>{{ enseignant.universite }}</td>
-                  </tr>
-                </div>
+                <tr *ngFor="let enseignant of comiteScientifique">
+                  <td>{{ comiteScientifique.indexOf(enseignant) + 1 }}</td>
+                  <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                  <td>{{ enseignant.grade }}</td>
+                  <td>{{ enseignant.qualite }}</td>
+                  <td>{{ enseignant.etablissement }}</td>
+                  <td>{{ enseignant.universite }}</td>
+                </tr>
               </tbody>
             </table>
           </div>

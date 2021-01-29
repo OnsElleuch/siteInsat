@@ -16,6 +16,7 @@ import { FormationComplementaireLmdComponent } from './recherche/formation-compl
 import { InscriptionTheseComponent } from './recherche/inscription-these/inscription-these.component';
 import { DossierMissionStageComponent } from './recherche/dossier-mission-stage/dossier-mission-stage.component';
 import { DepotDossierTheseComponent } from './recherche/depot-dossier-these/depot-dossier-these.component';
+import { LabosComponent } from './recherche/labos/labos.component';
 
 const routes: Routes = [
   {
@@ -69,6 +70,10 @@ const routes: Routes = [
       {
         path: 'insat/recherche/dossier-mission-stage',
         component: DossierMissionStageComponent,
+      },
+      {
+        path: 'insat/recherche/labos',
+        component: LabosComponent,
       },
       {
         path: '**',

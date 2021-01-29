@@ -12,8 +12,4 @@ export class EnseignantService {
   getEnseignants(): Enseignant[] {
     return this.enseignants;
   }
-
-  getResponsableEcoleDoctorale(): Enseignant[] {
-    return this.enseignants.filter((enseignant) => enseignant.posteAdministratif.includes('ecole doctorale'));
-  }
 }

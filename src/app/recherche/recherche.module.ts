@@ -7,6 +7,7 @@ import { faAtom, faCheck, faLaptopCode, faMicroscope } from '@fortawesome/free-s
 import { InscriptionTheseComponent } from './inscription-these/inscription-these.component';
 import { DepotDossierTheseComponent } from './depot-dossier-these/depot-dossier-these.component';
 import { DossierMissionStageComponent } from './dossier-mission-stage/dossier-mission-stage.component';
+import { LabosComponent } from './labos/labos.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { DossierMissionStageComponent } from './dossier-mission-stage/dossier-mi
     InscriptionTheseComponent,
     DepotDossierTheseComponent,
     DossierMissionStageComponent,
+    LabosComponent,
   ],
   imports: [FontAwesomeModule, CommonModule],
 })

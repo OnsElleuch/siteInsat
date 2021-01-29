@@ -8,15 +8,26 @@ import { EnseignantService } from '../../shared/services/enseignant.service';
   styleUrls: ['./ecole-doctorale.component.css'],
 })
 export class EcoleDoctoraleComponent implements OnInit {
-  responsables: Enseignant[];
-  comiteScientifique: Enseignant[];
+  responsables;
+  comiteScientifique = [
+    {
+      email: '',
+      name: 'Mohamed  Saber',
+      lastName: 'Naceur',
+      discipline: '',
+      department: '',
+      grade: 'Pr.',
+      qualite: 'Directeur Ecole Doctorale',
+      etablissement: 'UCAR',
+      universite: 'UCAR',
+      structureRecherche: '',
+    },
+  ];
   commissionTheseBiologie: Enseignant[];
   commissionTheseInformatiqueIndistruelle: Enseignant[];
   commissionTheseChimie: Enseignant[];
   commissionTheseElectronique: Enseignant[];
   constructor(private enseignantsService: EnseignantService) {}
 
-  ngOnInit(): void {
-    this.responsables = this.enseignantsService.getResponsableEcoleDoctorale();
-  }
+  ngOnInit(): void {}
 }
