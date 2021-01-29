@@ -5737,3 +5737,20 @@ input:checked + .radio-value {
 .kf_courses_detail_des > p > li > a > fa-icon {
   margin-right: 2px;
 }
+h6 > a:hover {
+  text-decoration: underline;
+  color: #830709;
+}
+
+.formation-display {
+  transition: 1s all ease-in-out;
+}
+.formation-table > tr > th,
+.formation-table > tr > td {
+  text-align: center;
+  font-size: small;
+  font-weight: normal;
+}
+.licences > li {
+  margin-top: 10px;
+}

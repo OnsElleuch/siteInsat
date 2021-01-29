@@ -42,6 +42,10 @@ const routes: Routes = [
         component: FormGenComponent,
       },
       {
+        path: 'formation',
+        loadChildren: () => import('./formation/formation.module').then((m) => m.FormationModule),
+      },
+      {
         path: 'insat/emplois',
         component: EmploisComponent,
       },
