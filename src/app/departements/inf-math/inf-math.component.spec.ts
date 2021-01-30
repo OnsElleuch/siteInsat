@@ -8,9 +8,8 @@ describe('InfMathComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InfMathComponent ]
-    })
-    .compileComponents();
+      declarations: [InfMathComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

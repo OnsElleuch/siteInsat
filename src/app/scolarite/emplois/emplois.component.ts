@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {Ressource} from '../../shared/models/ressource';
-import {EmploisService} from '../../shared/services/emplois.service';
+import { Component, OnInit } from '@angular/core';
+import { Ressource } from '../../shared/models/ressource';
+import { EmploisService } from '../../shared/services/emplois.service';
 
 @Component({
   selector: 'app-emplois',
   templateUrl: './emplois.component.html',
-  styleUrls: ['./emplois.component.css']
+  styleUrls: ['./emplois.component.css'],
 })
 export class EmploisComponent implements OnInit {
   currDiv: string;
@@ -18,8 +18,7 @@ export class EmploisComponent implements OnInit {
   EmploiBIO: Ressource[];
   EmploiCH: Ressource[];
 
-  constructor(private emploisService: EmploisService) {
-  }
+  constructor(private emploisService: EmploisService) {}
 
   ngOnInit(): void {
     this.EmploiBIO = this.emploisService.getBIO();
@@ -37,8 +36,7 @@ export class EmploisComponent implements OnInit {
     this.currDiv = divVal;
     console.log(this.currDiv);
   }
-  openPdf(url: string){
+  openPdf(url: string): void {
     window.open(url, '_blank');
   }
 }
-

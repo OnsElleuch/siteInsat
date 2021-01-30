@@ -4,20 +4,18 @@ import { Lab } from 'src/app/shared/models/lab';
 
 import { DepartmentService } from 'src/app/shared/services/department.service';
 
-
 @Component({
   selector: 'app-phy-ins',
   templateUrl: './phy-ins.component.html',
-  styleUrls: ['./phy-ins.component.css']
+  styleUrls: ['./phy-ins.component.css'],
 })
 export class PhyInsComponent implements OnInit {
   labs: Lab[] = [];
-  professeurs : Enseignant [] = [];
-  maitresConf : Enseignant [] = [];
-  maitresAss : Enseignant [] = [];
-  constructor(private departmentService : DepartmentService) { }
+  professeurs: Enseignant[] = [];
+  maitresConf: Enseignant[] = [];
+  maitresAss: Enseignant[] = [];
+  constructor(private departmentService: DepartmentService) {}
   tablist = [true, false, false];
-  
 
   ngOnInit(): void {
     this.getLabs();
@@ -26,35 +24,32 @@ export class PhyInsComponent implements OnInit {
     this.getMaitresAss();
   }
   getProfesseurs() {
-    this.departmentService.getProfesseurs('GPI').subscribe(data => {
+    this.departmentService.getProfesseurs('GPI').subscribe((data) => {
       this.professeurs = data;
     });
   }
   getMaitresConf() {
-    this.departmentService.getMaitreConf('GPI').subscribe(data => {
+    this.departmentService.getMaitreConf('GPI').subscribe((data) => {
       this.maitresConf = data;
     });
   }
   getMaitresAss() {
-    this.departmentService.getMaitreAss('GPI').subscribe(data => {
+    this.departmentService.getMaitreAss('GPI').subscribe((data) => {
       this.maitresAss = data;
     });
   }
-  changeActiveTab(tab : number){
+  changeActiveTab(tab: number) {
     this.tablist.forEach((value, index) => {
-      if(index == tab) {
+      if (index == tab) {
         this.tablist[index] = true;
-      }
-      else {
+      } else {
         this.tablist[index] = false;
       }
     });
   }
-  getLabs(){
-    this.departmentService.getLabs('GPI').subscribe(data => {
+  getLabs() {
+    this.departmentService.getLabs('GPI').subscribe((data) => {
       this.labs = data;
     });
-    
   }
-
 }

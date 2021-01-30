@@ -11,6 +11,7 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faAtom, faCheck, faLaptopCode, faMicroscope } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
 import { DepartementsModule } from './departements/departements.module';
+import { ScolariteModule } from './scolarite/scolarite.module';
 import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +23,11 @@ import { NewsEventTemplateComponent } from './news-event-template/news-event-tem
 import { ClubsComponent } from './clubs/clubs.component';
 import { CardClubComponent } from './card-club/card-club.component';
 import { ClubTemplateComponent } from './club-template/club-template.component';
+import { RechercheModule } from './recherche/recherche.module';
+import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
+import { EmploisService } from './shared/services/emplois.service';
+import { FormationModule } from './formation/formation.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,6 +43,7 @@ import { ClubTemplateComponent } from './club-template/club-template.component';
     ClubsComponent,
     CardClubComponent,
     ClubTemplateComponent,
+    RelationsExternesComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,14 +52,17 @@ import { ClubTemplateComponent } from './club-template/club-template.component';
     FontAwesomeModule,
     CommonModule,
     DepartementsModule,
-    SharedModule
-    
+    SharedModule,
+    RechercheModule,
+    ScolariteModule,
+    FormationModule,
+    BrowserAnimationsModule,
   ],
-  providers: [AboutUsService, DepartmentService],
-  bootstrap: [AppComponent]
+  providers: [AboutUsService, DepartmentService, EmploisService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(library: FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope );
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope);
   }
 }

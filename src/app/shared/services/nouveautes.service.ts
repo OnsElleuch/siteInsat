@@ -5,12 +5,10 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { News } from '../models/news';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NouveautesService extends GenericService {
-
   constructor(private http: HttpClient) {
     super();
   }
@@ -20,8 +18,4 @@ export class NouveautesService extends GenericService {
   getNewsById(): Observable<News> {
     return this.http.get<News>(environment.baseUrl + 'nouveautes/getNewsById');
   }
-  
-  
-  
-
 }
