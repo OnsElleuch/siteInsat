@@ -8,6 +8,7 @@ declare var jQuery: any;
 })
 export class FullLayoutComponent implements OnInit {
   constructor() {}
+  cellule = '/assets/upload/cellule_qualité.pdf';
 
   ngOnInit(): void {}
   initCarousel(className: string, timeout) {
@@ -36,5 +37,8 @@ export class FullLayoutComponent implements OnInit {
         itemsMobile: [400, 1], // itemsMobile disabled - inherit from itemsTablet option
       });
     }, timeout);
+  }
+  openPdf(url: string) {
+    window.open(url, '_blank');
   }
 }

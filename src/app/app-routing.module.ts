@@ -20,6 +20,7 @@ import { LaboratoiresRechercheComponent } from './recherche/laboratiores-recherc
 import { CollaborationsInternationallesComponent } from './recherche/collaborations-internationalles/collaborations-internationalles.component';
 import { BrevetInventionComponent } from './recherche/brevet-invention/brevet-invention.component';
 import { ProductionScientifiqueComponent } from './recherche/production-scientifique/production-scientifique.component';
+import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 
 const routes: Routes = [
   {
@@ -51,8 +52,12 @@ const routes: Routes = [
         component: FormGenComponent,
       },
       {
+        path: 'formation',
+        loadChildren: () => import('./formation/formation.module').then((m) => m.FormationModule),
+      },
+      {
         path: 'insat/emplois',
-        component: EmploisComponent,
+        component: EmploisComponent
       },
       {
         path: 'insat/recherche/ecole-doctorale',
@@ -88,7 +93,11 @@ const routes: Routes = [
       },
       {
         path: 'insat/recherche/production-scientifique',
-        component: ProductionScientifiqueComponent,
+        component: ProductionScientifiqueComponent
+      },
+      {
+        path: 'relations-externes',
+        component: RelationsExternesComponent,
       },
       {
         path: '**',
