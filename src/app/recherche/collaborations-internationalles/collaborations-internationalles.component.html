@@ -1,0 +1,49 @@
+<div class="kf_inr_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3 style="color: white">Collaborations Internationalles</h3>
+          </div>
+
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="#">Recherche</a></li>
+              <li><a href="#">Collaborations Internationalles</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kf_content_wrap" xmlns="http://www.w3.org/1999/html">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Conventions avec des organismes inetrnationaux</h3>
+          <div class="study_table_wrap d-flex justify-content-center">
+            <table class="table table-bordered col-md-8">
+              <thead>
+                <tr>
+                  <th>Institutions partenaires</th>
+                  <th>Domaine de collaboration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let convention of conventions">
+                  <td>{{ convention.etranger }}</td>
+                  <td>{{ convention.sujet }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
