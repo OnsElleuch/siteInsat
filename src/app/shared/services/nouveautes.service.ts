@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { GenericService } from './generic.service';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { News } from '../models/News';
+import { News } from '../models/news';
 
 
 @Injectable({

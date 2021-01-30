@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Club } from '../shared/models/club';
-import { Event } from '../shared/models/Event';
+import { Event } from '../shared/models/event';
 import { ClubTemplateService } from '../shared/services/club-template.service';
 import { environment } from 'src/environments/environment';
 import {Subscription} from 'rxjs';
