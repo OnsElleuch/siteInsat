@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Ressource } from '../models/ressource';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {environment} from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -296,7 +299,7 @@ export class EmploisService {
     },
   ];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getMPI(): Ressource[] {
     return this.emlpois.filter((filiere) => filiere.name.includes('MPI'));
@@ -330,7 +333,7 @@ export class EmploisService {
     return this.emlpois.filter((filiere) => filiere.name.includes('CH'));
   }
 
-  getEmplois(): Ressource[] {
-    return this.emlpois;
+  getEmplois(): Observable<Ressource[]> {
+    return this.http.get<Ressource[]>(environment.baseUrl + 'rendez-vous/calendrier');
   }
 }
