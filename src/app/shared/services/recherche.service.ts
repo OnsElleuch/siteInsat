@@ -238,7 +238,7 @@ export class RechercheService extends GenericService {
   }
 
   getConventions(): Observable<Convention[]> {
-    return this.http.get<Convention[]>(environment.baseUrl + 'convention/getConventions');
+    return this.http.get<Convention[]>(environment.baseUrl + 'convention');
   }
 
   getFiches(): Ressource[] {
