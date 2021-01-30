@@ -1,0 +1,44 @@
+<div class="kf_inr_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3 style="color: white">Productions Scientifique</h3>
+          </div>
+
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="#">Recherche</a></li>
+              <li><a href="#">Productions Scientifique</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kf_content_wrap" xmlns="http://www.w3.org/1999/html">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="kf_courses_detail_des">
+            <p>
+              Afin de mieux faire connaître sa production scientifique et d’encourager les échanges entre chercheurs, la
+              direction de l'école doctorale met à disposition différents types de productions scientifiques issues de
+              ses activités de recherche.
+            </p>
+
+            <h6>Liste des Publications Scientifiques:</h6>
+            <ul class="circle">
+              <li *ngFor="let article of articles">{{ article.content }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,99 @@
+<div class="kf_inr_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--KF INR BANNER DES Wrap Start-->
+        <div class="kf_inr_ban_des">
+          <div class="inr_banner_heading">
+            <h3 style="color: white">Laboratoires et unités de recherche</h3>
+          </div>
+
+          <div class="kf_inr_breadcrumb">
+            <ul>
+              <li><a href="#">Recherche</a></li>
+              <li><a href="#">Laboratoires et unités de recherche</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--KF INR BANNER DES Wrap End-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kf_content_wrap">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="study_table_wrap">
+            <h3>LABORATOIRES DE RECHERCHE</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Laboratoire de recherche</th>
+                  <th>Code</th>
+                  <th>Etablissement</th>
+                  <th>Nom du responsable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let labos of laboratoires">
+                  <td>{{ labos.name }}</td>
+                  <td>{{ labos.code }}</td>
+                  <td>{{ labos.etablissement }}</td>
+                  <td>{{ labos.responsable }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="study_table_wrap">
+            <h3>UNITES DE RECHERCHE</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Unités de recherche</th>
+                  <th>Code</th>
+                  <th>Etablissement</th>
+                  <th>Nom du responsable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let unit of uniteRecherche">
+                  <td>{{ unit.name }}</td>
+                  <td>{{ unit.code }}</td>
+                  <td>{{ unit.etablissement }}</td>
+                  <td>{{ unit.responsable }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="study_table_wrap">
+            <h3>Les projets de recherche à l’INSAT</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Cadre du projet</th>
+                  <th>Année de création</th>
+                  <th>Code</th>
+                  <th>Titre du projet</th>
+                  <th>Résponsable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let projet of projects">
+                  <td>{{ projet.cadre }}</td>
+                  <td>{{ projet.anneeCreation }}</td>
+                  <td>{{ projet.code }}</td>
+                  <td>{{ projet.titre }}</td>
+                  <td>{{ projet.responsable }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
