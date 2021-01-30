@@ -16,14 +16,21 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 import { EmploisService} from './shared/services/emplois.service';
-
 import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [AppComponent, FullLayoutComponent, HomeComponent, AboutUsComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    FullLayoutComponent,
+    HomeComponent,
+    AboutUsComponent,
+    NotFoundComponent,
+    RelationsExternesComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
