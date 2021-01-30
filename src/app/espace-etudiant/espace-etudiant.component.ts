@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EspaceEtudiantService } from '../shared/services/espace-etudiant.service';
 declare var jQuery: any;
 
 @Component({
@@ -7,136 +8,32 @@ declare var jQuery: any;
   styleUrls: ['./espace-etudiant.component.css'],
 })
 export class EspaceEtudiantComponent implements OnInit {
-  constructor() {}
+  constructor(private espaceEtudiantService: EspaceEtudiantService) {}
   Notes: any;
   Calendrier: any;
+  CalendrierData: any;
 
   ngOnInit(): void {
-    this.Notes = this.getNotes();
-    this.Calendrier = this.getCalendrier();
+    this.getNotes();
+    this.getCalendrier();
+  }
+  getCalenderInfo() {
+    this.espaceEtudiantService.getCalendrier().subscribe((data) => {
+      this.initCarousel9('owl-demo-999', 50);
+      console.log(data);
+      this.Calendrier = data;
+    });
   }
   getNotes() {
-    this.initCarousel9('owl-demo-99', 50);
-    return [
-      {
-        title: 'Deliberation semestre 1:',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Consulter relevée de notes:',
-        fields: [
-          {
-            fieldName: 'etudiant :',
-            fieldContent: ' elleuch sami ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Consulter dernier affichage:',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Deliberation semestre 1:',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-    ];
+    this.espaceEtudiantService.getNotes().subscribe((data) => {
+      this.initCarousel9('owl-demo-99', 50);
+      console.log(data);
+      this.Notes = data;
+    });
   }
 
   getCalendrier() {
-    this.initCarousel9('owl-demo-999', 50);
-    return [
-      {
-        title: 'Emploi du temps:',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Repartition TP',
-        fields: [
-          {
-            fieldName: 'etudiant :',
-            fieldContent: ' elleuch sami ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Repartition Examen',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-      {
-        title: 'Deliberation semestre 1:',
-        fields: [
-          {
-            fieldName: 'Class :',
-            fieldContent: ' GL4 ',
-          },
-          {
-            fieldName: 'Annee universitaires ::',
-            fieldContent: '2021/2022 ',
-          },
-        ],
-        link: '#',
-      },
-    ];
+    this.getCalenderInfo();
   }
   initCarousel9(className: string, timeout) {
     const carousel = jQuery('#' + className);

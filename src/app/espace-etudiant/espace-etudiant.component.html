@@ -108,21 +108,30 @@
               <div class="kode-text-modified">
                 <div class="row align-items-center">
                   <div class="col text-center">
-                    <h5 class="sliderTitle">{{ note.title }}</h5>
+                    <h5 class="sliderTitle">{{ note.name }}</h5>
                   </div>
                 </div>
-                <div *ngFor="let field of note.fields" class="row align-items-center">
+                <div class="row align-items-center">
                   <div class="col">
                     <p>
-                      <span class="bold">{{ field.fieldName }}</span
-                      >{{ field.fieldContent }}
+                      <span *ngIf="note.type == 'etudiant'" class="bold"> Etudiant </span>
+                      <span *ngIf="note.type != 'etudiant'" class="bold"> Class </span>{{ note.details }}
+                    </p>
+                    <hr />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p>
+                      <span class="bold">Date </span>
+                      {{ note.date }}
                     </p>
                     <hr />
                   </div>
                 </div>
 
                 <div class="col align-self-center text-center">
-                  <a class="btn-3 text-center" [href]="note.link">Telecharger</a>
+                  <a class="btn-3 text-center" [href]="note.pdfUrl">Telecharger</a>
                 </div>
               </div>
             </div>
@@ -161,21 +170,30 @@
                 <div class="kode-text-modified">
                   <div class="row align-items-center">
                     <div class="col text-center">
-                      <h5 class="sliderTitle">{{ note.title }}</h5>
+                      <h5 class="sliderTitle">{{ note.name }}</h5>
                     </div>
                   </div>
-                  <div *ngFor="let field of note.fields" class="row align-items-center">
+                  <div class="row align-items-center">
                     <div class="col">
                       <p>
-                        <span class="bold">{{ field.fieldName }}</span
-                        >{{ field.fieldContent }}
+                        <span *ngIf="note.type == 'etudiant'" class="bold"> Etudiant </span>
+                        <span *ngIf="note.type != 'etudiant'" class="bold"> Class </span>{{ note.details }}
+                      </p>
+                      <hr />
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <p>
+                        <span class="bold">Date </span>
+                        {{ note.date }}
                       </p>
                       <hr />
                     </div>
                   </div>
 
                   <div class="col align-self-center text-center">
-                    <a class="btn-3 text-center" [href]="note.link">Telecharger</a>
+                    <a class="btn-3 text-center" [href]="note.pdfUrl">Telecharger</a>
                   </div>
                 </div>
               </div>

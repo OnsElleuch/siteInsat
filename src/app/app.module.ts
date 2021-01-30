@@ -23,6 +23,7 @@ import { RelationsExternesComponent } from './relations-externes/relations-exter
 import { EmploisService } from './shared/services/emplois.service';
 import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EspaceEtudiantService } from './shared/services/espace-etudiant.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormationModule,
     BrowserAnimationsModule,
   ],
-  providers: [AboutUsService, DepartmentService, EmploisService],
+  providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
