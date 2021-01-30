@@ -14,7 +14,7 @@ export class BrevetInventionComponent implements OnInit {
   constructor(private rechercheService: RechercheService) {}
 
   ngOnInit(): void {
-    this.brevets = this.rechercheService.getBrevets();
+    this.rechercheService.getBrevets().subscribe((brevets) => (this.brevets = brevets));
     this.getInventeurs();
   }
 

@@ -64,111 +64,84 @@
           <div class="study_table_wrap">
             <h3>Les commissions de thèse de doctorat</h3>
             <br />
-            <h6>Electronique</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>N°</th>
-                  <th>Nom et prénom</th>
-                  <th>Grade</th>
-                  <th>Structure de Recherche</th>
-                  <th>Département</th>
-                  <th>Etablissement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <div *ngFor="let enseignant of commissionTheseElectronique">
+            <div *ngFor="let domaine of domaineRecherche">
+              <h6>{{ setCommission(domaine) }}</h6>
+              <table class="table table-bordered">
+                <thead>
                   <tr>
-                    <td>{{ commissionTheseElectronique.indexOf(enseignant) + 1 }}</td>
-                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                    <td>{{ enseignant.grade }}</td>
-                    <td>{{ enseignant.structureRecherche }}</td>
-                    <td>{{ enseignant.universite }}</td>
-                    <td>{{ enseignant.etablissement }}</td>
+                    <th>N°</th>
+                    <th>Nom et prénom</th>
+                    <th>Grade</th>
+                    <th>Structure de Recherche</th>
+                    <th>Département</th>
+                    <th>Etablissement</th>
                   </tr>
-                </div>
-              </tbody>
-            </table>
-            <h6>Informatique Indistruelle</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>N°</th>
-                  <th>Nom et prénom</th>
-                  <th>Grade</th>
-                  <th>Structure de Recherche</th>
-                  <th>Département</th>
-                  <th>Etablissement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <div *ngFor="let enseignant of commissionTheseInformatiqueIndistruelle">
-                  <tr>
-                    <td>{{ commissionTheseInformatiqueIndistruelle.indexOf(enseignant) + 1 }}</td>
-                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                    <td>{{ enseignant.grade }}</td>
-                    <td>{{ enseignant.structureRecherche }}</td>
-                    <td>{{ enseignant.universite }}</td>
-                    <td>{{ enseignant.etablissement }}</td>
-                  </tr>
-                </div>
-              </tbody>
-            </table>
-            <h6>Chimie Appliqué</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>N°</th>
-                  <th>Nom et prénom</th>
-                  <th>Grade</th>
-                  <th>Structure de Recherche</th>
-                  <th>Département</th>
-                  <th>Etablissement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <div *ngFor="let enseignant of commissionTheseChimie">
-                  <tr>
-                    <td>{{ commissionTheseChimie.indexOf(enseignant) + 1 }}</td>
-                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                    <td>{{ enseignant.grade }}</td>
-                    <td>{{ enseignant.structureRecherche }}</td>
-                    <td>{{ enseignant.universite }}</td>
-                    <td>{{ enseignant.etablissement }}</td>
-                  </tr>
-                </div>
-              </tbody>
-            </table>
-            <h6>Génie Biologie</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>N°</th>
-                  <th>Nom et prénom</th>
-                  <th>Grade</th>
-                  <th>Structure de Recherche</th>
-                  <th>Département</th>
-                  <th>Etablissement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <div *ngFor="let enseignant of commissionTheseBiologie">
-                  <tr>
-                    <td>{{ commissionTheseBiologie.indexOf(enseignant) + 1 }}</td>
-                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                    <td>{{ enseignant.grade }}</td>
-                    <td>{{ enseignant.structureRecherche }}</td>
-                    <td>{{ enseignant.universite }}</td>
-                    <td>{{ enseignant.etablissement }}</td>
-                  </tr>
-                </div>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <div *ngFor="let enseignant of commission">
+                    <tr>
+                      <td>{{ commission.indexOf(enseignant) + 1 }}</td>
+                      <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                      <td>{{ enseignant.grade }}</td>
+                      <td>{{ enseignant.structureRecherche }}</td>
+                      <td>{{ enseignant.universite }}</td>
+                      <td>{{ enseignant.etablissement }}</td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="study_table_wrap">
             <h3>Thèses soutenues 2019/2020</h3>
             <br />
             <h6>En Cotutelle :</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Etablissement</th>
+                  <th>Spécialité</th>
+                  <th>Date de soutenance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let doctorant of cotutelle">
+                  <tr>
+                    <td>{{ cotutelle.indexOf(doctorant) + 1 }}</td>
+                    <td>{{ doctorant.nom }} {{ doctorant.prenom }}</td>
+                    <td>{{ doctorant.etablissement }}</td>
+                    <td>{{ doctorant.specialite }}</td>
+                    <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+            <br />
+            <h6>Nouveau Régime LMD</h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°</th>
+                  <th>Nom et prénom</th>
+                  <th>Etablissement</th>
+                  <th>Spécialité</th>
+                  <th>Date de soutenance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <div *ngFor="let doctorant of doctorants">
+                  <tr>
+                    <td>{{ doctorants.indexOf(doctorant) + 1 }}</td>
+                    <td>{{ doctorant.nom }} {{ doctorant.prenom }}</td>
+                    <td>{{ doctorant.etablissement }}</td>
+                    <td>{{ doctorant.specialite }}</td>
+                    <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

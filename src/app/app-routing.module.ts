@@ -16,9 +16,10 @@ import { FormationComplementaireLmdComponent } from './recherche/formation-compl
 import { InscriptionTheseComponent } from './recherche/inscription-these/inscription-these.component';
 import { DossierMissionStageComponent } from './recherche/dossier-mission-stage/dossier-mission-stage.component';
 import { DepotDossierTheseComponent } from './recherche/depot-dossier-these/depot-dossier-these.component';
-import { LabosComponent } from './recherche/labos/labos.component';
+import { LaboratoiresRechercheComponent } from './recherche/laboratiores-recherche/laboratoires-recherche.component';
 import { CollaborationsInternationallesComponent } from './recherche/collaborations-internationalles/collaborations-internationalles.component';
 import { BrevetInventionComponent } from './recherche/brevet-invention/brevet-invention.component';
+import { ProductionScientifiqueComponent } from './recherche/production-scientifique/production-scientifique.component';
 
 const routes: Routes = [
   {
@@ -74,8 +75,8 @@ const routes: Routes = [
         component: DossierMissionStageComponent,
       },
       {
-        path: 'insat/recherche/labos',
-        component: LabosComponent,
+        path: 'insat/recherche/laboratiores-recherche',
+        component: LaboratoiresRechercheComponent,
       },
       {
         path: 'insat/recherche/collaboration-internationnalles',
@@ -84,6 +85,10 @@ const routes: Routes = [
       {
         path: 'insat/recherche/brevets',
         component: BrevetInventionComponent,
+      },
+      {
+        path: 'insat/recherche/production-scientifique',
+        component: ProductionScientifiqueComponent,
       },
       {
         path: '**',

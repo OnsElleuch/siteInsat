@@ -12,6 +12,6 @@ export class CollaborationsInternationallesComponent implements OnInit {
   constructor(private rechercheService: RechercheService) {}
 
   ngOnInit(): void {
-    this.conventions = this.rechercheService.getConventions();
+    this.rechercheService.getConventions().subscribe((conventions) => (this.conventions = conventions));
   }
 }
