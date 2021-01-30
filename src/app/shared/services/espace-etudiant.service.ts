@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Calendrier } from '../models/calendrier';
 import { Note } from '../models/notes';
+import { Contact } from '../models/Contact';
 
 @Injectable()
 export class EspaceEtudiantService extends GenericService {
@@ -16,5 +17,8 @@ export class EspaceEtudiantService extends GenericService {
   }
   getNotes(): Observable<Note[]> {
     return this.http.get<Note[]>(environment.baseUrl + 'notes');
+  }
+  sendContact(payload): Observable<Contact> {
+    return this.http.post<Contact>(environment.baseUrl + 'contact-admin', payload);
   }
 }

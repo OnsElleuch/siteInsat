@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
@@ -48,6 +48,8 @@ import { EspaceEtudiantService } from './shared/services/espace-etudiant.service
     ScolariteModule,
     FormationModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService],
   bootstrap: [AppComponent],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { EspaceEtudiantService } from '../shared/services/espace-etudiant.service';
 declare var jQuery: any;
 
@@ -16,6 +17,10 @@ export class EspaceEtudiantComponent implements OnInit {
   ngOnInit(): void {
     this.getNotes();
     this.getCalendrier();
+  }
+  onSubmit(formulaire: NgForm) {
+    console.log(formulaire.value);
+    this.espaceEtudiantService.sendContact(formulaire.value).subscribe(() => {});
   }
   getCalenderInfo() {
     this.espaceEtudiantService.getCalendrier().subscribe((data) => {

@@ -216,20 +216,27 @@
             <h3>CONTACTER L'ADMINISTRATION</h3>
           </div>
           <!-- FORM START -->
-          <form>
+          <form #formulaire="ngForm">
             <div class="edu2_serc_des">
-              <input type="text" placeholder="Nom Prenom:" />
+              <input name="name" type="text" placeholder="Nom Prenom:" #name ngModel />
             </div>
             <div class="edu2_serc_des">
-              <input type="text" placeholder="Num inscription:" />
+              <input
+                name="numInscription"
+                type="text"
+                type="text"
+                placeholder="Num inscription:"
+                #numInscription
+                ngModel
+              />
             </div>
 
             <div class="edu2_serc_des">
-              <input type="text" placeholder="Email:" />
+              <input type="text" placeholder="Email:" name="email" #email ngModel />
             </div>
             <!-- EDU2 DROP DOWN DES START -->
             <div class="edu2_serc_des">
-              <select>
+              <select #filiere name="filiere" ngModel>
                 <option value="1">GL</option>
                 <option value="9">RT</option>
                 <option value="2">IIA</option>
@@ -245,19 +252,19 @@
             <!-- EDU2 DROP DOWN DES END -->
             <!-- EDU2 DROP DOWN DES START -->
             <div class="edu2_serc_des">
-              <select>
-                <option value="1">Demande d'attestation de presence</option>
-                <option value="9">Demande de relevé de note</option>
-                <option value="2">Demande de</option>
-                <option value="3">autre</option>
+              <select name="typeDemande" #typeDemande ngModel>
+                <option value="attestation de presence">Demande d'attestation de presence</option>
+                <option value="relevé de note">Demande de relevé de note</option>
+                <option value="Demande">Demande de</option>
+                <option value="autre">autre</option>
               </select>
             </div>
             <!-- EDU2 DROP DOWN DES END -->
 
             <div class="edu2_serc_des">
-              <input type="text" placeholder="Autre ... " />
+              <input name="comment" type="text" placeholder="Autre ... " #comment ngModel />
             </div>
-            <button>Submit Contact Ticket</button>
+            <button (click)="onSubmit(formulaire)">Submit Contact Ticket</button>
           </form>
           <!-- FORM END -->
         </div>
