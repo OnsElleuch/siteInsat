@@ -1,5 +1,8 @@
 .btn_slider{
-  margin-top:220px;
+  margin-top:120px;
+}
+.h3_slider{
+  color: aliceblue;
 }
 
 .nouveauté{
@@ -23,15 +26,7 @@
 .news_image{
   height : 190px;
 }
-.gallery_image{
-  height : 200px;
-  width : 300px;
-  margin : 10px;
-}
-.row_gallery{
-margin-top : 20px;
-margin-bottom: 15px;
-}
+
 .decouvrir{
   padding-bottom: 10px
 }
