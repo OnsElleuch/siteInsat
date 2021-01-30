@@ -8,7 +8,7 @@ import { RechercheService } from '../../shared/services/recherche.service';
   styleUrls: ['./brevet-invention.component.css'],
 })
 export class BrevetInventionComponent implements OnInit {
-  brevets: BrevetInvention[];
+  brevets: BrevetInvention[] = [];
   inventeurs: Array<any>;
 
   constructor(private rechercheService: RechercheService) {}

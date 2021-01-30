@@ -18,8 +18,8 @@ export class LaboratoiresRechercheComponent implements OnInit {
 
   ngOnInit(): void {
     this.rechercheService.getLabos().subscribe((labos) => (this.all = labos));
-    this.laboratoires = this.all.filter((lab) => lab.type === 'laboratiore de recherche');
-    this.laboratoires = this.all.filter((unite) => unite.type === 'unité de recherche');
+    this.laboratoires = this.all?.filter((lab) => lab.type === 'laboratiore de recherche');
+    this.laboratoires = this.all?.filter((unite) => unite.type === 'unité de recherche');
     this.rechercheService.getprojets().subscribe((projets) => (this.projects = projets));
   }
 }

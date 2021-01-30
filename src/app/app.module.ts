@@ -11,14 +11,14 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faAtom, faCheck, faLaptopCode, faMicroscope } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
 import { DepartementsModule } from './departements/departements.module';
-import {ScolariteModule} from './scolarite/scolarite.module';
+import { ScolariteModule } from './scolarite/scolarite.module';
 import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
 import { RechercheModule } from './recherche/recherche.module';
 import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
-import { EmploisService} from './shared/services/emplois.service';
+import { EmploisService } from './shared/services/emplois.service';
 import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -44,9 +44,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormationModule,
     BrowserAnimationsModule,
   ],
-  providers: [AboutUsService, DepartmentService,EmploisService],
-  bootstrap: [AppComponent]
-
+  providers: [AboutUsService, DepartmentService, EmploisService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {

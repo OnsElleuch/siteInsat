@@ -57,7 +57,7 @@ const routes: Routes = [
       },
       {
         path: 'insat/emplois',
-        component: EmploisComponent
+        component: EmploisComponent,
       },
       {
         path: 'insat/recherche/ecole-doctorale',
@@ -93,7 +93,7 @@ const routes: Routes = [
       },
       {
         path: 'insat/recherche/production-scientifique',
-        component: ProductionScientifiqueComponent
+        component: ProductionScientifiqueComponent,
       },
       {
         path: 'relations-externes',
