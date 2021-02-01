@@ -13,11 +13,21 @@ export class EspaceEtudiantComponent implements OnInit {
   Notes: any;
   Calendrier: any;
   CalendrierData: any;
-
   ngOnInit(): void {
     this.getNotes();
     this.getCalendrier();
   }
+  Filiere: any[] = [
+    { option: 'GL' },
+    { option: 'RT' },
+    { option: 'IIA' },
+    { option: 'IMI' },
+    { option: 'CH' },
+    { option: 'BIO' },
+    { option: 'CBA' },
+    { option: 'MPI' },
+    { option: 'Licence' },
+  ];
   onSubmit(formulaire: NgForm) {
     console.log(formulaire.value);
     this.espaceEtudiantService.sendContact(formulaire.value).subscribe(() => {});

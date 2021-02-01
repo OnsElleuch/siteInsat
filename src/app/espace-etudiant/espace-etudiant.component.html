@@ -236,17 +236,8 @@
             </div>
             <!-- EDU2 DROP DOWN DES START -->
             <div class="edu2_serc_des">
-              <select #filiere name="filiere" ngModel>
-                <option value="1">GL</option>
-                <option value="9">RT</option>
-                <option value="2">IIA</option>
-                <option value="3">IMI</option>
-                <option value="3">CH</option>
-                <option value="3">BIO</option>
-                <option value="3">CBA</option>
-                <option value="3">MPI</option>
-                <option value="3">Licence</option>
-                <option value="3">Master</option>
+              <select name="filiere" #filiere ngModel>
+                <option *ngFor="let item of Filiere" [value]="item.option">{{ item.option }}</option>
               </select>
             </div>
             <!-- EDU2 DROP DOWN DES END -->
