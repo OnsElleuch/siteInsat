@@ -475,8 +475,8 @@ section,
 .logo_wrap {
   float: left;
   width: 100%;
-  padding: 22px 0;
-  max-width: 55%;
+  padding: 24px 0;
+  max-width: 100%;
 }
 .nav_2 {
   float: left;
@@ -498,7 +498,7 @@ section,
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px 18px;
+  padding: 10px 13px;
   position: relative;
   z-index: 2;
 }
