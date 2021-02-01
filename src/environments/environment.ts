@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: 'http://localhost:3000/',
-  baseUrlFiles: 'http://localhost:3000/files/',
+  baseUrlFiles: 'http://localhost:3000/uploads/',
 };
 
 /*
