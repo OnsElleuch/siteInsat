@@ -1,33 +1,32 @@
-.btn_slider{
-  margin-top:120px;
+.btn_slider {
+  margin-top: 120px;
 }
-.h3_slider{
+.h3_slider {
   color: aliceblue;
 }
 
-.nouveauté{
-  padding-top : 0px;
-  padding-bottom : 10px;
-  height : 70px
+.nouveauté {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  height: 70px;
 }
 
-.date{
+.date {
   margin-bottom: 5px;
 }
-.titre{
-  font-size : 13px;
+.titre {
+  font-size: 13px;
 }
-.box{
-  height : 100px;
+.box {
+  height: 100px;
 }
-.margin{
-  margin-bottom : 30px;
+.margin {
+  margin-bottom: 30px;
 }
-.news_image{
-  height : 190px;
-}
-
-.decouvrir{
-  padding-bottom: 10px
+.news_image {
+  height: 190px;
 }
 
+.decouvrir {
+  padding-bottom: 10px;
+}

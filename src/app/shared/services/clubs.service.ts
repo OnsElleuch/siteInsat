@@ -3,14 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { GenericService } from './generic.service';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { Club } from '../models/Club';
-
+import { Club } from '../models/club';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ClubsService extends GenericService {
-
   constructor(private http: HttpClient) {
     super();
   }
@@ -20,8 +18,4 @@ export class ClubsService extends GenericService {
   getClubById(): Observable<Club> {
     return this.http.get<Club>(environment.baseUrl + 'clubs/getClubById');
   }
-  
-  
-  
-
 }

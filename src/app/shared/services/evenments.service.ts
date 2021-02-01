@@ -5,12 +5,10 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Event } from '../models/event';
 
-
 @Injectable({
-    providedIn: 'root'
-  })
+  providedIn: 'root',
+})
 export class EvenmentsService extends GenericService {
-
   constructor(private http: HttpClient) {
     super();
   }
@@ -21,11 +19,7 @@ export class EvenmentsService extends GenericService {
     return this.http.get<Event>(environment.baseUrl + 'evenments/getEventById');
   }
 
-  getEventsByClub(club : string): Observable<Event[]> {
-    return this.http.get<Event[]>(environment.baseUrl + 'evenments/getEventsByClub/'+ club);
+  getEventsByClub(club: string): Observable<Event[]> {
+    return this.http.get<Event[]>(environment.baseUrl + 'evenments/getEventsByClub/' + club);
   }
-  
-  
-  
-
 }

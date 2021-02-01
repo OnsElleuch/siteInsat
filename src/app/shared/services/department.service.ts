@@ -7,28 +7,25 @@ import { Lab } from '../models/lab';
 import { GenericService } from './generic.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DepartmentService extends GenericService {
-
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
     super();
   }
-  getLabs(department: string): Observable<Lab[]>{
-    return this.http.get<Lab[]>(environment.baseUrl + 'department/getLabs/'+ department);
-
+  getLabs(department: string): Observable<Lab[]> {
+    return this.http.get<Lab[]>(environment.baseUrl + 'department/getLabs/' + department);
   }
-  getProfesseurs(department: string): Observable<Enseignant[]>{
-    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/'+ department + '/professeur');
+  getProfesseurs(department: string): Observable<Enseignant[]> {
+    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/' + department + '/professeur');
   }
-  getMaitreConf(department: string): Observable<Enseignant[]>{
-    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/'+ department + '/conf');
+  getMaitreConf(department: string): Observable<Enseignant[]> {
+    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/' + department + '/conf');
   }
-  getMaitreAss(department: string): Observable<Enseignant[]>{
-    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/'+ department + '/ass');
+  getMaitreAss(department: string): Observable<Enseignant[]> {
+    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/' + department + '/ass');
   }
-  getProfSec(department: string): Observable<Enseignant[]>{
-    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/'+ department + '/sec');
+  getProfSec(department: string): Observable<Enseignant[]> {
+    return this.http.get<Enseignant[]>(environment.baseUrl + 'department/getEnseignant/' + department + '/sec');
   }
-  
 }

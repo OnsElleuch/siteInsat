@@ -22,7 +22,6 @@
 </div>
 
 <div class="kf_content_wrap">
-
   <div class="gallery-masonery_page gallery inner-content-holder">
     <div class="container">
       <div class="row">
@@ -41,86 +40,98 @@
       <div class="row">
         <div class="col-md-12">
           <div class="contact_2_headung">
-            <div *ngIf="currDiv=='MPI'">
-
+            <div *ngIf="currDiv == 'MPI'">
               <li *ngFor="let filiere of EmploiMPI">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
 
-            <div *ngIf="currDiv=='CBA'">
-
+            <div *ngIf="currDiv == 'CBA'">
               <li *ngFor="let filiere of EmploiCBA">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='GL'">
-
+            <div *ngIf="currDiv == 'GL'">
               <li *ngFor="let filiere of EmploiGL">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='IIA'">
-
+            <div *ngIf="currDiv == 'IIA'">
               <li *ngFor="let filiere of EmploiIIA">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='IMI'">
-
+            <div *ngIf="currDiv == 'IMI'">
               <li *ngFor="let filiere of EmploiIMI">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='BIO'">
-
+            <div *ngIf="currDiv == 'BIO'">
               <li *ngFor="let filiere of EmploiBIO">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='CH'">
-
+            <div *ngIf="currDiv == 'CH'">
               <li *ngFor="let filiere of EmploiCH">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
             </div>
-            <div *ngIf="currDiv=='RT'">
-
+            <div *ngIf="currDiv == 'RT'">
               <li *ngFor="let filiere of EmploiRT">
-                <fa-icon [icon]="['fas', 'check']" style="color: #830709;"></fa-icon> &nbsp;
-                <a (click)="openPdf(filiere.url)" href="JavaScript:Void(0);"
-                   style="color: #777777; text-align: right;">{{filiere.name}}</a>
+                <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon> &nbsp;
+                <a
+                  (click)="openPdf(filiere.url)"
+                  href="JavaScript:Void(0);"
+                  style="color: #777777; text-align: right"
+                  >{{ filiere.name }}</a
+                >
               </li>
-
-            </div>
-
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
+</div>

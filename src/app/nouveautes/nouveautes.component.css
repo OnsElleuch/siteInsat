@@ -1,13 +1,9 @@
-.margin{
-  margin-top : 50px ;
-  padding-bottom : 50px;
-
-  
+.margin {
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 .pagination {
-  
-  justify-content: center
-  
+  justify-content: center;
 }
 
 .pagination a {
