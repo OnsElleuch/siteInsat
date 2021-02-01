@@ -40,7 +40,7 @@
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
-        "asyncArrow": "always",
+        "asyncArrow": "never",
         "constructor": "never",
         "method": "never",
         "named": "never"
