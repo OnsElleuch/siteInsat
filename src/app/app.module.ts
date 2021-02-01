@@ -32,6 +32,7 @@ import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EspaceEtudiantService } from './shared/services/espace-etudiant.service';
 import { LoginComponent } from './login/login.component';
+import { LoginService } from './shared/services/login.service';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService],
+  providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService, LoginService],
   bootstrap: [AppComponent],
 })
 export class AppModule {

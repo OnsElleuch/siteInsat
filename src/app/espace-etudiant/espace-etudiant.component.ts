@@ -29,10 +29,11 @@ export class EspaceEtudiantComponent implements OnInit {
     { option: 'Licence' },
   ];
   onSubmit(formulaire: NgForm) {
-    console.log(formulaire.value);
-    this.espaceEtudiantService.sendContact(formulaire.value).subscribe(() => {});
+    this.espaceEtudiantService.sendContact(formulaire.value).subscribe((res) => {
+      console.log(res);
+    });
   }
-  getCalenderInfo() {
+  getCalendrier() {
     this.espaceEtudiantService.getCalendrier().subscribe((data) => {
       this.initCarousel9('owl-demo-999', 50);
       console.log(data);
@@ -47,9 +48,6 @@ export class EspaceEtudiantComponent implements OnInit {
     });
   }
 
-  getCalendrier() {
-    this.getCalenderInfo();
-  }
   initCarousel9(className: string, timeout) {
     const carousel = jQuery('#' + className);
 
