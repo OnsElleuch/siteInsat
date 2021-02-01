@@ -9,17 +9,12 @@ import { InfMathComponent } from './inf-math/inf-math.component';
 import { BioChComponent } from './bio-ch/bio-ch.component';
 import { FormGenComponent } from './form-gen/form-gen.component';
 
-
 @NgModule({
   declarations: [PhyInsComponent, InfMathComponent, BioChComponent, FormGenComponent],
-  imports: [
-    CommonModule,
-    FontAwesomeModule,
-    DepartementsRoutingModule
-  ]
+  imports: [CommonModule, FontAwesomeModule, DepartementsRoutingModule],
 })
 export class DepartementsModule {
-  constructor(library : FaIconLibrary){
-    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope, faFlask );
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCheck, faAtom, faLaptopCode, faMicroscope, faFlask);
   }
- }
+}

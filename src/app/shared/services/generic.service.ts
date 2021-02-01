@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import {HttpHeaders} from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 
 @Injectable()
@@ -7,7 +7,7 @@ export class GenericService {
   headers: HttpHeaders;
 
   constructor() {
-    this.headers = new HttpHeaders({'Content-Type': 'application/json'});
+    this.headers = new HttpHeaders({ 'Content-Type': 'application/json' });
   }
 
   handleResponse(response: any) {
@@ -19,7 +19,6 @@ export class GenericService {
     console.log('**** response *****');
   }
 
-
   handleErrors(error: Response) {
     console.log('**** Error *****');
     console.log('status ' + error.status);
@@ -30,5 +29,4 @@ export class GenericService {
     console.log('**** error *****');
     return throwError(error);
   }
-
 }

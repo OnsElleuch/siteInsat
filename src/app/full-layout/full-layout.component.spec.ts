@@ -8,9 +8,8 @@ describe('FullLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FullLayoutComponent ]
-    })
-    .compileComponents();
+      declarations: [FullLayoutComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
