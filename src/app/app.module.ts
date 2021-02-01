@@ -18,6 +18,13 @@ import { AboutUsService } from './shared/services/about-us.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './shared/services/department.service';
+import { EvenmentsComponent } from './evenments/evenments.component';
+import { EventCardComponent } from './event-card/event-card.component';
+import { NouveautesComponent } from './nouveautes/nouveautes.component';
+import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
+import { ClubsComponent } from './clubs/clubs.component';
+import { CardClubComponent } from './card-club/card-club.component';
+import { ClubTemplateComponent } from './club-template/club-template.component';
 import { RechercheModule } from './recherche/recherche.module';
 import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 import { EmploisService } from './shared/services/emplois.service';
@@ -34,6 +41,13 @@ import { EspaceEtudiantService } from './shared/services/espace-etudiant.service
     EspaceEtudiantComponent,
     ParallaxDirective,
     NotFoundComponent,
+    EvenmentsComponent,
+    EventCardComponent,
+    NouveautesComponent,
+    NewsEventTemplateComponent,
+    ClubsComponent,
+    CardClubComponent,
+    ClubTemplateComponent,
     RelationsExternesComponent,
   ],
   imports: [
