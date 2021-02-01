@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FullLayoutComponent } from './full-layout/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
+import { ParallaxDirective } from './espace-etudiant/parallax.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAtom, faCheck, faLaptopCode, faMicroscope } from '@fortawesome/free-solid-svg-icons';
@@ -28,6 +30,7 @@ import { RelationsExternesComponent } from './relations-externes/relations-exter
 import { EmploisService } from './shared/services/emplois.service';
 import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EspaceEtudiantService } from './shared/services/espace-etudiant.service';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FullLayoutComponent,
     HomeComponent,
     AboutUsComponent,
+    EspaceEtudiantComponent,
+    ParallaxDirective,
     NotFoundComponent,
     EvenmentsComponent,
     EventCardComponent,
@@ -57,8 +62,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ScolariteModule,
     FormationModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [AboutUsService, DepartmentService, EmploisService],
+  providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService],
   bootstrap: [AppComponent],
 })
 export class AppModule {

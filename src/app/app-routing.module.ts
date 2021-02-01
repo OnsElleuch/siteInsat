@@ -13,6 +13,7 @@ import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { EmploisComponent } from './scolarite/emplois/emplois.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
 import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { ClubTemplateComponent } from './club-template/club-template.component';
@@ -37,8 +38,16 @@ const routes: Routes = [
         component: HomeComponent,
       },
       {
+        path: 'relations-externes',
+        component: RelationsExternesComponent,
+      },
+      {
         path: 'insat',
         component: AboutUsComponent,
+      },
+      {
+        path: 'espace-etudiant',
+        component: EspaceEtudiantComponent,
       },
       {
         path: 'insat/phyins',
@@ -119,10 +128,6 @@ const routes: Routes = [
       {
         path: 'insat/recherche/production-scientifique',
         component: ProductionScientifiqueComponent,
-      },
-      {
-        path: 'relations-externes',
-        component: RelationsExternesComponent,
       },
       {
         path: '**',
