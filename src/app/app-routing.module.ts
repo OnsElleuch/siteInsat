@@ -13,6 +13,7 @@ import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { EmploisComponent } from './scolarite/emplois/emplois.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
 import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
 import { NewsEventTemplateComponent } from './news-event-template/news-event-template.component';
 import { ClubsComponent } from './clubs/clubs.component';
@@ -27,7 +28,7 @@ import { InscriptionTheseComponent } from './recherche/inscription-these/inscrip
 import { LaboratoiresRechercheComponent } from './recherche/laboratiores-recherche/laboratoires-recherche.component';
 import { ProductionScientifiqueComponent } from './recherche/production-scientifique/production-scientifique.component';
 import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
-
+import { AuthGuardService as AuthGuard } from './auth/auth-guard.service';
 const routes: Routes = [
   {
     path: '',
@@ -46,8 +47,13 @@ const routes: Routes = [
         component: AboutUsComponent,
       },
       {
+        path: 'login',
+        component: LoginComponent,
+      },
+      {
         path: 'espace-etudiant',
         component: EspaceEtudiantComponent,
+        canActivate: [AuthGuard],
       },
       {
         path: 'insat/phyins',

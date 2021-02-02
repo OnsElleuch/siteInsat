@@ -7,19 +7,19 @@
             <img class="profile-img" src="../assets/extra-images/testemonial.1.jpg" alt="" />
           </div>
           <div class="kf_edu2_heading2 col">
-            <h3 class="header">Elleuch Sami</h3>
-            <p class="header">- Etudiant 4emme année cycle ingenieure GL</p>
+            <h3 class="header">{{ user.name }}</h3>
+            <p class="header">- {{ user.class }}</p>
           </div>
         </div>
         <!-- -->
         <div class="row align-items-center">
           <div class="col text-center">
             <hr class="heading-hr" />
-            <p><span class="bold">CIN :</span> 000000000000</p>
+            <p><span class="bold">CIN :</span> {{ user.CIN }}</p>
             <hr />
-            <p><span class="bold">NumEtudiant :</span> 074151515</p>
+            <p><span class="bold">NumEtudiant :</span> {{ user.numEtudiant }}</p>
             <hr />
-            <p><span class="bold">Email :</span> xxxxxxx@xxxxxx.xx</p>
+            <p><span class="bold">Email :</span> {{ user.email }}</p>
             <hr />
           </div>
         </div>
@@ -29,7 +29,7 @@
             <a class="btn-3 text-center" href="#">Changer mes informations personelles</a>
           </div>
           <div class="col align-self-center text-center">
-            <a class="btn-3 text-center" href="#">Deconnecter</a>
+            <a class="btn-3 text-center" (click)="logout()">Deconnecter</a>
           </div>
         </div>
       </div>
@@ -113,9 +113,9 @@
                 </div>
                 <div class="row align-items-center">
                   <div class="col">
-                    <p>
-                      <span *ngIf="note.type == 'etudiant'" class="bold"> Etudiant </span>
-                      <span *ngIf="note.type != 'etudiant'" class="bold"> Class </span>{{ note.details }}
+                    <p *ngIf="note.type == 'individuelle'" class="bold"><span> Etudiant </span> {{ user.name }}</p>
+                    <p *ngIf="note.type != 'individuelle'" class="bold">
+                      <span class="bold"> Class </span>{{ note.details }}
                     </p>
                     <hr />
                   </div>
@@ -175,9 +175,9 @@
                   </div>
                   <div class="row align-items-center">
                     <div class="col">
-                      <p>
-                        <span *ngIf="note.type == 'etudiant'" class="bold"> Etudiant </span>
-                        <span *ngIf="note.type != 'etudiant'" class="bold"> Class </span>{{ note.details }}
+                      <p *ngIf="note.type == 'individuelle'" class="bold"><span> Etudiant </span> {{ user.name }}</p>
+                      <p *ngIf="note.type != 'individuelle'" class="bold">
+                        <span class="bold"> Class </span>{{ note.details }}
                       </p>
                       <hr />
                     </div>
