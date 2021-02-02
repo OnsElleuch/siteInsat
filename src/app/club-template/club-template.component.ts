@@ -13,29 +13,34 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./club-template.component.css'],
 })
 export class ClubTemplateComponent implements OnInit {
-  club : Club ;
-  clubId : number;
+  club: Club;
+  clubId: number;
   events: Event[];
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;
-  constructor(private route: ActivatedRoute,private clubService: ClubsService, private evenmentsService: EvenmentsService) {
-    this.route.params.subscribe((params)=>{ this.clubId = params['id'] ;}) ;
+  constructor(
+    private route: ActivatedRoute,
+    private clubService: ClubsService,
+    private evenmentsService: EvenmentsService
+  ) {
+    this.route.params.subscribe((params) => {
+      this.clubId = params['id'];
+    });
   }
 
   ngOnInit(): void {
     this.getClubById();
-    
   }
-  getClubById(){
-      this.busy = this.clubService.getClubById(this.clubId).subscribe((data) => {
+  getClubById() {
+    this.busy = this.clubService.getClubById(this.clubId).subscribe((data) => {
       this.club = data[0];
       console.log(data[0].clubName);
       this.getEventsByClub(this.club.clubName);
     });
   }
-  getEventsByClub(clubName : string) {
+  getEventsByClub(clubName: string) {
     this.busy = this.evenmentsService.getEventsByClub(clubName).subscribe((data) => {
-    this.events = data;
+      this.events = data;
     });
   }
 }

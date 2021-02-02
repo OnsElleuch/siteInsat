@@ -28,7 +28,11 @@
   margin-right: auto;
   width: 150px;
   margin-bottom: 50px;
-  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92);
+}
+.kf_edu2_search_wrap {
+  animation: closeBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92);
+  margin-bottom: 50px;
 }
 .intro_subtext {
   color: black;
@@ -41,7 +45,10 @@
 }
 .edu_testemonial_wrap {
   background-color: #f8f8f8;
-  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92);
+}
+.animate {
+  animation: closeBox 1.4s cubic-bezier(0.74, 0.06, 0.4, 0.92) !important;
 }
 .kf_edu2_intro_wrap:before {
   content: '';
@@ -56,7 +63,7 @@
 }
 .btn-3 {
   transition-duration: 450ms;
-  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: openBox 1.2s cubic-bezier(0.74, 0.06, 0.4, 0.92);
   position: relative;
   overflow: hidden;
 }
@@ -111,6 +118,14 @@
 @keyframes openBox {
   0% {
     clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes closeBox {
+  0% {
+    clip-path: inset(0 100% 0 0%);
   }
   100% {
     clip-path: inset(0 0 0 0);

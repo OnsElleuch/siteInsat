@@ -4,13 +4,11 @@ import { News } from '../shared/models/news';
 @Component({
   selector: 'app-news-card',
   templateUrl: './news-card.component.html',
-  styleUrls: ['./news-card.component.css']
+  styleUrls: ['./news-card.component.css'],
 })
 export class NewsCardComponent implements OnInit {
-  @Input() news : News;
-  constructor() { }
+  @Input() news: News;
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

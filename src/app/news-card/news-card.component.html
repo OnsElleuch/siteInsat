@@ -1,16 +1,16 @@
 <body>
-    <div class="edu2_cur_wrap">
-      <figure>
-        <img src="{{ news.photo_url }}" alt="" height="190" />
-        <figcaption><a routerLink="nouveaute/{{news.id}}">Plus d'information</a></figcaption>
-      </figure>
-      <div class="edu2_cur_des nouveauté">
-        <strong class="date">
-          <span>{{ news.date }}</span>
-        </strong>
-        <h4 class="titre">
-          <a routerLink="/insat/nouveautes/nouveaute">{{ news.title }}</a>
-        </h4>
-      </div>
+  <div class="edu2_cur_wrap">
+    <figure>
+      <img src="{{ news.photo_url }}" alt="" height="190" />
+      <figcaption><a routerLink="nouveaute/{{ news.id }}">Plus d'information</a></figcaption>
+    </figure>
+    <div class="edu2_cur_des nouveauté">
+      <strong class="date">
+        <span>{{ news.date }}</span>
+      </strong>
+      <h4 class="titre">
+        <a routerLink="/insat/nouveautes/nouveaute">{{ news.title }}</a>
+      </h4>
     </div>
-  </body>
+  </div>
+</body>

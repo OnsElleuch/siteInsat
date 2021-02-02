@@ -12,24 +12,24 @@ import { Event } from '../shared/models/event';
   styleUrls: ['./news-event-template.component.css'],
 })
 export class NewsEventTemplateComponent implements OnInit {
-  event : Event;
-  eventId : number;
+  event: Event;
+  eventId: number;
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;
 
-  constructor(private route: ActivatedRoute,private evenmentsService: EvenmentsService) {
-    this.route.params.subscribe((params)=>{ this.eventId = params['id'] ;}) ;
+  constructor(private route: ActivatedRoute, private evenmentsService: EvenmentsService) {
+    this.route.params.subscribe((params) => {
+      this.eventId = params['id'];
+    });
     console.log(this.eventId);
   }
 
   ngOnInit(): void {
     this.getEventsById();
-    
   }
-  getEventsById(){
+  getEventsById() {
     this.busy = this.evenmentsService.getEventsById(this.eventId).subscribe((data) => {
-    this.event = data[0];
-    
-  });
-}
+      this.event = data[0];
+    });
+  }
 }

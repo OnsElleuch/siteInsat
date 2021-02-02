@@ -10,24 +10,24 @@
   <section>
     <div class="row">
       <div class="col-md-6">
-          <img src="{{ event.photo_url }}" alt="" />
-      </div>
-    
-        <div class="col-md-6">
-      <div>
-        <h5>Description :</h5>
-        <h6>{{ event.description }}</h6>
+        <img src="{{ event.photo_url }}" alt="" />
       </div>
 
-      <div class="espace">
-        <h5>Cet évenement est organisé par :</h5>
-        <h6>{{ event.club }}</h6>
+      <div class="col-md-6">
+        <div>
+          <h5>Description :</h5>
+          <h6>{{ event.description }}</h6>
+        </div>
+
+        <div class="espace">
+          <h5>Cet évenement est organisé par :</h5>
+          <h6>{{ event.club }}</h6>
+        </div>
+        <div class="espace">
+          <h5>Description du club :</h5>
+          <h6>{{ event.descriptionClub }}</h6>
+        </div>
       </div>
-      <div class="espace">
-        <h5>Description du club :</h5>
-        <h6>{{ event.descriptionClub }}</h6>
-      </div>
-    </div>
     </div>
     <!-- INTERO DES END-->
   </section>

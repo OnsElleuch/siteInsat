@@ -15,11 +15,14 @@ export class EspaceEtudiantComponent implements OnInit {
   CalendrierData: any;
   user: any;
   local: any;
+  changeToggle: Boolean;
+
   ngOnInit(): void {
     this.getNotes();
     this.getCalendrier();
     this.user = JSON.parse(localStorage.getItem('user'));
     console.log(this.user);
+    this.changeToggle = true;
   }
   Filiere: any[] = [
     { option: 'GL' },
@@ -32,6 +35,9 @@ export class EspaceEtudiantComponent implements OnInit {
     { option: 'MPI' },
     { option: 'Licence' },
   ];
+  toggle() {
+    this.changeToggle = !this.changeToggle;
+  }
   onSubmit(formulaire: NgForm) {
     this.espaceEtudiantService.sendContact(formulaire.value).subscribe((res) => {
       console.log(res);

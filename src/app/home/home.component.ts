@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   events: Event[];
   busy: Subscription;
   news: News[];
-  constructor(private nouveautesService: NouveautesService,private evenmentsService: EvenmentsService) {}
+  constructor(private nouveautesService: NouveautesService, private evenmentsService: EvenmentsService) {}
 
   ngOnInit(): void {
     this.getNews();
@@ -23,13 +23,13 @@ export class HomeComponent implements OnInit {
   }
   getEvents() {
     this.busy = this.evenmentsService.getEvents().subscribe((data) => {
-      this.events = data.splice(0,4);
+      this.events = data.splice(0, 4);
     });
   }
-  
+
   getNews() {
     this.busy = this.nouveautesService.getNews().subscribe((data) => {
-      this.news = data.splice(0,6);
+      this.news = data.splice(0, 6);
     });
   }
   initCarousel(className: string, timeout) {
