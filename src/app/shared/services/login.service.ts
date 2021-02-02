@@ -13,7 +13,7 @@ export class LoginService extends GenericService {
   constructor(private http: HttpClient) {
     super();
   }
-  login(payload): Observable<login> {
+  login(payload): Observable<any> {
     return this.http.post<login>(environment.baseUrl + 'auth/login', payload);
   }
 }

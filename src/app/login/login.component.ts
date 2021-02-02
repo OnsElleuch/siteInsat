@@ -19,8 +19,9 @@ export class LoginComponent implements OnInit {
       (res) => {
         console.log(res);
         //store object in local storage
-        localStorage.setItem('user', JSON.stringify(res));
+        localStorage.setItem('user', JSON.stringify(res.user));
         this.err = null;
+        window.location.replace('');
       },
       (error) => {
         //Error callback

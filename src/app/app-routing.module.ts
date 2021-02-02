@@ -28,7 +28,7 @@ import { InscriptionTheseComponent } from './recherche/inscription-these/inscrip
 import { LaboratoiresRechercheComponent } from './recherche/laboratiores-recherche/laboratoires-recherche.component';
 import { ProductionScientifiqueComponent } from './recherche/production-scientifique/production-scientifique.component';
 import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
-
+import { AuthGuardService as AuthGuard } from './auth/auth-guard.service';
 const routes: Routes = [
   {
     path: '',
@@ -53,6 +53,7 @@ const routes: Routes = [
       {
         path: 'espace-etudiant',
         component: EspaceEtudiantComponent,
+        canActivate: [AuthGuard],
       },
       {
         path: 'insat/phyins',

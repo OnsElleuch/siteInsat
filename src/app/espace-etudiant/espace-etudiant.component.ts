@@ -13,9 +13,13 @@ export class EspaceEtudiantComponent implements OnInit {
   Notes: any;
   Calendrier: any;
   CalendrierData: any;
+  user: any;
+  local: any;
   ngOnInit(): void {
     this.getNotes();
     this.getCalendrier();
+    this.user = JSON.parse(localStorage.getItem('user'));
+    console.log(this.user);
   }
   Filiere: any[] = [
     { option: 'GL' },
@@ -32,6 +36,11 @@ export class EspaceEtudiantComponent implements OnInit {
     this.espaceEtudiantService.sendContact(formulaire.value).subscribe((res) => {
       console.log(res);
     });
+  }
+  logout() {
+    localStorage.clear();
+    localStorage.removeItem('user');
+    window.location.reload();
   }
   getCalendrier() {
     this.espaceEtudiantService.getCalendrier().subscribe((data) => {
