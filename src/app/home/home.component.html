@@ -9,7 +9,7 @@
 						<img src="../assets/extra-images/photo.jpg" alt="" height="510"/>
 						<figcaption>
 							<h3 class="h3_slider">Institut National des Sciences Appliquées et de Technologie</h3>
-							<a href="/insat" class="btn-1 btn_slider">Plus d'information</a>
+							<a routerLink="/insat" class="btn-1 btn_slider">Plus d'information</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -18,7 +18,7 @@
 						<img src="../assets/extra-images/photoo.jpg" alt="" height="510"/>
 						<figcaption>
 							<h3 class="h3_slider">Une formation riche</h3>
-							<a href="/formation/prepa" class="btn-1 btn_slider">Plus d'information</a>
+							<a routerLink="/formation/prepa" class="btn-1 btn_slider">Plus d'information</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -27,7 +27,7 @@
 						<img src="../assets/extra-images/slider_2.jpg" alt="" height="510"/>
 						<figcaption>
 							<h3 class="h3_slider">Une vie associative animée</h3>
-							<a href="/insat/clubs" class="btn-1 btn_slider">Dévouvrir nos clubs</a>
+							<a routerLink="/insat/clubs" class="btn-1 btn_slider">Dévouvrir nos clubs</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -60,7 +60,7 @@
 											<span><i class="icon-statistics"></i></span>
 											<div class="kf_cur_catg_capstion">
 												<h5>GÉNIE INFORMATIQUE ET MATHÉMATIQUES</h5>
-												<a href="/insat/infmath" class="btn btn-outline-dark">Plus d'information</a>
+												<a routerLink="/insat/infmath" class="btn btn-outline-dark">Plus d'information</a>
 											</div>
 										</div>
 									</div>
@@ -72,7 +72,7 @@
 											<span><i class="icon-accounting5"></i></span>
 											<div class="kf_cur_catg_capstion">
                         <h5>GÉNIE PHYSIQUE ET INSTRUMENTATION</h5>
-												<a href="/insat/phyins" class="btn btn-outline-dark">Plus d'information</a>
+												<a routerLink="/insat/phyins" class="btn btn-outline-dark">Plus d'information</a>
 											</div>
 										</div>
 									</div>
@@ -84,7 +84,7 @@
 											<span><i class="icon-chemistry29"></i></span>
 											<div class="kf_cur_catg_capstion">
                         <h5>GÉNIE BIOLOGIE ET CHIMIE</h5>
-												<a href="/insat/bioch" class="btn btn-outline-dark">Plus d'information</a>
+												<a routerLink="/insat/bioch" class="btn btn-outline-dark">Plus d'information</a>
 											</div>
 										</div>
 									</div>
@@ -96,8 +96,8 @@
 											<span><i class="fas fa-users"></i></span>
 											<div class="kf_cur_catg_capstion">												
                         <h5>SCIENCES SOCIALES, LANGUES ET FORMATION GÉNÉRALE</h5>
-												<a href="/insat/formgen" class="btn btn-outline-dark">Plus d'information</a>
-											</div>
+												<a routerLink="/insat/formgen" class="btn btn-outline-dark">Plus d'information</a>
+											</div> 
 										</div>
 									</div>
 									<!--COURSE CATEGORIES DES END-->
@@ -129,11 +129,11 @@
 							<span><i class="icon-earth132"></i></span>
 							<h6>A propos</h6>
 							<p>Découvrir la structure générale de l'INSAT et son historique.</p>
-							<a href="#">Découvrir</a>
+							<a  routerLink="/insat">Découvrir</a>
 						</div>
 						<figure>
 							<img src="../assets/extra-images/intro-1.jpg" alt=""/>
-							<figcaption><a href="/insat">A propos de l'INSAT</a></figcaption>
+							<figcaption><a routerLink="/insat">A propos de l'INSAT</a></figcaption>
 						</figure>
 					</div>
 					<!-- INTERO DES END-->
@@ -143,11 +143,11 @@
 							<span><i class="icon-educational18"></i></span>
 							<h6>Espace Etudiant</h6>
 							<p>Cet espace est dedié seulement aux étudiants de l'INSAT.</p>
-							<a href="#">Découvrir</a>
+							<a routerLink="/espace-etudiant">Découvrir</a>
 						</div>
 						<figure>
 							<img src="../assets/extra-images/intro-2.jpg" alt=""/>
-							<figcaption><a href="#">Espace étudiant</a></figcaption>
+							<figcaption><a routerLink="/espace-etudiant">Espace étudiant</a></figcaption>
 						</figure>
 					</div>
 					<!-- INTERO DES END-->
@@ -158,11 +158,11 @@
 							<span><i class="icon-teacher4"></i></span>
 							<h6>Calendrier</h6>
 							<p>Consulter les emplois de temps,les calendriers des examens et des vacances.</p>
-							<a href="#">Découvrir</a>
+							<a routerLink="/insat/emplois">Découvrir</a>
 						</div>
 						<figure>
 							<img src="../assets/extra-images/intro-3.jpg" alt=""/>
-							<figcaption><a href="#">Calendrier pédagogique</a></figcaption>
+							<figcaption><a routerLink="/insat/emplois">Calendrier pédagogique</a></figcaption>
 						</figure>
 					</div>
 					<!-- INTERO DES END-->
@@ -185,9 +185,9 @@
 				</div>
 			  </div>
           <div class="row margin">
-            <div class="view-all">
-              <a class="btn-3" href="/insat/nouveautes">Toutes les nouveautés</a>
-            </div>
+			<div class="loadmore">
+				<a routerLink="/insat/nouveautes" class="btn-3">Toutes les nouveautés</a>
+			  </div>
           </div>
         </div>
       </section>
@@ -335,7 +335,7 @@
           </div>
         </div>
         <div class="loadmore">
-          <a href="#" class="btn-3">Plus de photos</a>
+          <a routerLink="/insat" class="btn-3">Plus de photos</a>
         </div>
       </section>
       <!--GALLERY SECTION END-->
@@ -397,16 +397,16 @@
 											<h4>Sep</h4>
 											<p>{{events[0].club}} organise {{events[0].title}}</p>
 											<ul class="post-option">
- 												<li>Organisé par : <a href="/insat/clubs/club">{{events[0].club}}</a></li>
+ 												<li>Organisé par : <a routerLink="/insat/clubs/club">{{events[0].club}}</a></li>
  												<li>{{events[0].date}}</li>
 											</ul>
-											<a href="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
+											<a routerLink="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
 											<span>24</span>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 thumb">
 										<figure><img class="news_image" src="../assets/extra-images/news1.jpg" alt=""/>
-											<figcaption><a href="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
+											<figcaption><a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
 										</figure>
 									</div>
 								</div>
@@ -420,7 +420,7 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-6 thumb">
 										<figure><img class="news_image" src="../assets/extra-images/news2.jpg" alt=""/>
-											<figcaption><a href="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
+											<figcaption><a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
 										</figure>
 									</div>
 									<div class="col-md-6 col-sm-6">
@@ -428,10 +428,10 @@
 											<h4>Jui</h4>
 											<p>{{events[1].club}} organise {{events[1].title}}</p>
 											<ul class="post-option">
- 												<li>Organisé par : <a href="/insat/clubs/club">{{events[1].club}}</a></li>
+ 												<li>Organisé par : <a routerLink="/insat/clubs/club">{{events[1].club}}</a></li>
  												<li>{{events[1].date}}</li>
 											</ul>
-											<a href="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
+											<a routerLink="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
 											<span>03</span>
 										</div>
 									</div>
@@ -449,16 +449,16 @@
 											<h4>Jui</h4>
 											<p>{{events[2].club}} organise {{events[2].title}}</p>
 											<ul class="post-option">
- 												<li>Organisé par : <a href="/insat/clubs/club">{{events[2].club}}</a></li>
+ 												<li>Organisé par : <a routerLink="/insat/clubs/club">{{events[2].club}}</a></li>
  												<li>{{events[2].date}}</li>
 											</ul>
-											<a href="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
+											<a routerLink="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
 											<span>30</span>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 thumb">
 										<figure><img src="../assets/extra-images/news3.jpg" alt=""/>
-											<figcaption><a href="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
+											<figcaption><a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
 										</figure>
 									</div>
 								</div>
@@ -472,7 +472,7 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-6 thumb">
 										<figure><img src="../assets/extra-images/news4.jpg" alt=""/>
-											<figcaption><a href="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
+											<figcaption><a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a></figcaption>
 										</figure>
 									</div>
 									<div class="col-md-6 col-sm-6">
@@ -480,10 +480,10 @@
 											<h4>Mai</h4>
 											<p>{{events[3].club}} organise {{events[3].title}}</p>
 											<ul class="post-option">
- 												<li>Organisé par : <a href="/insat/clubs/club">{{events[3].club}}</a></li>
+ 												<li>Organisé par : <a routerLink="/insat/clubs/club">{{events[3].club}}</a></li>
  												<li>{{events[3].date}}</li>
 											</ul>
-											<a href="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
+											<a routerLink="insat/evenments/event" class="readmore">Plus d'information<i class="fa fa-long-arrow-right"></i></a>
 											<span>11</span>
 										</div>
 									</div>
@@ -493,9 +493,9 @@
 						<!-- EDU2 NEW DES END-->
 					</div>
           <div class="row">
-        <div class="view-all">
-            <a class="btn-3" href="/insat/evenments">Tous les événements</a>
-        </div>
+			<div class="loadmore">
+				<a routerLink="/insat/evenments" class="btn-3">Tous les événements</a>
+			</div>
           </div>
 				</div>
 			</section>
