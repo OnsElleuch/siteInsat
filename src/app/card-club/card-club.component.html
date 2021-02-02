@@ -2,7 +2,7 @@
   <div class="edu2_cur_wrap">
     <figure>
       <img src="{{ club.photo_url }}" alt="" height="190" />
-      <figcaption><a routerLink="club/" [queryParams]="{ id : club.id}" queryParamsHandling="merge">Plus d'information</a></figcaption>
+      <figcaption><a routerLink="club/{{club.id}}" >Plus d'information</a></figcaption>
     </figure>
     <div class="edu2_cur_des nouveauté">
       <h6 class="date">

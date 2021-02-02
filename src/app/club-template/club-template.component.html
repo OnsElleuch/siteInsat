@@ -7,16 +7,23 @@
   </div>
   <!-- HEADING 2 END-->
   <!-- INTERO DES START-->
-  <section class="wrap">
-    <div class="kf_intro_des_wrap">
+  <section>
+    <div class="row">
+      <div class="col-md-6">
+          <img src="{{ club.photo_url }}" alt="" />
+      </div>
+    
+        <div class="col-md-6">
+          
       <div>
         <h5>Description du club:</h5>
-        <h6>{{ club.descriptionClub }}</h6>
+        <h6>{{ club.clubDescription }}</h6>
       </div>
 
       <div class="espace">
         <h5>Président du club :</h5>
         <h6>{{ club.president }}</h6>
+      </div>
       </div>
     </div>
     <!-- INTERO DES END-->
@@ -26,16 +33,6 @@
       <div class="col-md-12">
         <div class="kf_edu2_heading2">
           <h3>Les événements de {{ club.clubName }}</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 margin" *ngFor="let event of events">
-          <app-event-card [event]="event"></app-event-card>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 margin" *ngFor="let event of events">
-          <app-event-card [event]="event"></app-event-card>
         </div>
       </div>
       <div class="row">

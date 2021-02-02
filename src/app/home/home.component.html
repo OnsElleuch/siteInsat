@@ -32,27 +32,24 @@
 					</figure>
 				</div>
 			</div>
-		</div>
+    </div>
 
-
-		<div class="kf_content_wrap">
-			<!--COURSE OUTER WRAP START-->
-			<div class="kf_course_outerwrap">
-				<div class="container">
-
-					<div class="row">
-
-						<div>
-							<div class="row">
-								<!--COURSE CATEGORIES WRAP START-->
-								<div class="kf_cur_catg_wrap row">
-									<!--COURSE CATEGORIES WRAP HEADING START-->
-									<div class="col-md-12">
-										<div class="kf_edu2_heading1">
-											<h3>Nos départements</h3>
-										</div>
-									</div>
-									<!--COURSE CATEGORIES WRAP HEADING END-->
+    <div class="kf_content_wrap">
+      <!--COURSE OUTER WRAP START-->
+      <div class="kf_course_outerwrap">
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="row">
+                <!--COURSE CATEGORIES WRAP START-->
+                <div class="kf_cur_catg_wrap row">
+                  <!--COURSE CATEGORIES WRAP HEADING START-->
+                  <div class="col-md-12">
+                    <div class="kf_edu2_heading1">
+                      <h3>Nos départements</h3>
+                    </div>
+                  </div>
+                  <!--COURSE CATEGORIES WRAP HEADING END-->
 
 									<!--COURSE CATEGORIES DES START-->
 									<div class="col-md-6">
@@ -66,11 +63,11 @@
 									</div>
 									<!--COURSE CATEGORIES DES END-->
 
-									<!--COURSE CATEGORIES DES START-->
-									<div class="col-md-6">
-										<div class="kf_cur_catg_des color-2">
-											<span><i class="icon-accounting5"></i></span>
-											<div class="kf_cur_catg_capstion">
+                  <!--COURSE CATEGORIES DES START-->
+                  <div class="col-md-6">
+                    <div class="kf_cur_catg_des color-2">
+                      <span><i class="icon-accounting5"></i></span>
+                      <div class="kf_cur_catg_capstion">
                         <h5>GÉNIE PHYSIQUE ET INSTRUMENTATION</h5>
 												<a routerLink="/insat/phyins" class="btn btn-outline-dark">Plus d'information</a>
 											</div>
@@ -78,11 +75,11 @@
 									</div>
 									<!--COURSE CATEGORIES DES END-->
 
-									<!--COURSE CATEGORIES DES START-->
-									<div class="col-md-6">
-										<div class="kf_cur_catg_des color-3">
-											<span><i class="icon-chemistry29"></i></span>
-											<div class="kf_cur_catg_capstion">
+                  <!--COURSE CATEGORIES DES START-->
+                  <div class="col-md-6">
+                    <div class="kf_cur_catg_des color-3">
+                      <span><i class="icon-chemistry29"></i></span>
+                      <div class="kf_cur_catg_capstion">
                         <h5>GÉNIE BIOLOGIE ET CHIMIE</h5>
 												<a routerLink="/insat/bioch" class="btn btn-outline-dark">Plus d'information</a>
 											</div>
@@ -90,11 +87,11 @@
 									</div>
 									<!--COURSE CATEGORIES DES END-->
 
-									<!--COURSE CATEGORIES DES START-->
-									<div class="col-md-6">
-										<div class="kf_cur_catg_des color-4">
-											<span><i class="fas fa-users"></i></span>
-											<div class="kf_cur_catg_capstion">												
+                  <!--COURSE CATEGORIES DES START-->
+                  <div class="col-md-6">
+                    <div class="kf_cur_catg_des color-4">
+                      <span><i class="fas fa-users"></i></span>
+                      <div class="kf_cur_catg_capstion">
                         <h5>SCIENCES SOCIALES, LANGUES ET FORMATION GÉNÉRALE</h5>
 												<a routerLink="/insat/formgen" class="btn btn-outline-dark">Plus d'information</a>
 											</div> 
@@ -170,18 +167,16 @@
 			</section>
 			<!--KF INTRO WRAP END-->
 
-			<!--KF COURSES CATEGORIES WRAP START-->
-     
+      <!--KF COURSES CATEGORIES WRAP START-->
 
-			<!--KF INTRO WRAP END-->
+      <!--KF INTRO WRAP END-->
 
-			
       <!--KF COURSES CATEGORIES WRAP START-->
       <section>
         <div class="container">
 			<div class="row margin">
 				<div class="col-md-4 margin" *ngFor="let new of news">
-				  <app-event-card [event]="new"></app-event-card>
+				  <app-news-card [news]="new"></app-news-card>
 				</div>
 			  </div>
           <div class="row margin">
@@ -497,37 +492,34 @@
 				<a routerLink="/insat/evenments" class="btn-3">Tous les événements</a>
 			</div>
           </div>
-				</div>
-			</section>
-			<!-- LATEST NEWS AND EVENT WRAP END-->
-
-		</div>
-
-		<!--EDU2 FOOTER WRAP START-->
-		<!--NEWS LETTERS START-->
-		<div class="edu2_ft_topbar_wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="edu2_ft_topbar_des">
-							<h5>Poursuivre les nouveautés</h5>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="edu2_ft_topbar_des">
-							<form>
-								<input type="email" placeholder="Entrer votre adresse mail">
-								<button><i class="fa fa-paper-plane"></i>Envoyer</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--NEWS LETTERS END-->
-	
+        </div>
+      </section>
+      <!-- LATEST NEWS AND EVENT WRAP END-->
     </div>
-    <!--KF KODE WRAPPER WRAP END-->
 
+    <!--EDU2 FOOTER WRAP START-->
+    <!--NEWS LETTERS START-->
+    <div class="edu2_ft_topbar_wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="edu2_ft_topbar_des">
+              <h5>Poursuivre les nouveautés</h5>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="edu2_ft_topbar_des">
+              <form>
+                <input type="email" placeholder="Entrer votre adresse mail" />
+                <button><i class="fa fa-paper-plane"></i>Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--NEWS LETTERS END-->
+  </div>
   <!--KF KODE WRAPPER WRAP END-->
+
 </body>

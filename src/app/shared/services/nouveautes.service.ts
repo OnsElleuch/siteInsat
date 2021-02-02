@@ -15,7 +15,7 @@ export class NouveautesService extends GenericService {
   getNews(): Observable<News[]> {
     return this.http.get<News[]>(environment.baseUrl + 'nouveautes/getNews');
   }
-  getNewsById(): Observable<News> {
-    return this.http.get<News>(environment.baseUrl + 'nouveautes/getNewsById');
+  getNewsById(id : number): Observable<News> {
+    return this.http.get<News>(environment.baseUrl + 'nouveautes/getNewsById/'+id);
   }
 }
