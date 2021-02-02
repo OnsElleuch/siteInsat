@@ -29,6 +29,7 @@ import { LaboratoiresRechercheComponent } from './recherche/laboratiores-recherc
 import { ProductionScientifiqueComponent } from './recherche/production-scientifique/production-scientifique.component';
 import { RelationsExternesComponent } from './relations-externes/relations-externes.component';
 import { AuthGuardService as AuthGuard } from './auth/auth-guard.service';
+import { NewsTemplateComponent } from './news-template/news-template.component';
 const routes: Routes = [
   {
     path: '',
@@ -84,15 +85,19 @@ const routes: Routes = [
         component: NouveautesComponent,
       },
       {
-        path: 'insat/evenments/event',
+        path: 'insat/evenments/event/:id',
         component: NewsEventTemplateComponent,
+      },
+      {
+        path: 'insat/nouveautes/nouveaute/:id',
+        component: NewsTemplateComponent,
       },
       {
         path: 'insat/clubs',
         component: ClubsComponent,
       },
       {
-        path: 'insat/clubs/club',
+        path: 'insat/clubs/club/:id',
         component: ClubTemplateComponent,
       },
       {

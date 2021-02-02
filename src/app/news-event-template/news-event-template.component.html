@@ -7,8 +7,13 @@
   </div>
   <!-- HEADING 2 END-->
   <!-- INTERO DES START-->
-  <section class="wrap">
-    <div class="kf_intro_des_wrap">
+  <section>
+    <div class="row">
+      <div class="col-md-6">
+          <img src="{{ event.photo_url }}" alt="" />
+      </div>
+    
+        <div class="col-md-6">
       <div>
         <h5>Description :</h5>
         <h6>{{ event.description }}</h6>
@@ -22,6 +27,7 @@
         <h5>Description du club :</h5>
         <h6>{{ event.descriptionClub }}</h6>
       </div>
+    </div>
     </div>
     <!-- INTERO DES END-->
   </section>

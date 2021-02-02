@@ -35,6 +35,8 @@ import { LoginComponent } from './login/login.component';
 import { LoginService } from './shared/services/login.service';
 import { AuthGuardService } from './auth/auth-guard.service';
 import { AuthService } from './shared/services/auth.service';
+import { NewsTemplateComponent } from './news-template/news-template.component';
+import { NewsCardComponent } from './news-card/news-card.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { AuthService } from './shared/services/auth.service';
     ClubTemplateComponent,
     RelationsExternesComponent,
     LoginComponent,
+    NewsTemplateComponent,
+    NewsCardComponent,
   ],
   imports: [
     BrowserModule,

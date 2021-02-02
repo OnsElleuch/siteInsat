@@ -475,7 +475,7 @@ section,
 .logo_wrap {
   float: left;
   width: 100%;
-  padding: 24px 0;
+  padding: 24px 0 ;
   max-width: 100%;
 }
 .nav_2 {
