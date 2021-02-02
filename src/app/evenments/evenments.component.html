@@ -12,8 +12,8 @@
 
             <div class="kf_inr_breadcrumb">
               <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/insat">Evénements</a></li>
+                <li><a routerLink="/">Accueil</a></li>
+                <li><a routerLink="/insat">Evénements</a></li>
               </ul>
             </div>
           </div>
@@ -24,16 +24,6 @@
   </div>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 margin" *ngFor="let event of events">
-        <app-event-card [event]="event"></app-event-card>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 margin" *ngFor="let event of events">
-        <app-event-card [event]="event"></app-event-card>
-      </div>
-    </div>
     <div class="row">
       <div class="col-md-4 margin" *ngFor="let event of events">
         <app-event-card [event]="event"></app-event-card>

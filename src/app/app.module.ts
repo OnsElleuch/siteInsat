@@ -31,6 +31,12 @@ import { EmploisService } from './shared/services/emplois.service';
 import { FormationModule } from './formation/formation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EspaceEtudiantService } from './shared/services/espace-etudiant.service';
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './shared/services/login.service';
+import { AuthGuardService } from './auth/auth-guard.service';
+import { AuthService } from './shared/services/auth.service';
+import { NewsTemplateComponent } from './news-template/news-template.component';
+import { NewsCardComponent } from './news-card/news-card.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +55,9 @@ import { EspaceEtudiantService } from './shared/services/espace-etudiant.service
     CardClubComponent,
     ClubTemplateComponent,
     RelationsExternesComponent,
+    LoginComponent,
+    NewsTemplateComponent,
+    NewsCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +74,15 @@ import { EspaceEtudiantService } from './shared/services/espace-etudiant.service
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [AboutUsService, DepartmentService, EmploisService, EspaceEtudiantService],
+  providers: [
+    AboutUsService,
+    DepartmentService,
+    EmploisService,
+    EspaceEtudiantService,
+    LoginService,
+    AuthGuardService,
+    AuthService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {

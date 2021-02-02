@@ -15,7 +15,7 @@ export class ClubsService extends GenericService {
   getClubs(): Observable<Club[]> {
     return this.http.get<Club[]>(environment.baseUrl + 'clubs/getClubs');
   }
-  getClubById(): Observable<Club> {
-    return this.http.get<Club>(environment.baseUrl + 'clubs/getClubById');
+  getClubById(id :number): Observable<Club> {
+    return this.http.get<Club>(environment.baseUrl + 'clubs/club/' + id);
   }
 }
