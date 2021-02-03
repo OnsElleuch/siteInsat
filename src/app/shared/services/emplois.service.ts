@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Ressource } from '../models/ressource';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
-import {environment} from '../../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
+import { GenericService } from './generic.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class EmploisService {
+export class EmploisService extends GenericService {
   emlpois = [
     {
       name: 'MPI 1/1',
@@ -299,7 +300,9 @@ export class EmploisService {
     },
   ];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    super();
+  }
 
   getMPI(): Ressource[] {
     return this.emlpois.filter((filiere) => filiere.name.includes('MPI'));
@@ -334,6 +337,6 @@ export class EmploisService {
   }
 
   getEmplois(): Observable<Ressource[]> {
-    return this.http.get<Ressource[]>(environment.baseUrl + 'rendez-vous/calendrier');
+    return this.http.get<Ressource[]>(environment.baseUrl + 'calendrier/calendrier');
   }
 }

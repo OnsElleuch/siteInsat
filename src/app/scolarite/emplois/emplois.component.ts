@@ -22,7 +22,7 @@ export class EmploisComponent implements OnInit {
   constructor(private emploisService: EmploisService) {}
 
   ngOnInit(): void {
-    this.emploisService.getEmplois.subscribe(emplois => this.emplois = emplois);
+    this.emploisService.getEmplois().subscribe((emplois) => (this.emplois = emplois));
     this.EmploiBIO = this.getBIO();
     this.EmploiCBA = this.getCBA();
     this.EmploiMPI = this.getMPI();
@@ -31,7 +31,6 @@ export class EmploisComponent implements OnInit {
     this.EmploiIMI = this.getIMI();
     this.EmploiRT = this.getRT();
     this.EmploiGL = this.getGL();
-    
   }
 
   ShowDiv(divVal: string): void {
