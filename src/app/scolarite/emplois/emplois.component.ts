@@ -9,6 +9,7 @@ import { EmploisService } from '../../shared/services/emplois.service';
 })
 export class EmploisComponent implements OnInit {
   currDiv: string;
+  emplois: Ressource[];
   EmploiMPI: Ressource[];
   EmploiGL: Ressource[];
   EmploiIIA: Ressource[];
@@ -21,15 +22,15 @@ export class EmploisComponent implements OnInit {
   constructor(private emploisService: EmploisService) {}
 
   ngOnInit(): void {
-    this.EmploiBIO = this.emploisService.getBIO();
-    this.EmploiCBA = this.emploisService.getCBA();
-    this.EmploiMPI = this.emploisService.getMPI();
-    this.EmploiCH = this.emploisService.getCH();
-    this.EmploiIIA = this.emploisService.getIIA();
-    this.EmploiIMI = this.emploisService.getIMI();
-    this.EmploiRT = this.emploisService.getRT();
-    this.EmploiGL = this.emploisService.getGL();
-    console.log(this.EmploiMPI);
+    this.emploisService.getEmplois().subscribe((emplois) => (this.emplois = emplois));
+    this.EmploiBIO = this.getBIO();
+    this.EmploiCBA = this.getCBA();
+    this.EmploiMPI = this.getMPI();
+    this.EmploiCH = this.getCH();
+    this.EmploiIIA = this.getIIA();
+    this.EmploiIMI = this.getIMI();
+    this.EmploiRT = this.getRT();
+    this.EmploiGL = this.getGL();
   }
 
   ShowDiv(divVal: string): void {
@@ -38,5 +39,36 @@ export class EmploisComponent implements OnInit {
   }
   openPdf(url: string): void {
     window.open(url, '_blank');
+  }
+  getMPI(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('MPI'));
+  }
+
+  getCBA(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('CBA'));
+  }
+
+  getGL(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('GL'));
+  }
+
+  getIIA(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('IIA'));
+  }
+
+  getIMI(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('IMI'));
+  }
+
+  getRT(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('RT'));
+  }
+
+  getBIO(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('BIO'));
+  }
+
+  getCH(): Ressource[] {
+    return this.emplois.filter((filiere) => filiere.name.includes('CH'));
   }
 }
