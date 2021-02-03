@@ -42,34 +42,34 @@ export class EmploisComponent implements OnInit {
     window.open(url, '_blank');
   }
   getMPI(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('MPI'));
+    return this.emplois.filter((filiere) => filiere.name.includes('MPI'));
   }
 
   getCBA(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('CBA'));
+    return this.emplois.filter((filiere) => filiere.name.includes('CBA'));
   }
 
   getGL(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('GL'));
+    return this.emplois.filter((filiere) => filiere.name.includes('GL'));
   }
 
   getIIA(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('IIA'));
+    return this.emplois.filter((filiere) => filiere.name.includes('IIA'));
   }
 
   getIMI(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('IMI'));
+    return this.emplois.filter((filiere) => filiere.name.includes('IMI'));
   }
 
   getRT(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('RT'));
+    return this.emplois.filter((filiere) => filiere.name.includes('RT'));
   }
 
   getBIO(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('BIO'));
+    return this.emplois.filter((filiere) => filiere.name.includes('BIO'));
   }
 
   getCH(): Ressource[] {
-    return this.emlpois.filter((filiere) => filiere.name.includes('CH'));
+    return this.emplois.filter((filiere) => filiere.name.includes('CH'));
   }
 }
