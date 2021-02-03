@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { News } from '../shared/models/news';
+import { Event } from '../shared/models/event';
+import { EvenmentsService } from '../shared/services/evenments.service';
+import { NouveautesService } from '../shared/services/nouveautes.service';
 declare var jQuery: any;
 @Component({
   selector: 'app-home',
@@ -6,10 +11,26 @@ declare var jQuery: any;
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  events: Event[];
+  busy: Subscription;
+  news: News[];
+  constructor(private nouveautesService: NouveautesService,private evenmentsService: EvenmentsService) {}
 
   ngOnInit(): void {
+    this.getNews();
+    this.getEvents();
     this.initCarousel('owl-carousel', 50);
+  }
+  getEvents() {
+    this.busy = this.evenmentsService.getEvents().subscribe((data) => {
+      this.events = data.splice(0,4);
+    });
+  }
+  
+  getNews() {
+    this.busy = this.nouveautesService.getNews().subscribe((data) => {
+      this.news = data.splice(0,6);
+    });
   }
   initCarousel(className: string, timeout) {
     const carousel = jQuery('.' + className);

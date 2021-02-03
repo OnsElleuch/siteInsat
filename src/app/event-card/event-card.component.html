@@ -1,0 +1,16 @@
+<body>
+  <div class="edu2_cur_wrap">
+    <figure>
+      <img src="{{ event.photo_url }}" alt="" height="190" />
+      <figcaption><a routerLink="event/{{event.id}}">Plus d'information</a></figcaption>
+    </figure>
+    <div class="edu2_cur_des nouveauté">
+      <strong class="date">
+        <span>{{ event.date }}</span>
+      </strong>
+      <h4 class="titre">
+        <a routerLink="/insat/evenments/event">{{ event.title }}</a>
+      </h4>
+    </div>
+  </div>
+</body>

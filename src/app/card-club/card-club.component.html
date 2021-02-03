@@ -1,0 +1,16 @@
+<body>
+  <div class="edu2_cur_wrap">
+    <figure>
+      <img src="{{ club.photo_url }}" alt="" height="190" />
+      <figcaption><a routerLink="club/{{club.id}}" >Plus d'information</a></figcaption>
+    </figure>
+    <div class="edu2_cur_des nouveauté">
+      <h6 class="date">
+        <span>{{ club.clubName }}</span>
+      </h6>
+      <h4 class="titre">
+        President : <a href="#">{{ club.president }}</a>
+      </h4>
+    </div>
+  </div>
+</body>

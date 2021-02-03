@@ -475,8 +475,8 @@ section,
 .logo_wrap {
   float: left;
   width: 100%;
-  padding: 22px 0;
-  max-width: 55%;
+  padding: 24px 0 ;
+  max-width: 100%;
 }
 .nav_2 {
   float: left;
@@ -498,7 +498,7 @@ section,
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px 18px;
+  padding: 10px 13px;
   position: relative;
   z-index: 2;
 }
@@ -1067,7 +1067,7 @@ section,
   width: 50%;
   top: 0;
   bottom: 0;
-  background-image: url(src/assets/extra-images/bg-1.jpg);
+  background-image: url(src/assets/images/photos_insat/IMG_20210106_171135-01.jpeg);
   background-size: cover;
   background-position: center;
   position: absolute;

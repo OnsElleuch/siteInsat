@@ -5,4 +5,8 @@ export class Enseignant {
   public discipline: string;
   public department: string;
   public grade: string;
+  public qualite: string;
+  public etablissement: string;
+  public universite: string;
+  public structureRecherche: string;
 }

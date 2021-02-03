@@ -37,7 +37,7 @@ export class EmploisComponent implements OnInit {
     this.currDiv = divVal;
     console.log(this.currDiv);
   }
-  openPdf(url: string) {
+  openPdf(url: string): void {
     window.open(url, '_blank');
   }
   getMPI(): Ressource[] {
