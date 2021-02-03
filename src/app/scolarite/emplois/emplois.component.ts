@@ -26,7 +26,7 @@ export class EmploisComponent implements OnInit {
     this.EmploiBIO = this.getBIO();
     this.EmploiCBA = this.getCBA();
     this.EmploiMPI = this.getMPI();
-    this.EmploiCH = this..getCH();
+    this.EmploiCH = this.getCH();
     this.EmploiIIA = this.getIIA();
     this.EmploiIMI = this.getIMI();
     this.EmploiRT = this.getRT();
