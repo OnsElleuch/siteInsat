@@ -7,7 +7,7 @@ import { Event } from '../shared/models/event';
   styleUrls: ['./event-card.component.css'],
 })
 export class EventCardComponent implements OnInit {
-  @Input() event : Event;
+  @Input() event: Event;
   constructor() {}
 
   ngOnInit(): void {}

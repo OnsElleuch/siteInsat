@@ -13,7 +13,7 @@ export class EvenmentsComponent implements OnInit {
   events: Event[];
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;
-  
+
   constructor(private evenmentsService: EvenmentsService) {}
 
   ngOnInit(): void {

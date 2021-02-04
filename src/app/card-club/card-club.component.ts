@@ -7,7 +7,7 @@ import { Club } from '../shared/models/club';
   styleUrls: ['./card-club.component.css'],
 })
 export class CardClubComponent implements OnInit {
-  @Input() club : Club;
+  @Input() club: Club;
   constructor() {}
 
   ngOnInit(): void {}

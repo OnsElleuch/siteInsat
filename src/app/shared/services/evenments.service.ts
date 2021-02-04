@@ -16,7 +16,7 @@ export class EvenmentsService extends GenericService {
     return this.http.get<Event[]>(environment.baseUrl + 'evenments/getEvents');
   }
   getEventsById(id: number): Observable<Event> {
-    return this.http.get<Event>(environment.baseUrl + 'evenments/getEventsById/'+id);
+    return this.http.get<Event>(environment.baseUrl + 'evenments/getEventsById/' + id);
   }
 
   getEventsByClub(club: string): Observable<Event[]> {

@@ -1,5 +1,5 @@
 export class Club {
-  public id : number ;
+  public id: number;
   public clubName: string;
   public clubDescription: string;
   public president: string;
