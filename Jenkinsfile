@@ -30,7 +30,7 @@ pipeline {
 		
     stage('build') {
       steps {
-        sh '''npm install . 
+        sh '''sudo npm install . 
 node -v
 npm -v 
 sudo npm run build
