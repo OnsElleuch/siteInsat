@@ -34,7 +34,6 @@ pipeline {
 node -v
 npm -v 
 sudo npm run build
-sudo cp dist/* /var/www
 '''
       }
     }
