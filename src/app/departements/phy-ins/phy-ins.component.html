@@ -239,6 +239,210 @@
             <!-- COURSES DETAIL TABS WRAP END -->
 
             <!--KF_BLOG DETAIL_DES END-->
+
+            <!-- COURSES DETAIL TABS WRAP START -->
+            <div class="kf_courses_tabs">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[0] }" (click)="changeActiveTab(0)">
+                  <a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Présentation</a>
+                </li>
+                <li role="presentation" [ngClass]="{ 'active-tab': tablist[1] }" (click)="changeActiveTab(1)">
+                  <a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab"
+                    >Débouchés professionnels</a
+                  >
+                </li>
+                <li
+                  role="presentation"
+                  [ngClass]="{ 'active-tab': tablist[2] }"
+                  (click)="changeActiveTab(2)"
+                  *ngIf="maitresAss.length > 0 || maitresConf.length > 0 || professeurs.length > 0"
+                >
+                  <a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab"
+                    >Enseignants permanents</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="coursedetails">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Présentation</h3>
+                    </div>
+                    <p>
+                      Le Département de Génie Physique et Instrumentation propose, après une année de tronc commun en
+                      Maths-Physique-Informatique (MPI), le choix entre deux options, dans le cadre du cycle
+                      préparatoire intégré :
+
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Instrumentation et Maintenance Industrielle.
+                      </li>
+                      <li style="flex-wrap: nowrap">
+                        <fa-icon [icon]="['fas', 'check']" style="color: #830709"></fa-icon>
+                        Informatique Industrielle et Automatique.
+                      </li>
+
+                      Cette formation de qualité, à finalité professionnelle, mais également largement ouverte vers la
+                      poursuite d'études, est fort appréciée des industriels comme des établissements universitaires
+                      habilités pour des études doctorales.
+                      <br />
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="coursestructure">
+                  <!-- COURSES DETAIL DES START -->
+                  <div class="kf_courses_detail_des">
+                    <div class="course_heading">
+                      <h3>Débouchés Professionnels</h3>
+                    </div>
+                    <p>
+                      Le diplômé de filières IMI ou IIA est un ingénieur praticien. C'est un professionnel de terrain,
+                      intermédiaire privilégié entre les différents acteurs d'un projet industriel (clients, services
+                      techniques, services commerciaux, exploitants, …) et collaborateur direct des chercheurs ou des
+                      cadres de l'entreprise.
+                    </p>
+                    <p>
+                      Il sait analyser, synthétiser, concevoir, réaliser, tester, mettre en œuvre, organiser et
+                      communiquer.
+                    </p>
+                    <p>
+                      Les réalités économiques de la Tunisie montre depuis quelques années une demande croissante en
+                      ingénieurs IIA et IMI (taux de recrutement global dans l’industrie avoisinant 90% ; les 10%
+                      restant s’orientant vers des études de 3ème cycle).
+                    </p>
+                    <p>
+                      Les besoins en ingénieurs dans les domaines IIA et IMI augmentent exponentiellement suite à
+                      l’installation en Tunisie de différentes grandes sociétés comme AIRBUS, BOEING et autres.
+                    </p>
+                    <p>
+                      Pour assurer une formation d’ingénieur d’un niveau de compétence très apprécié par les
+                      industriels, le Département de Génie Physique et Instrumentation dispose d’une équipe
+                      pluridisciplinaire de plus de 70 enseignants en contact permanent avec le milieu industriel et
+                      connaissant parfaitement ses besoins et impératifs.
+                    </p>
+                    <p>
+                      Le département dispose d’équipements pédagogiques orienté industrie et vient d’acquérir pour 4
+                      milliards de millimes d’équipements pédagogiques pour les travaux pratiques IMI et IIA ; ce
+                      matériel ultra moderne est opérationnel dès cette année.
+                    </p>
+                  </div>
+                  <!-- COURSES DETAIL DES END -->
+
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="labs.length > 0">
+                    <h6>Laboratoires affectés au département de Génie Physique et Instrumentation</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>N°</th>
+                          <th>Laboratoires affectés au département de Génie Physique et Instrumentation</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let lab of labs">
+                          <td>{{ lab.num }}</td>
+                          <td>{{ lab.name }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="entryrequirment">
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="professeurs.length > 0">
+                    <h6>Grade Professeur</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of professeurs">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="maitresConf.length > 0">
+                    <h6>Grade Maître de Conférences</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresConf">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                  <!-- STUDY TABLE WRAP START -->
+
+                  <div class="study_table_wrap" *ngIf="maitresAss.length > 0">
+                    <h6>Grade Maître Assistant</h6>
+                    <!--  TABLE  START -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom et Prénom</th>
+                          <th>Grade</th>
+                          <th>Discipline</th>
+                          <th>E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let prof of maitresAss">
+                          <td>{{ prof.name }} {{ prof.lastName }}</td>
+                          <td>{{ prof.grade }}</td>
+                          <td>{{ prof.discipline }}</td>
+                          <td>{{ prof.email }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!--  TABLE  END -->
+                  </div>
+                  <!-- STUDY TABLE WRAP END -->
+                </div>
+              </div>
+            </div>
+            <!-- COURSES DETAIL TABS WRAP END -->
+
+            <!--KF_BLOG DETAIL_DES END-->
           </div>
           <!-- COURSES DETAIL WRAP END -->
         </div>
