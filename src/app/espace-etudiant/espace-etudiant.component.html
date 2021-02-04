@@ -1,4 +1,4 @@
-<div class="profile">
+<div *ngIf="!changeToggle" class="profile">
   <div class="edu_testemonial_wrap row">
     <div class="col">
       <div class="col align-self-center">
@@ -26,13 +26,67 @@
         <!-- -->
         <div class="row align-items-center">
           <div class="col align-self-center text-center">
-            <a class="btn-3 text-center" href="#">Changer mes informations personelles</a>
+            <a class="btn-3 text-center" (click)="toggle()">Changer mes informations personelles</a>
           </div>
           <div class="col align-self-center text-center">
             <a class="btn-3 text-center" (click)="logout()">Deconnecter</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Changer data-->
+<!-- Contant Form-->
+<div *ngIf="changeToggle" class="row align-items-center">
+  <div class="col-md-7 align-self-center text-center contact-center">
+    <div class="container">
+      <!-- EDU2 SEARCH WRAP START -->
+      <div class="kf_edu2_search_wrap text-center">
+        <div class="kf_edu2_heading2 text-center">
+          <h3>Changer Mes Informations Personelles</h3>
+        </div>
+        <!-- FORM START -->
+        <form #formulaireChange="ngForm">
+          <div class="edu2_serc_des">
+            <input name="name" type="text" placeholder="Nom Prenom:" #name ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input
+              name="numEtudiant"
+              type="text"
+              type="text"
+              placeholder="Numéro Etudiant:" 
+              #numEtudiant
+              ngModel
+            />
+          </div>
+          <div class="edu2_serc_des">
+            <input name="class" type="text" placeholder="Classe:" #class ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="Email:" name="email" #email ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="CIN:" name="CIN" #CIN ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="Mot de passe:" name="password" #password ngModel />
+          </div>
+          
+          <div class="row">
+            <div class="col md-6">
+              <a class="btn-3 animate" (click)="submitChange(formulaireChange)">Confirmer les changements</a>
+            </div>
+            <div class="col md-6">
+              <a class="btn-3 text-center animate" (click)="toggle()">Annuler</a>
+            </div>
+          </div>
+        </form>
+        <!-- FORM END -->
+      </div>
+      <!-- EDU2 SEARCH WRAP END -->
     </div>
   </div>
 </div>
