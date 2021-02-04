@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ChangeInfoService } from '../shared/services/change-info.service';
 import { EspaceEtudiantService } from '../shared/services/espace-etudiant.service';
 declare var jQuery: any;
 
@@ -9,7 +10,7 @@ declare var jQuery: any;
   styleUrls: ['./espace-etudiant.component.css'],
 })
 export class EspaceEtudiantComponent implements OnInit {
-  constructor(private espaceEtudiantService: EspaceEtudiantService) {}
+  constructor(private espaceEtudiantService: EspaceEtudiantService,private changeInfoService: ChangeInfoService) {}
   Notes: any;
   Calendrier: any;
   CalendrierData: any;
@@ -42,6 +43,17 @@ export class EspaceEtudiantComponent implements OnInit {
     this.espaceEtudiantService.sendContact(formulaire.value).subscribe((res) => {
       console.log(res);
     });
+  }
+  submitChange(formulaireChange: NgForm) {
+    this.changeInfoService.changeInfo(this.user.id,formulaireChange.value).subscribe((res) => {
+      console.log(res);
+      this.changeInfoService.getInfo(this.user.id).subscribe((res) => {
+        this.user=res;
+        console.log(res);
+      });
+    });
+    this.toggle();
+    
   }
   logout() {
     localStorage.clear();

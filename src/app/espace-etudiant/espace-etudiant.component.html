@@ -48,48 +48,36 @@
           <h3>Changer Mes Informations Personelles</h3>
         </div>
         <!-- FORM START -->
-        <form #formulaire="ngForm">
+        <form #formulaireChange="ngForm">
           <div class="edu2_serc_des">
             <input name="name" type="text" placeholder="Nom Prenom:" #name ngModel />
           </div>
           <div class="edu2_serc_des">
             <input
-              name="numInscription"
+              name="numEtudiant"
               type="text"
               type="text"
-              placeholder="Num inscription:"
-              #numInscription
+              placeholder="Numéro Etudiant:" 
+              #numEtudiant
               ngModel
             />
           </div>
-
+          <div class="edu2_serc_des">
+            <input name="class" type="text" placeholder="Classe:" #class ngModel />
+          </div>
           <div class="edu2_serc_des">
             <input type="text" placeholder="Email:" name="email" #email ngModel />
           </div>
-          <!-- EDU2 DROP DOWN DES START -->
           <div class="edu2_serc_des">
-            <select name="filiere" #filiere ngModel>
-              <option *ngFor="let item of Filiere" [value]="item.option">{{ item.option }}</option>
-            </select>
+            <input type="text" placeholder="CIN:" name="CIN" #CIN ngModel />
           </div>
-          <!-- EDU2 DROP DOWN DES END -->
-          <!-- EDU2 DROP DOWN DES START -->
           <div class="edu2_serc_des">
-            <select name="typeDemande" #typeDemande ngModel>
-              <option value="attestation de presence">Demande d'attestation de presence</option>
-              <option value="relevé de note">Demande de relevé de note</option>
-              <option value="Demande">Demande de</option>
-              <option value="autre">autre</option>
-            </select>
+            <input type="text" placeholder="Mot de passe:" name="password" #password ngModel />
           </div>
-          <!-- EDU2 DROP DOWN DES END -->
-
-          <div class="edu2_serc_des">
-            <input name="comment" type="text" placeholder="Autre ... " #comment ngModel />
-          </div>
+          
           <div class="row">
             <div class="col md-6">
-              <a class="btn-3 animate" (click)="onSubmit(formulaire)">Confirmer les changements</a>
+              <a class="btn-3 animate" (click)="submitChange(formulaireChange)">Confirmer les changements</a>
             </div>
             <div class="col md-6">
               <a class="btn-3 text-center animate" (click)="toggle()">Annuler</a>
