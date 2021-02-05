@@ -34,6 +34,7 @@ pipeline {
 node -v
 npm -v 
 sudo ng build --configuration=production
+'''
       }
     }
     }
