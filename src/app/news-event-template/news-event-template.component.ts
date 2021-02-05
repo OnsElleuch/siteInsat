@@ -12,7 +12,7 @@ import { Event } from '../shared/models/event';
   styleUrls: ['./news-event-template.component.css'],
 })
 export class NewsEventTemplateComponent implements OnInit {
-  event: Event;
+  event= new Event();
   eventId: number;
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;
@@ -21,7 +21,6 @@ export class NewsEventTemplateComponent implements OnInit {
     this.route.params.subscribe((params) => {
       this.eventId = params['id'];
     });
-    console.log(this.eventId);
   }
 
   ngOnInit(): void {
