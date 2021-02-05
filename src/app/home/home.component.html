@@ -384,12 +384,12 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="edu2_event_des">
                       <h4>Sep</h4>
-                      <p>{{ events[0].club }} organise {{ events[0].title }}</p>
+                      <p>{{ events[0]?.club }} organise {{ events[0]?.title }}</p>
                       <ul class="post-option">
                         <li>
-                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[0].club }}</a>
+                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[0]?.club }}</a>
                         </li>
-                        <li>{{ events[0].date }}</li>
+                        <li>{{ events[0]?.date }}</li>
                       </ul>
                       <a routerLink="insat/evenments/event" class="readmore"
                         >Plus d'information<i class="fa fa-long-arrow-right"></i
@@ -399,7 +399,7 @@
                   </div>
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img class="news_image" src="../assets/extra-images/news1.jpg" alt="" />
+                      <img class="news_image" src="{{events[0]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -416,7 +416,7 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img class="news_image" src="../assets/extra-images/news2.jpg" alt="" />
+                      <img class="news_image" src="{{events[1]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -425,12 +425,12 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="edu2_event_des text-right">
                       <h4>Jui</h4>
-                      <p>{{ events[1].club }} organise {{ events[1].title }}</p>
+                      <p>{{ events[1]?.club }} organise {{ events[1]?.title }}</p>
                       <ul class="post-option">
                         <li>
-                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[1].club }}</a>
+                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[1]?.club }}</a>
                         </li>
-                        <li>{{ events[1].date }}</li>
+                        <li>{{ events[1]?.date }}</li>
                       </ul>
                       <a routerLink="insat/evenments/event" class="readmore"
                         >Plus d'information<i class="fa fa-long-arrow-right"></i
@@ -450,12 +450,12 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="edu2_event_des">
                       <h4>Jui</h4>
-                      <p>{{ events[2].club }} organise {{ events[2].title }}</p>
+                      <p>{{ events[2]?.club }} organise {{ events[2]?.title }}</p>
                       <ul class="post-option">
                         <li>
-                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[2].club }}</a>
+                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[2]?.club }}</a>
                         </li>
-                        <li>{{ events[2].date }}</li>
+                        <li>{{ events[2]?.date }}</li>
                       </ul>
                       <a routerLink="insat/evenments/event" class="readmore"
                         >Plus d'information<i class="fa fa-long-arrow-right"></i
@@ -465,7 +465,7 @@
                   </div>
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img src="../assets/extra-images/news3.jpg" alt="" />
+                      <img src="{{events[2]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -482,7 +482,7 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img src="../assets/extra-images/news4.jpg" alt="" />
+                      <img src="{{events[3]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -491,12 +491,12 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="edu2_event_des text-right">
                       <h4>Mai</h4>
-                      <p>{{ events[3].club }} organise {{ events[3].title }}</p>
+                      <p>{{ events[3]?.club }} organise {{ events[3]?.title }}</p>
                       <ul class="post-option">
                         <li>
-                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[3].club }}</a>
+                          Organisé par : <a routerLink="/insat/clubs/club">{{ events[3]?.club }}</a>
                         </li>
-                        <li>{{ events[3].date }}</li>
+                        <li>{{ events[3]?.date }}</li>
                       </ul>
                       <a routerLink="insat/evenments/event" class="readmore"
                         >Plus d'information<i class="fa fa-long-arrow-right"></i
