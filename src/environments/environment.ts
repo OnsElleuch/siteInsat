@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:3000/',
-  baseUrlFiles: 'http://localhost:3000/uploads/',
+  baseUrl: 'http://40.89.145.72:3000/',
+  baseUrlFiles: 'http://40.89.145.72:3000/uploads/',
 };
 
 /*
