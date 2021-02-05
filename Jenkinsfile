@@ -33,8 +33,7 @@ pipeline {
         sh '''sudo npm install . 
 node -v
 npm -v 
-sudo npm run build
-'''
+sudo ng build --configuration=production
       }
     }
     }

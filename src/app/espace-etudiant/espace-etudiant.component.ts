@@ -10,7 +10,7 @@ declare var jQuery: any;
   styleUrls: ['./espace-etudiant.component.css'],
 })
 export class EspaceEtudiantComponent implements OnInit {
-  constructor(private espaceEtudiantService: EspaceEtudiantService,private changeInfoService: ChangeInfoService) {}
+  constructor(private espaceEtudiantService: EspaceEtudiantService, private changeInfoService: ChangeInfoService) {}
   Notes: any;
   Calendrier: any;
   CalendrierData: any;
@@ -23,7 +23,7 @@ export class EspaceEtudiantComponent implements OnInit {
     this.getCalendrier();
     this.user = JSON.parse(localStorage.getItem('user'));
     console.log(this.user);
-    this.changeToggle = true;
+    this.changeToggle = false;
   }
   Filiere: any[] = [
     { option: 'GL' },
@@ -45,15 +45,14 @@ export class EspaceEtudiantComponent implements OnInit {
     });
   }
   submitChange(formulaireChange: NgForm) {
-    this.changeInfoService.changeInfo(this.user.id,formulaireChange.value).subscribe((res) => {
+    this.changeInfoService.changeInfo(this.user.id, formulaireChange.value).subscribe((res) => {
       console.log(res);
       this.changeInfoService.getInfo(this.user.id).subscribe((res) => {
-        this.user=res;
+        this.user = res;
         console.log(res);
       });
     });
     this.toggle();
-    
   }
   logout() {
     localStorage.clear();
