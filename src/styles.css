@@ -482,11 +482,12 @@ section,
   float: left;
   width: 100%;
   padding: 31px 0;
+  display: inline-block;
 }
 .nav_2 ul {
   float: left;
-  width: 100%;
-  text-align: center;
+  width: 120%;
+  text-align: left;
 }
 .nav_2 ul li {
   display: inline-block;
