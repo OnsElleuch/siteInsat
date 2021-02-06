@@ -11,7 +11,7 @@ import { NouveautesService } from '../shared/services/nouveautes.service';
   styleUrls: ['./news-template.component.css'],
 })
 export class NewsTemplateComponent implements OnInit {
-  news= new News();
+  news = new News();
   newsId: number;
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;

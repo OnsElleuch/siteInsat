@@ -11,9 +11,9 @@ declare var jQuery: any;
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  events: Event[]= [];
+  events: Event[] = [];
   busy: Subscription;
-  news: News[]= [];
+  news: News[] = [];
   constructor(private nouveautesService: NouveautesService, private evenmentsService: EvenmentsService) {}
 
   ngOnInit(): void {

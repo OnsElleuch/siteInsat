@@ -12,7 +12,7 @@ import { Event } from '../shared/models/event';
   styleUrls: ['./news-event-template.component.css'],
 })
 export class NewsEventTemplateComponent implements OnInit {
-  event= new Event();
+  event = new Event();
   eventId: number;
   filesUrl = environment.baseUrl + '/';
   busy: Subscription;

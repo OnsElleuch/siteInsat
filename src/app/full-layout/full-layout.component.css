@@ -4,3 +4,10 @@
 .etudiant {
   color: brown;
 }
+.logo_wrap {
+  padding-bottom: 7px !important;
+}
+.padding0 {
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+}
