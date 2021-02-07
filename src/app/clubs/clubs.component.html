@@ -1,0 +1,45 @@
+<div class="kode_wrapper">
+  <!--Banner Wrap Start-->
+  <div class="kf_inr_banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!--KF INR BANNER DES Wrap Start-->
+          <div class="kf_inr_ban_des">
+            <div class="inr_banner_heading">
+              <h3>Les clubs de l'INSAT</h3>
+            </div>
+
+            <div class="kf_inr_breadcrumb">
+              <ul>
+                <li><a routerLink="/">Accueil</a></li>
+                <li><a routerLink="/insat/clubs">Clubs</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--KF INR BANNER DES Wrap End-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 margin" *ngFor="let club of clubs">
+        <app-card-club [club]="club"></app-card-club>
+      </div>
+    </div>
+  </div>
+  <div class="row pagination">
+    <div>
+      <a href="insat/clubs">&laquo;</a>
+      <a href="insat/clubs">1</a>
+      <a href="insat/clubs">2</a>
+      <a href="insat/clubs">3</a>
+      <a href="insat/clubs">4</a>
+      <a href="insat/clubs">5</a>
+      <a href="insat/clubs">6</a>
+      <a href="insat/clubs">&raquo;</a>
+    </div>
+  </div>
+</div>

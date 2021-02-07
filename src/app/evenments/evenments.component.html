@@ -1,0 +1,45 @@
+<div class="kode_wrapper">
+  <!--Banner Wrap Start-->
+  <div class="kf_inr_banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!--KF INR BANNER DES Wrap Start-->
+          <div class="kf_inr_ban_des">
+            <div class="inr_banner_heading">
+              <h3>Les événements de l'INSAT</h3>
+            </div>
+
+            <div class="kf_inr_breadcrumb">
+              <ul>
+                <li><a routerLink="/">Accueil</a></li>
+                <li><a routerLink="/insat">Evénements</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--KF INR BANNER DES Wrap End-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 margin" *ngFor="let event of events">
+        <app-event-card [event]="event"></app-event-card>
+      </div>
+    </div>
+  </div>
+  <div class="row pagination">
+    <div>
+      <a href="insat/evenments">&laquo;</a>
+      <a href="insat/evenments">1</a>
+      <a href="insat/evenments">2</a>
+      <a href="insat/evenments">3</a>
+      <a href="insat/evenments">4</a>
+      <a href="insat/evenments">5</a>
+      <a href="insat/evenments">6</a>
+      <a href="insat/evenments">&raquo;</a>
+    </div>
+  </div>
+</div>

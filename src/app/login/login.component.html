@@ -1,0 +1,34 @@
+<section class="background_td">
+  <div class="card-overlay">
+    <!-- Contant Form-->
+    <div class="row align-items-center">
+      <div class="col-md-4 align-self-center text-center login-center">
+        <div *ngIf="err" class="alert alert-danger">
+          {{ err }}
+        </div>
+        <div class="container">
+          <!-- EDU2 SEARCH WRAP START -->
+          <div class="kf_edu2_search_wrap text-center">
+            <div class="kf_edu2_heading2 text-center">
+              <h3>LOG IN</h3>
+            </div>
+            <!-- FORM START -->
+            <form #formulaire="ngForm">
+              <div class="edu2_serc_des">
+                <input name="CIN" type="text" placeholder="CIN:" #cin ngModel />
+              </div>
+              <div class="edu2_serc_des">
+                <input name="password" type="text" placeholder="password:" #password ngModel />
+              </div>
+
+              <button (click)="onSubmit(formulaire)">Login</button>
+            </form>
+            <!-- FORM END -->
+          </div>
+
+          <!-- EDU2 SEARCH WRAP END -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

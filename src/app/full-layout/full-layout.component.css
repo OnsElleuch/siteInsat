@@ -1,0 +1,6 @@
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.etudiant {
+  color: brown;
+}

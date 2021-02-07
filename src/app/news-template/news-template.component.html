@@ -1,0 +1,30 @@
+<section>
+  <!-- HEADING 2 START-->
+  <div class="col-md-12">
+    <div class="kf_edu2_heading2">
+      <h3>{{ news.title }}</h3>
+    </div>
+  </div>
+  <!-- HEADING 2 END-->
+  <!-- INTERO DES START-->
+  <section>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ news.photo_url }}" alt="" />
+      </div>
+
+      <div class="col-md-6">
+        <div>
+          <h5>Description de la nouveauté :</h5>
+          <h6>{{ news.description }}</h6>
+        </div>
+
+        <div class="espace">
+          <h5>Date de cet nouveauté :</h5>
+          <h6>{{ news.date }}</h6>
+        </div>
+      </div>
+    </div>
+    <!-- INTERO DES END-->
+  </section>
+</section>

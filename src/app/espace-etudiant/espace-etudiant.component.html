@@ -1,0 +1,313 @@
+<div *ngIf="!changeToggle" class="profile">
+  <div class="edu_testemonial_wrap row">
+    <div class="col">
+      <div class="col align-self-center">
+        <div class="row align-items-center">
+          <div class="col-md-4 align-self-center">
+            <img class="profile-img" src="../assets/extra-images/testemonial.1.jpg" alt="" />
+          </div>
+          <div class="kf_edu2_heading2 col">
+            <h3 class="header">{{ user.name }}</h3>
+            <p class="header">- {{ user.class }}</p>
+          </div>
+        </div>
+        <!-- -->
+        <div class="row align-items-center">
+          <div class="col text-center">
+            <hr class="heading-hr" />
+            <p><span class="bold">CIN :</span> {{ user.CIN }}</p>
+            <hr />
+            <p><span class="bold">NumEtudiant :</span> {{ user.numEtudiant }}</p>
+            <hr />
+            <p><span class="bold">Email :</span> {{ user.email }}</p>
+            <hr />
+          </div>
+        </div>
+        <!-- -->
+        <div class="row align-items-center">
+          <div class="col align-self-center text-center">
+            <a class="btn-3 text-center" (click)="toggle()">Changer mes informations personelles</a>
+          </div>
+          <div class="col align-self-center text-center">
+            <a class="btn-3 text-center" (click)="logout()">Deconnecter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Changer data-->
+<!-- Contant Form-->
+<div *ngIf="changeToggle" class="row align-items-center">
+  <div class="col-md-7 align-self-center text-center contact-center">
+    <div class="container">
+      <!-- EDU2 SEARCH WRAP START -->
+      <div class="kf_edu2_search_wrap text-center">
+        <div class="kf_edu2_heading2 text-center">
+          <h3>Changer Mes Informations Personelles</h3>
+        </div>
+        <!-- FORM START -->
+        <form #formulaireChange="ngForm">
+          <div class="edu2_serc_des">
+            <input name="name" type="text" placeholder="Nom Prenom:" #name ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input name="numEtudiant" type="text" type="text" placeholder="Numéro Etudiant:" #numEtudiant ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input name="class" type="text" placeholder="Classe:" #class ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="Email:" name="email" #email ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="CIN:" name="CIN" #CIN ngModel />
+          </div>
+          <div class="edu2_serc_des">
+            <input type="text" placeholder="Mot de passe:" name="password" #password ngModel />
+          </div>
+
+          <div class="row">
+            <div class="col md-6">
+              <a class="btn-3 animate" (click)="submitChange(formulaireChange)">Confirmer les changements</a>
+            </div>
+            <div class="col md-6">
+              <a class="btn-3 text-center animate" (click)="toggle()">Annuler</a>
+            </div>
+          </div>
+        </form>
+        <!-- FORM END -->
+      </div>
+      <!-- EDU2 SEARCH WRAP END -->
+    </div>
+  </div>
+</div>
+
+<!-- TESTEMONIAL SLIDER WRAP END-->
+
+<section class="k">
+  <div class="k">
+    <!-- HEADING 2 START-->
+    <div class="col-md-12">
+      <div class="kf_edu2_heading2">
+        <h3 class="header">Bienvenu dans votre espace etudiant</h3>
+      </div>
+    </div>
+    <!-- HEADING 2 END-->
+
+    <!-- INTERO DES START-->
+    <div class="kf_intro_des">
+      <div class="kf_intro_des_caption">
+        <span><i class="icon-earth132"></i></span>
+        <h6>Consultation de notes</h6>
+        <p class="intro_subtext">Consulter vos notes délibérées.</p>
+        <a href="#">view more</a>
+      </div>
+    </div>
+    <!-- INTERO DES END-->
+    <!-- INTERO DES START-->
+    <div class="kf_intro_des">
+      <div class="kf_intro_des_caption">
+        <span><i class="icon-educational18"></i></span>
+        <h6>Calendrier pédagogique</h6>
+        <p class="intro_subtext">Consulter votre emploi du temps, répartition de TP, et la répartition des examens.</p>
+        <a href="#">view more</a>
+      </div>
+    </div>
+    <!-- INTERO DES END-->
+
+    <!-- INTERO DES START-->
+    <div class="kf_intro_des">
+      <div class="kf_intro_des_caption">
+        <span><i class="icon-teacher4"></i></span>
+        <h6>Contacter l'administration</h6>
+        <p class="intro_subtext">Passer des demandes à l’administration (demande d’attestation de présence…</p>
+        <a href="#">view more</a>
+      </div>
+    </div>
+    <!-- INTERO DES END-->
+  </div>
+</section>
+<!--KF INTRO WRAP END-->
+<div appParallax [ratio]="+0.2" id="square"></div>
+<!--OUR TESTEMONIAL WRAP START Direction-->
+<!-- Consultation de notes-->
+
+<section class="background_color">
+  <div class="container">
+    <div class="row">
+      <!-- HEADING 2 START-->
+      <div class="col-md-12">
+        <div class="training_heading">
+          <h4>Consultation de notes</h4>
+        </div>
+      </div>
+      <!-- HEADING 2 END-->
+      <!-- TESTEMONIAL SLIDER WRAP START-->
+      <div class="edu2_testemonial_slider_wrap">
+        <div id="owl-demo-99">
+          <!-- TESTEMONIAL SLIDER WRAP END-->
+
+          <div *ngFor="let note of Notes" class="item">
+            <!-- TESTEMONIAL SLIDER WRAP START-->
+            <div class="edu_testemonial_wrap slideritem">
+              <div class="kode-text-modified">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <h5 class="sliderTitle">{{ note.name }}</h5>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p *ngIf="note.type == 'individuelle'" class="bold"><span> Etudiant </span> {{ user.name }}</p>
+                    <p *ngIf="note.type != 'individuelle'" class="bold">
+                      <span class="bold"> Class </span>{{ note.details }}
+                    </p>
+                    <hr />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p>
+                      <span class="bold">Date </span>
+                      {{ note.date }}
+                    </p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col align-self-center text-center">
+                  <a class="btn-3 text-center" [href]="note.pdfUrl">Telecharger</a>
+                </div>
+              </div>
+            </div>
+            <!-- TESTEMONIAL SLIDER WRAP END-->
+          </div>
+        </div>
+      </div>
+      <!-- TESTEMONIAL SLIDER WRAP END-->
+    </div>
+  </div>
+</section>
+
+<!--OUR TESTEMONIAL WRAP START Direction-->
+
+<!-- Calendrier Pedagogique-->
+
+<section class="background_td">
+  <div class="card-overlay">
+    <div class="container">
+      <div class="row">
+        <!-- HEADING 2 START-->
+        <div class="col-md-12">
+          <div class="training_heading">
+            <h4>CALENDRIER PÉDAGOGIQUE</h4>
+          </div>
+        </div>
+        <!-- HEADING 2 END-->
+        <!-- TESTEMONIAL SLIDER WRAP START-->
+        <div class="edu2_testemonial_slider_wrap">
+          <div id="owl-demo-999">
+            <!-- TESTEMONIAL SLIDER WRAP END-->
+
+            <div *ngFor="let note of Calendrier" class="item">
+              <!-- TESTEMONIAL SLIDER WRAP START-->
+              <div class="edu_testemonial_wrap slideritem">
+                <div class="kode-text-modified">
+                  <div class="row align-items-center">
+                    <div class="col text-center">
+                      <h5 class="sliderTitle">{{ note.name }}</h5>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <p *ngIf="note.type == 'individuelle'" class="bold"><span> Etudiant </span> {{ user.name }}</p>
+                      <p *ngIf="note.type != 'individuelle'" class="bold">
+                        <span class="bold"> Class </span>{{ note.details }}
+                      </p>
+                      <hr />
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <p>
+                        <span class="bold">Date </span>
+                        {{ note.date }}
+                      </p>
+                      <hr />
+                    </div>
+                  </div>
+
+                  <div class="col align-self-center text-center">
+                    <a class="btn-3 text-center" [href]="note.pdfUrl">Telecharger</a>
+                  </div>
+                </div>
+              </div>
+              <!-- TESTEMONIAL SLIDER WRAP END-->
+            </div>
+          </div>
+        </div>
+        <!-- TESTEMONIAL SLIDER WRAP END-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contant Form-->
+  <div class="row align-items-center">
+    <div class="col-md-7 align-self-center text-center contact-center">
+      <div class="container">
+        <!-- EDU2 SEARCH WRAP START -->
+        <div class="kf_edu2_search_wrap text-center">
+          <div class="kf_edu2_heading2 text-center">
+            <h3>CONTACTER L'ADMINISTRATION</h3>
+          </div>
+          <!-- FORM START -->
+          <form #formulaire="ngForm">
+            <div class="edu2_serc_des">
+              <input name="name" type="text" placeholder="Nom Prenom:" #name ngModel />
+            </div>
+            <div class="edu2_serc_des">
+              <input
+                name="numInscription"
+                type="text"
+                type="text"
+                placeholder="Num inscription:"
+                #numInscription
+                ngModel
+              />
+            </div>
+
+            <div class="edu2_serc_des">
+              <input type="text" placeholder="Email:" name="email" #email ngModel />
+            </div>
+            <!-- EDU2 DROP DOWN DES START -->
+            <div class="edu2_serc_des">
+              <select name="filiere" #filiere ngModel>
+                <option *ngFor="let item of Filiere" [value]="item.option">{{ item.option }}</option>
+              </select>
+            </div>
+            <!-- EDU2 DROP DOWN DES END -->
+            <!-- EDU2 DROP DOWN DES START -->
+            <div class="edu2_serc_des">
+              <select name="typeDemande" #typeDemande ngModel>
+                <option value="attestation de presence">Demande d'attestation de presence</option>
+                <option value="relevé de note">Demande de relevé de note</option>
+                <option value="Demande">Demande de</option>
+                <option value="autre">autre</option>
+              </select>
+            </div>
+            <!-- EDU2 DROP DOWN DES END -->
+
+            <div class="edu2_serc_des">
+              <input name="comment" type="text" placeholder="Autre ... " #comment ngModel />
+            </div>
+            <button (click)="onSubmit(formulaire)">Submit Contact Ticket</button>
+          </form>
+          <!-- FORM END -->
+        </div>
+        <!-- EDU2 SEARCH WRAP END -->
+      </div>
+    </div>
+  </div>
+</section>
