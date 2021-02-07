@@ -9,7 +9,6 @@ import { RechercheService } from '../../shared/services/recherche.service';
   styleUrls: ['./laboratoires-recherche.component.css'],
 })
 export class LaboratoiresRechercheComponent implements OnInit {
-  all: LaboratoireRecherche[];
   laboratoires: LaboratoireRecherche[];
   uniteRecherche: LaboratoireRecherche[];
   projects: ProjetDeRecherche[];
@@ -17,9 +16,9 @@ export class LaboratoiresRechercheComponent implements OnInit {
   constructor(private rechercheService: RechercheService) {}
 
   ngOnInit(): void {
-    this.rechercheService.getLabos().subscribe((labos) => (this.all = labos));
-    this.laboratoires = this.all?.filter((lab) => lab.type === 'laboratiore de recherche');
-    this.laboratoires = this.all?.filter((unite) => unite.type === 'unité de recherche');
+    this.rechercheService.getLabos().subscribe((labos) => (this.laboratoires = labos));
+    this.rechercheService.getUnites().subscribe((labos) => (this.uniteRecherche = labos));
+
     this.rechercheService.getprojets().subscribe((projets) => (this.projects = projets));
   }
 }

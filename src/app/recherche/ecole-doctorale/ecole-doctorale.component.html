@@ -65,6 +65,7 @@
             <h3>Les commissions de thèse de doctorat</h3>
             <br />
             <div *ngFor="let domaine of domaineRecherche">
+              <div hidden>{{ getDomainesRecherche() }}</div>
               <h6>{{ setCommission(domaine) }}</h6>
               <table class="table table-bordered">
                 <thead>
@@ -78,16 +79,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <div *ngFor="let enseignant of commission">
-                    <tr>
-                      <td>{{ commission.indexOf(enseignant) + 1 }}</td>
-                      <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
-                      <td>{{ enseignant.grade }}</td>
-                      <td>{{ enseignant.structureRecherche }}</td>
-                      <td>{{ enseignant.universite }}</td>
-                      <td>{{ enseignant.etablissement }}</td>
-                    </tr>
-                  </div>
+                  <tr *ngFor="let enseignant of commissionThese">
+                    <td>{{ commissionThese.indexOf(enseignant) + 1 }}</td>
+                    <td>{{ enseignant.name }} {{ enseignant.lastName }}</td>
+                    <td>{{ enseignant.grade }}</td>
+                    <td>{{ enseignant.structureRecherche }}</td>
+                    <td>{{ enseignant.universite }}</td>
+                    <td>{{ enseignant.etablissement }}</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -107,15 +106,13 @@
                 </tr>
               </thead>
               <tbody>
-                <div *ngFor="let doctorant of cotutelle">
-                  <tr>
-                    <td>{{ cotutelle.indexOf(doctorant) + 1 }}</td>
-                    <td>{{ doctorant.nom }} {{ doctorant.prenom }}</td>
-                    <td>{{ doctorant.etablissement }}</td>
-                    <td>{{ doctorant.specialite }}</td>
-                    <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
-                  </tr>
-                </div>
+                <tr *ngFor="let doctorant of cotutelle">
+                  <td>{{ cotutelle.indexOf(doctorant) + 1 }}</td>
+                  <td>{{ doctorant.name }}</td>
+                  <td>{{ doctorant.etablissement }}</td>
+                  <td>{{ doctorant.specialite }}</td>
+                  <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
+                </tr>
               </tbody>
             </table>
             <br />
@@ -131,15 +128,13 @@
                 </tr>
               </thead>
               <tbody>
-                <div *ngFor="let doctorant of doctorants">
-                  <tr>
-                    <td>{{ doctorants.indexOf(doctorant) + 1 }}</td>
-                    <td>{{ doctorant.nom }} {{ doctorant.prenom }}</td>
-                    <td>{{ doctorant.etablissement }}</td>
-                    <td>{{ doctorant.specialite }}</td>
-                    <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
-                  </tr>
-                </div>
+                <tr *ngFor="let doctorant of doctorants">
+                  <td>{{ doctorants.indexOf(doctorant) + 1 }}</td>
+                  <td>{{ doctorant.name }}</td>
+                  <td>{{ doctorant.etablissement }}</td>
+                  <td>{{ doctorant.specialite }}</td>
+                  <td>{{ doctorant.soutenance | date: 'dd/MM/yyyy' }}</td>
+                </tr>
               </tbody>
             </table>
           </div>

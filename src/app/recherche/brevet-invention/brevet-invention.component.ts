@@ -9,18 +9,12 @@ import { RechercheService } from '../../shared/services/recherche.service';
 })
 export class BrevetInventionComponent implements OnInit {
   brevets: BrevetInvention[] = [];
-  inventeurs: Array<any>;
 
   constructor(private rechercheService: RechercheService) {}
 
   ngOnInit(): void {
-    this.rechercheService.getBrevets().subscribe((brevets) => (this.brevets = brevets));
-    this.getInventeurs();
-  }
-
-  getInventeurs(): void {
-    for (const brevet of this.brevets) {
-      this.inventeurs.push(brevet.inventeurs.map((inventeur) => inventeur.name.concat(inventeur.lastName)));
-    }
+    this.rechercheService.getBrevets().subscribe((brevets) => {
+      this.brevets = brevets;
+    });
   }
 }

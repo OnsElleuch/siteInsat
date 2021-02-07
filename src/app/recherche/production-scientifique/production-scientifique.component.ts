@@ -15,6 +15,7 @@ export class ProductionScientifiqueComponent implements OnInit {
   ngOnInit(): void {
     this.rechercheService.getArticles().subscribe((articles) => {
       this.articles = articles;
+      console.log(this.articles);
     });
   }
 }

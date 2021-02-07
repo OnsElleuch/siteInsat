@@ -13,8 +13,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./club-template.component.css'],
 })
 export class ClubTemplateComponent implements OnInit {
-  club= new Club() ;
-  
+  club = new Club();
+
   clubId: number;
   events: Event[];
   filesUrl = environment.baseUrl + '/';
@@ -26,7 +26,6 @@ export class ClubTemplateComponent implements OnInit {
   ) {
     this.route.params.subscribe((params) => {
       this.clubId = params['id'];
-     
     });
   }
 
@@ -37,7 +36,6 @@ export class ClubTemplateComponent implements OnInit {
     this.busy = this.clubService.getClubById(this.clubId).subscribe((data) => {
       this.club = data[0];
       this.getEventsByClub(this.club.clubName);
-      
     });
   }
   getEventsByClub(clubName: string) {
