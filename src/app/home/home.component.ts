@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  events: Event[]= [];
+  events: Event[] = [];
   busy: Subscription;
   news: News[]= [];
   baseFileUrl= environment.baseUrlFiles;

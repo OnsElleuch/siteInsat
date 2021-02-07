@@ -45,7 +45,11 @@
                   <td>{{ brevet.dateDepot }}</td>
                   <td>{{ brevet.numeroEnregistrement }}</td>
                   <td>{{ brevet.dateEnregistrement }}</td>
-                  <td>{{ inventeurs[brevets.indexOf(brevet)] }}}</td>
+                  <td>
+                    <span *ngFor="let inventeur of brevet.inventeurs">
+                      {{ inventeur.name | titlecase }} {{ inventeur.lastName | titlecase }}
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>

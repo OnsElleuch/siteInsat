@@ -1,6 +1,5 @@
 export class Doctorant {
-  public nom: string;
-  public prenom: string;
+  public name: string;
   public etablissement: string;
   public specialite: string;
   public soutenance: Date;

@@ -247,8 +247,11 @@ export class RechercheService extends GenericService {
 
   getLabos(): Observable<LaboratoireRecherche[]> {
     return this.http.get<LaboratoireRecherche[]>(
-      environment.baseUrl + 'laboratoires-recherche/getLaboratoiresRecherche'
+      environment.baseUrl + 'laboratoire-recherche/getLaboratoiresRecherche'
     );
+  }
+  getUnites(): Observable<LaboratoireRecherche[]> {
+    return this.http.get<LaboratoireRecherche[]>(environment.baseUrl + 'laboratoire-recherche/getUnitesDeRecherche');
   }
 
   getprojets(): Observable<ProjetDeRecherche[]> {
@@ -259,9 +262,24 @@ export class RechercheService extends GenericService {
     return this.http.get<Article[]>(environment.baseUrl + 'article/getArticles');
   }
 
-  getCommissionThese(): Observable<EnseignantCommissionThese[]> {
+  getCommissionTheseChimie(): Observable<EnseignantCommissionThese[]> {
     return this.http.get<EnseignantCommissionThese[]>(
-      environment.baseUrl + 'enseignant-commission-these/getMembresDeCommites'
+      environment.baseUrl + 'enseignant-commission-these/getMembresDeCommites/Chimie'
+    );
+  }
+  getCommissionTheseInformatiqueIndistruelle(): Observable<EnseignantCommissionThese[]> {
+    return this.http.get<EnseignantCommissionThese[]>(
+      environment.baseUrl + 'enseignant-commission-these/getMembresDeCommites/InformatiqueIndistruelle'
+    );
+  }
+  getCommissionTheseElectronique(): Observable<EnseignantCommissionThese[]> {
+    return this.http.get<EnseignantCommissionThese[]>(
+      environment.baseUrl + 'enseignant-commission-these/getMembresDeCommites/Electronique'
+    );
+  }
+  getCommissionTheseBio(): Observable<EnseignantCommissionThese[]> {
+    return this.http.get<EnseignantCommissionThese[]>(
+      environment.baseUrl + 'enseignant-commission-these/getMembresDeCommites/biologie'
     );
   }
 
