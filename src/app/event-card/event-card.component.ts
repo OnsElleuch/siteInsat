@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Event } from '../shared/models/event';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-event-card',
