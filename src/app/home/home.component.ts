@@ -5,6 +5,8 @@ import { Event } from '../shared/models/event';
 import { EvenmentsService } from '../shared/services/evenments.service';
 import { NouveautesService } from '../shared/services/nouveautes.service';
 declare var jQuery: any;
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,6 +16,7 @@ export class HomeComponent implements OnInit {
   events: Event[]= [];
   busy: Subscription;
   news: News[]= [];
+  baseFileUrl= environment.baseUrlFiles;
   constructor(private nouveautesService: NouveautesService, private evenmentsService: EvenmentsService) {}
 
   ngOnInit(): void {
