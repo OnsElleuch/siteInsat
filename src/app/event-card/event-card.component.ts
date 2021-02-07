@@ -8,6 +8,7 @@ import { Event } from '../shared/models/event';
 })
 export class EventCardComponent implements OnInit {
   @Input() event: Event;
+  baseFileUrl= environment.baseUrlFiles;
   constructor() {}
 
   ngOnInit(): void {}
