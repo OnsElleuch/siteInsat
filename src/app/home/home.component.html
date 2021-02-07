@@ -399,7 +399,9 @@
                   </div>
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img class="news_image" src="{{ events[0]?.photo_url }}" alt="" />
+
+                      <img class="news_image" src="{{baseFileUrl}}{{events[0]?.photo_url}}" alt="" />
+
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -416,7 +418,9 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img class="news_image" src="{{ events[1]?.photo_url }}" alt="" />
+
+                      <img class="news_image" src="{{baseFileUrl}}{{events[1]?.photo_url}}" alt="" />
+
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -465,7 +469,7 @@
                   </div>
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img src="{{ events[2]?.photo_url }}" alt="" />
+                      <img src="{{baseFileUrl}}{{events[2]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>
@@ -482,7 +486,8 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-6 thumb">
                     <figure>
-                      <img src="{{ events[3]?.photo_url }}" alt="" />
+
+                      <img src="{{baseFileUrl}}{{events[3]?.photo_url}}" alt="" />
                       <figcaption>
                         <a routerLink="insat/evenments/event"><i class="fa fa-plus"></i></a>
                       </figcaption>

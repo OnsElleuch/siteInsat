@@ -20,7 +20,7 @@ export class AboutUsComponent implements OnInit {
   busy: Subscription;
   directionMembers: Direction[];
   administrationMembers: Direction[];
-  filesUrl = environment.baseUrl + '/';
+  filesUrl = environment.baseUrlFiles;
   constructor(private aboutService: AboutUsService) {}
 
   ngOnInit(): void {
