@@ -13,7 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-<img src="http://5d20d590711e.ngrok.io/tqibadge?projectid=1" >
+<img src="http://5d20d590711e.ngrok.io/tqibadge?projectid=1.svg" >
 
 
 ## Running unit tests
